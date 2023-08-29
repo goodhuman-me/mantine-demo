@@ -1,26 +1,40 @@
+// import { Button } from "@mantine/core";
+import { AppShell, Burger } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 import { Outlet, Link } from "react-router-dom";
-import { Button } from "@mantine/core";
-import { MantineProvider, createTheme } from "@mantine/core";
 
 function App() {
+  const [opened, { toggle }] = useDisclosure();
+
   return (
-    <div>
-      {/* <div>
-        Navigation
-        <nav>
-          <Link to="/buttons">Test</Link> <br />
-          <Link to="/buttons">Test</Link>
-        </nav>
-      </div>
-      <div>
+    <AppShell
+      header={{ height: 60 }}
+      navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
+      padding="md"
+    >
+      <AppShell.Header>
+        <div style={{ padding: "16px", fontWeight: "bold" }}>Header here</div>
+      </AppShell.Header>
+
+      <AppShell.Navbar>
+        <div
+          style={{
+            paddingTop: "0px",
+            padding: "16px",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <p>Navigation</p>
+          <Link to="/">Home</Link>
+          <Link to="/buttons">Buttons</Link>
+        </div>
+      </AppShell.Navbar>
+
+      <AppShell.Main>
         <Outlet />
-      </div> */}
-      <div>
-        <Button color="blue" variant="outline">
-          Click me
-        </Button>
-      </div>
-    </div>
+      </AppShell.Main>
+    </AppShell>
   );
 }
 
