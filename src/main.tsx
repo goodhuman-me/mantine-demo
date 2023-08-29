@@ -6,6 +6,7 @@ import { router } from "./routes/router.tsx";
 import { MantineProvider, createTheme } from "@mantine/core";
 const theme = createTheme({});
 
+import "./index.css";
 import "@mantine/core/styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
