@@ -4,11 +4,12 @@ import {
   Route,
 } from "react-router-dom";
 import App from "../App.tsx";
+import Buttons from "../views/Buttons.tsx";
 
 const routes = (
   <Route path="/" element={<App />}>
     <Route path="/" element={<div>Home</div>} />
-    <Route path="buttons" element={<div>Buttons</div>} />
+    <Route path="buttons" element={<Buttons />} />
   </Route>
 );
 
