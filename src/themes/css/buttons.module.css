@@ -1,6 +1,6 @@
 @import "./colors.module.css";
 
-.root {
+/* .root {
   &[data-variant="default"] {
     background-color: var(--brand-accent-main);
     color: var(--brand-primary-white);
@@ -45,4 +45,4 @@
       background-color: var(--brand-body-light-1);
     }
   }
-}
+} */
