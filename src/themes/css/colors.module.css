@@ -1,0 +1,202 @@
+:root {
+  /* * Colors */
+  /* ? Based on Identity System (General) */
+
+  /* Primary  */
+  --brand-primary-hero: #ffd52e;
+  --brand-primary-black: #000;
+  --brand-primary-white: #fff;
+
+  /* Accent  */
+  --brand-accent-dark-2: #164d62;
+  --brand-accent-dark-1: #1a5870;
+  --brand-accent-main: #206e8c;
+  --brand-accent-light-1: #e9f1f4;
+  --brand-accent-light-2: #f4f8f9;
+
+  /* Body  */
+  --brand-body-dark-2: #3d3d3b;
+  --brand-body-dark-1: #706f6d;
+  --brand-body-main: #cccac6;
+  --brand-body-light-1: #ebeae8;
+  --brand-body-light-2: #f7f7f6;
+  --brand-body-light-3: #fafaf9;
+
+  /* Lavender  */
+  --color-lavender-dark-2: #1a2859ff;
+  --color-lavender-dark-1: #56608cff;
+  --color-lavender-main: #6773a7ff;
+  --color-lavender-light-1: #eaecf5ff;
+  --color-lavender-light-2: #f1f2f8ff;
+  --color-lavender-ref: #7280baff;
+
+  /* Canary  */
+  --color-canary-dark-2: #384e55ff;
+  --color-canary-dark-1: #47616bff;
+  --color-canary-main: #557480ff;
+  --color-canary-light-1: #e8f3f7ff;
+  --color-canary-light-2: #f4f9fbff;
+  --color-canary-ref: #8dc2d5ff;
+
+  /* Lilac  */
+  --color-lilac-dark-2: #574066ff;
+  --color-lilac-dark-1: #7a5a8eff;
+  --color-lilac-main: #8b66a2ff;
+  --color-lilac-light-1: #efe6f5ff;
+  --color-lilac-light-2: #f7f2faff;
+  --color-lilac-ref: #ae80cbff;
+
+  /* Blue */
+  --color-blue-dark-2: #004d99ff;
+  --color-blue-dark-1: #0066ccff;
+  --color-blue-main: #0073e6ff;
+  --color-blue-light-1: #e6f2ffff;
+  --color-blue-light-2: #f2f9ffff;
+  --color-blue-ref: #0080ffff;
+
+  /* Green  */
+  --color-green-dark-2: #1b4d40ff;
+  --color-green-dark-1: #266c59ff;
+  --color-green-main: #2b7b66ff;
+  --color-green-light-1: #c3e1d9ff;
+  --color-green-light-2: #ebf5f2ff;
+  --color-green-ref: #369a7fff;
+
+  /* Orange  */
+  --color-orange-dark-2: #773a11ff;
+  --color-orange-dark-1: #9a4b15ff;
+  --color-orange-main: #b25719ff;
+  --color-orange-light-1: #fbe3d3ff;
+  --color-orange-light-2: #fdf1e9ff;
+  --color-orange-ref: #ed7421ff;
+
+  /* Red  */
+  --color-red-dark-2: #802121ff;
+  --color-red-dark-1: #962727ff;
+  --color-red-main: #ab2c2cff;
+  --color-red-light-1: #f7d7d7ff;
+  --color-red-light-2: #fbebebff;
+  --color-red-ref: #d63737ff;
+
+  /* Gray  */
+  --color-gray-dark-2: #3d3d3bff;
+  --color-gray-dark-1: #706f6dff;
+  --color-gray-main: #cccac6ff;
+  --color-gray-light-1: #ebeae8ff;
+  --color-gray-light-2: #f7f7f6ff;
+  --color-gray-light-3: #fafaf9ff;
+
+  /* Ocean  */
+  --color-ocean-dark-2: #164d62ff;
+  --color-ocean-dark-1: #1a5870ff;
+  --color-ocean-main: #206e8cff;
+  --color-ocean-light-1: #e9f1f4ff;
+  --color-ocean-light-2: #f4f8f9ff;
+
+  /* Overlay  */
+  --base-overlay-50: rgba(0, 0, 0, 0.04);
+  --base-overlay-500: rgba(0, 0, 0, 0.5);
+  --base-overlay-700: rgba(0, 0, 0, 0.7);
+
+  /* Black & White  */
+  --base-black-base: #000;
+  --base-white-base: #fff;
+
+  /* ! Ignore everything below for now  */
+
+  /* Misc  */
+  --color-misc-black: #000000ff;
+  --color-misc-transparent: #ffffff00;
+  --color-misc-white: #ffffffff;
+
+  /* ---Backgrounds---  */
+
+  /* Info  */
+  --color-bg-info-default: var(--color-text-info-default);
+  --color-bg-info-weak: var(--color-ocean-light-1);
+
+  /* Accent  */
+  --color-bg-accent-accent: var(--color-ocean-default);
+  --color-bg-accent-accent-weak: var(--color-ocean-light-1);
+
+  /* Neutral  */
+  --color-bg-neutral-default: var(--color-gray-dark-1);
+  --color-bg-neutral-weak: var(--color-gray-light-2);
+
+  /* Notice  */
+  --color-bg-notice-default: var(--color-orange-default);
+  --color-bg-notice-weak: var(--color-orange-light-2);
+
+  /* Positive  */
+  --color-bg-positive-default: var(--color-green-default);
+  --color-bg-positive-weak: var(--color-green-light-2);
+
+  /* Critical  */
+  --color-bg-critical-default: var(--color-red-default);
+  --color-bg-critical-weak: var(--color-red-light-1);
+
+  /* Misc  */
+  --color-bg-misc-base: #ffffffff;
+
+  /* Blue  */
+  --color-bg-blue-default: var(--color-blue-default);
+  --color-bg-blue-weak: var(--color-blue-light-1);
+
+  /* Canary  */
+  --color-bg-canary-default: var(--color-canary-default);
+  --color-bg-canary-weak: var(--color-canary-light-1);
+
+  /* Lilac  */
+  --color-bg-lilac-default: var(--color-lilac-light-1);
+  --color-bg-lilac-weak: var(--color-lilac-default);
+
+  /* Outline  */
+  --color-outline-accent-default: var(--color-ocean-dark-1);
+  --color-outline-critical-default: var(--color-red-dark-1);
+  --color-outline-on-background-default: var(--color-bg-misc-base);
+
+  /* --- Text ---  */
+
+  /* Text neutral  */
+  --color-text-neutral-default: var(--color-gray-dark-1);
+  --color-text-neutral-strong: var(--color-gray-dark-2);
+  --color-text-neutral-weak: var(--color-gray-default);
+
+  /* Text info  */
+  --color-text-info-default: var(--color-lavender-dark-1);
+  --color-text-info-strong: var(--color-lavender-dark-2);
+
+  /* Text accent  */
+  --color-text-accent-default: var(--color-ocean-default);
+  --color-text-accent-strong: var(--color-ocean-dark-2);
+
+  /* Text critical  */
+  --color-text-critical-default: var(--color-red-default);
+  --color-text-critical-strong: var(--color-red-dark-2);
+
+  /* Text notice  */
+  --color-text-notice-default: var(--color-orange-default);
+  --color-text-notice-strong: var(--color-orange-dark-2);
+
+  /* Text positive  */
+  --color-text-positive-default: var(--color-green-default);
+  --color-text-positive-strong: var(--color-green-dark-2);
+
+  /* Text misc  */
+  --color-text-misc-base: var(--color-gray-dark-2);
+  --color-text-misc-on-background: var(--color-misc-white);
+  --color-text-misc-strong: var(--color-misc-black);
+  --color-text-misc-weak: var(--color-gray-dark-1);
+
+  /* Text blue  */
+  --color-text-blue-default: var(--color-blue-dark-1);
+  --color-text-blue-strong: var(--color-blue-dark-2);
+
+  /* Text canary  */
+  --color-text-canary-default: var(--color-canary-default);
+  --color-text-canary-strong: var(--color-canary-dark-2);
+
+  /* Text lilac  */
+  --color-text-lilac-default: var(--color-lilac-dark-1);
+  --color-text-lilac-strong: var(--color-lilac-dark-2);
+}

@@ -1,0 +1,48 @@
+@import "./colors.module.css";
+
+.root {
+  &[data-variant="default"] {
+    background-color: var(--brand-accent-main);
+    color: var(--brand-primary-white);
+
+    @mixin hover {
+      background-color: var(--brand-accent-dark-1);
+    }
+  }
+
+  &[data-variant="accent"] {
+    background-color: var(--brand-accent-main);
+    color: var(--brand-primary-white);
+
+    @mixin hover {
+      background-color: var(--brand-accent-dark-1);
+    }
+  }
+
+  &[data-variant="danger"] {
+    background-color: var(--color-red-main);
+    color: var(--brand-primary-white);
+
+    @mixin hover {
+      background-color: var(--color-red-dark-1);
+    }
+  }
+
+  &[data-variant="warning"] {
+    background-color: var(--color-orange-main);
+    color: var(--brand-primary-white);
+
+    @mixin hover {
+      background-color: var(--color-orange-dark-1);
+    }
+  }
+
+  &[data-variant="neutral"] {
+    background-color: var(--brand-body-light-2);
+    color: var(--brand-body-dark-2);
+
+    @mixin hover {
+      background-color: var(--brand-body-light-1);
+    }
+  }
+}
