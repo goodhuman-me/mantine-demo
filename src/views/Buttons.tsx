@@ -4,7 +4,7 @@ import { ActionIcon, Badge, Button } from "@mantine/core";
 import { Divider } from "@mantine/core";
 import { AirConditioning, Analyze } from "tabler-icons-react";
 
-export default function Buttons() {
+export default function ButtonPage() {
   return (
     <div>
       <div>

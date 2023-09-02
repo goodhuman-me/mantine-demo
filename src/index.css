@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("./assets/fonts/MessinaSansWeb-Regular.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("./assets/fonts/MessinaSansWeb-RegularItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("./assets/fonts/MessinaSansWeb-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("./assets/fonts/MessinaSansWeb-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("./assets/fonts/MessinaSansWeb-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("./assets/fonts/MessinaSansWeb-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}

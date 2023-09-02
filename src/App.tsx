@@ -1,48 +1,45 @@
-// import { Button } from "@mantine/core";
-import { AppShell, Burger } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import { Outlet, Link } from "react-router-dom";
-
+import { Link, Outlet } from "react-router-dom";
 import { router } from "./routes/router";
 
+import { AppShell, Burger, Text, Title, NavLink, Divider } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+
+import {
+  Link as LinkIcon,
+  ChevronRight,
+  Home,
+  Components,
+} from "tabler-icons-react";
+
 function App() {
-  const [opened, { toggle }] = useDisclosure();
+  const [opened, { toggle }] = useDisclosure(true);
 
-  // console.log(router!.routes[0]!.children[1]!.path);
-
-  const routes = router!.routes[0]!.children.filter(
+  // @ts-expect-error -- quiet, you
+  const routes = router?.routes[0]?.children.filter(
     (route) => route.path !== "/"
   );
 
   return (
     <AppShell
       header={{ height: 60 }}
-      navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
+      navbar={{
+        width: 300,
+        breakpoint: "sm",
+        collapsed: { desktop: !opened, mobile: !opened },
+      }}
       padding="md"
     >
       <AppShell.Header>
-        <div style={{ padding: "16px", fontWeight: "bold" }}>Header here</div>
+        <div className="flex flex-row items-center justify-content p-2.5">
+          <Burger opened={opened} onClick={toggle} />
+          <Title order={4} className="ml-2">
+            Mantine v7 exploration
+          </Title>
+        </div>
       </AppShell.Header>
 
       <AppShell.Navbar>
-        <div
-          style={{
-            paddingTop: "0px",
-            padding: "16px",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <p>Navigation</p>
-          <Link to="/">Home</Link>
-          {/* <Link to="/buttons">Buttons</Link> */}
-          {/* <Link to="/textinput">Text input</Link> */}
-          {routes.map((route) => (
-            <Link key={route.path} to={route.path}>
-              {route.path}
-            </Link>
-          ))}
-        </div>
+        <NavMenu routes={routes} />
       </AppShell.Navbar>
 
       <AppShell.Main>
@@ -53,3 +50,32 @@ function App() {
 }
 
 export default App;
+
+const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
+  <div className="flex flex-col">
+    <div className="px-3 py-2">
+      <Title order={6}>Navigation</Title>
+    </div>
+    <Link to="/">
+      <NavLink
+        label="Home"
+        leftSection={<Home size="1rem" />}
+        rightSection={<ChevronRight size="1rem" />}
+      />
+    </Link>
+
+    <div className="px-3 py-2">
+      <Title order={6}>Individual components</Title>
+    </div>
+
+    {routes.map((route) => (
+      <Link key={route.path} to={route.path as string}>
+        <NavLink
+          label={route.path}
+          leftSection={<Components size="1rem" />}
+          rightSection={<ChevronRight size="1rem" />}
+        />
+      </Link>
+    ))}
+  </div>
+);

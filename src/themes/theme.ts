@@ -1,4 +1,4 @@
-import { createTheme } from "@mantine/core";
+import { createTheme, TextInput } from "@mantine/core";
 
 import { buttonProps } from "./button/props";
 import { variantColorResolver } from "./common/variant-colors";
@@ -13,5 +13,23 @@ export const theme = createTheme({
   defaultRadius: 6,
   components: {
     Button: buttonProps,
+    TextInput: TextInput.extend({
+      styles: {
+        input: {
+          borderWidth: 2,
+        },
+      },
+    }),
   },
 });
+
+// const theme = createTheme({
+//   components: {
+//     TextInput: TextInput.extend({
+//       classNames: (_theme, props) => ({
+//         label: cx({ [classes.labelRequired]: props.required }),
+//         input: cx({ [classes.inputError]: props.error }),
+//       }),
+//     }),
+//   },
+// });

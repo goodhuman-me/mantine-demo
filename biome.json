@@ -1,4 +1,5 @@
 {
+  "$schema": "https://biomejs.dev/schemas/1.0.0/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -20,10 +21,13 @@
       "quoteProperties": "asNeeded"
     }
   },
-  "linter": {
-    "enabled": false
-  },
   "organizeImports": {
-    "enabled": false
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
   }
 }
