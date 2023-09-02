@@ -6,11 +6,13 @@ import {
 import App from "../App.tsx";
 import Buttons from "../views/Buttons.tsx";
 import Home from "../views/Home.tsx";
+import TextInput from "../views/TextInput.tsx";
 
 const routes = (
   <Route path="/" element={<App />}>
     <Route path="/" element={<Home />} />
-    <Route path="buttons" element={<Buttons />} />
+    <Route path="Buttons" element={<Buttons />} />
+    <Route path="TextInput" element={<TextInput />} />
   </Route>
 );
 
