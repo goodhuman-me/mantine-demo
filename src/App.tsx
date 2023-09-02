@@ -17,7 +17,7 @@ function App() {
   // @ts-expect-error -- quiet, you
   const routes = router?.routes[0]?.children.filter(
     (route) => route.path !== "/"
-  );
+  ) as { path: string }[];
 
   return (
     <AppShell
