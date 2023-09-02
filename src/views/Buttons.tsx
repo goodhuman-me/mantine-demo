@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Badge, Button } from "@mantine/core";
+import { ActionIcon, Badge, Button } from "@mantine/core";
 import { Divider } from "@mantine/core";
-import { Analyze } from "tabler-icons-react";
+import { AirConditioning, Analyze } from "tabler-icons-react";
 
 export default function Buttons() {
   return (

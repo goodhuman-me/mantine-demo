@@ -4,6 +4,8 @@ import { buttonProps } from "./button/props";
 import { variantColorResolver } from "./common/variant-colors";
 import activeClasses from "./common/active.module.css";
 
+import "./common/colors.module.css";
+
 export const theme = createTheme({
   focusRing: "auto",
   variantColorResolver,
