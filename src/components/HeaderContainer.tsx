@@ -10,11 +10,14 @@ export default function HeaderContainer({
   return (
     <Container
       bg="var(--brand-body-light-3)"
-      p="xl"
       className="border-gray-200 border-solid border-0 border-b"
     >
-      <Container size="md">
-        <Title order={1} className={subtitle && "mb-4"}>
+      <Container size="md" p="xl">
+        <Title
+          order={1}
+          className={subtitle && "mb-4"}
+          c="var(--brand-body-dark-2)"
+        >
           {title}
         </Title>
         {subtitle && (
@@ -23,7 +26,7 @@ export default function HeaderContainer({
             fw="normal"
             styles={{
               root: {
-                color: "var(--brand-body-dark-1)",
+                color: "var(--brand-body-dark-2)",
               },
             }}
           >

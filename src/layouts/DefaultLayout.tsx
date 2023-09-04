@@ -11,7 +11,7 @@ export default function DefaultLayout(props: {
     <Container fluid className="p-0">
       <HeaderContainer title={props.title} subtitle={props.subtitle} />
 
-      <Container size="md" mt="xl">
+      <Container size="md" p="xl">
         {props.children}
       </Container>
     </Container>
