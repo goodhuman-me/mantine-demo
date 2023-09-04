@@ -1,175 +1,155 @@
-import { Button, Divider, Container } from "@mantine/core";
+import { Box, Button, Flex, Title } from "@mantine/core";
+import { Content } from "../components/Content";
+import DefaultLayout from "../layouts/DefaultLayout";
 import { Analyze } from "tabler-icons-react";
 
-export default function ButtonPage() {
-  return (
-    <Container size="md">
-      <div>
-        <h1>Buttons</h1>
-      </div>
-      <Divider />
+export const ButtonsPage = () => (
+  <DefaultLayout title="Buttons" subtitle="A collection of clickable things">
+    <Box id="variants">
+      <Content.Header>Variants</Content.Header>
+      <Content.Section title="Filled variant">
+        <Content.Text>Solid filled button with custom theme colors</Content.Text>
+        <Content.Area>
+          <Flex gap="md">
+            <Button variant="filled" color="accent">
+              Accent
+            </Button>
+            <Button variant="filled" color="warning">
+              Warning
+            </Button>
+            <Button variant="filled" color="danger">
+              Danger
+            </Button>
+            <Button variant="filled" color="neutral">
+              Neutral
+            </Button>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
+      <Content.Section title="Outline variant">
+        <Content.Text>Outline button with custom theme colors</Content.Text>
+        <Content.Area>
+          <Flex gap="md">
+            <Button variant="outline" color="accent">
+              Accent
+            </Button>
+            <Button variant="outline" color="warning">
+              Warning
+            </Button>
+            <Button variant="outline" color="danger">
+              Danger
+            </Button>
+            <Button variant="outline" color="neutral">
+              Neutral
+            </Button>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
 
-      <div>
-        <h2>Variants</h2>
-      </div>
+      <Content.Section title="Transparent variant">
+        <Content.Text>Transparent button with custom theme colors</Content.Text>
+        <Content.Area>
+          <Flex gap="md">
+            <Button variant="transparent" color="accent">
+              Accent
+            </Button>
+            <Button variant="transparent" color="warning">
+              Warning
+            </Button>
+            <Button variant="transparent" color="danger">
+              Danger
+            </Button>
+            <Button variant="transparent" color="neutral">
+              Neutral
+            </Button>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
+    </Box>
 
-      <div className="mb-8">
-        <h3>Filled</h3>
-        <Button className="mr-4" variant="filled" color="accent">
-          Accent
-        </Button>
-        <Button className="mr-4" variant="filled" color="warning">
-          Warning
-        </Button>
-        <Button className="mr-4" variant="filled" color="danger">
-          Danger
-        </Button>
-        <Button className="mr-4" variant="filled" color="neutral">
-          Neutral
-        </Button>
-      </div>
+    <Box id="sizes">
+      <Content.Header>Sizes</Content.Header>
+      <Content.Section title="Sizes">
+        <Content.Text>4 different sizes for the button</Content.Text>
+        <Content.Area>
+          <Flex gap="md" align="center">
+            <Button size="xs">Xsmall</Button>
+            <Button size="sm">Small</Button>
+            <Button size="md">Medium</Button>
+            <Button size="lg">Large</Button>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
+    </Box>
 
-      <div className="mb-8">
-        <h3>Outlined</h3>
-        <Button className="mr-4" variant="outline" color="accent">
-          Accent
-        </Button>
-        <Button className="mr-4" variant="outline" color="warning">
-          Warning
-        </Button>
-        <Button className="mr-4" variant="outline" color="danger">
-          Danger
-        </Button>
-        <Button className="mr-4" variant="outline" color="neutral">
-          Neutral
-        </Button>
-      </div>
+    <Box id="icons">
+      <Content.Header>Icons support</Content.Header>
+      <Content.Section title="Left icons">
+        <Content.Area>
+          <Flex gap="md" align="center">
+            <Button size="xs" leftSection={<Analyze size={14} />}>
+              Xsmall
+            </Button>
+            <Button size="sm" leftSection={<Analyze size={16} />}>
+              Small
+            </Button>
+            <Button size="md" leftSection={<Analyze size={16} />}>
+              Medium
+            </Button>
+            <Button size="lg" leftSection={<Analyze size={16} />}>
+              Large
+            </Button>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
+      <Content.Section title="Right icons">
+        <Content.Area>
+          <Flex align="center" gap="md">
+            <Button size="xs" rightSection={<Analyze size={14} />}>
+              Xsmall
+            </Button>
+            <Button size="sm" rightSection={<Analyze size={16} />}>
+              Small
+            </Button>
+            <Button size="md" rightSection={<Analyze size={16} />}>
+              Medium
+            </Button>
+            <Button size="lg" rightSection={<Analyze size={16} />}>
+              Large
+            </Button>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
+      <Content.Section title="Both sides">
+        <Content.Area>
+          <Flex align="center" gap="md">
+            <Button size="xs" leftSection={<Analyze size={14} />} rightSection={<Analyze size={14} />}>
+              Xsmall
+            </Button>
+            <Button size="sm" leftSection={<Analyze size={14} />} rightSection={<Analyze size={16} />}>
+              Small
+            </Button>
+            <Button size="md" leftSection={<Analyze size={14} />} rightSection={<Analyze size={16} />}>
+              Medium
+            </Button>
+            <Button size="lg" leftSection={<Analyze size={14} />} rightSection={<Analyze size={16} />}>
+              Large
+            </Button>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
+    </Box>
 
-      <div className="mb-8">
-        <h3>Transparent</h3>
-        <Button className="mr-4" variant="transparent" color="accent">
-          Accent
-        </Button>
-        <Button className="mr-4" variant="transparent" color="warning">
-          Warning
-        </Button>
-        <Button className="mr-4" variant="transparent" color="danger">
-          Danger
-        </Button>
-        <Button className="mr-4" variant="transparent" color="neutral">
-          Neutral
-        </Button>
-      </div>
-
-      <Divider />
-
-      <div className="mt-4">
-        <h2>Sizes</h2>
-
-        <div className="mb-8">
-          <h3>All sizes</h3>
-          <Button className="mr-4" size="xs">
-            Xsmall
-          </Button>
-          <Button className="mr-4" size="sm">
-            Small
-          </Button>
-          <Button className="mr-4" size="md">
-            Medium
-          </Button>
-          <Button className="mr-4" size="lg">
-            Large
-          </Button>
-        </div>
-      </div>
-
-      <Divider />
-
-      <div className="mt-4">
-        <h2>Icons</h2>
-
-        <div className="mb-8">
-          <h3>Left icon</h3>
-          <Button
-            className="mr-4"
-            size="xs"
-            leftSection={<Analyze size={14} />}
-          >
-            Xsmall
-          </Button>
-          <Button
-            className="mr-4"
-            size="sm"
-            leftSection={<Analyze size={16} />}
-          >
-            Small
-          </Button>
-          <Button
-            className="mr-4"
-            size="md"
-            leftSection={<Analyze size={16} />}
-          >
-            Medium
-          </Button>
-          <Button
-            className="mr-4"
-            size="lg"
-            leftSection={<Analyze size={16} />}
-          >
-            Large
-          </Button>
-        </div>
-
-        <div className="mb-8">
-          <h3>Right icon</h3>
-          <Button
-            className="mr-4"
-            size="xs"
-            rightSection={<Analyze size={14} />}
-          >
-            Xsmall
-          </Button>
-          <Button
-            className="mr-4"
-            size="sm"
-            rightSection={<Analyze size={16} />}
-          >
-            Small
-          </Button>
-          <Button
-            className="mr-4"
-            size="md"
-            rightSection={<Analyze size={16} />}
-          >
-            Medium
-          </Button>
-          <Button
-            className="mr-4"
-            size="lg"
-            rightSection={<Analyze size={16} />}
-          >
-            Large
-          </Button>
-        </div>
-
-        <Divider />
-
-        <div className="mb-8">
-          <h3>Loading state</h3>
-          <Button className="mr-4" size="xs" loading>
-            Xsmall
-          </Button>
-          <Button className="mr-4" size="sm" loading>
-            Small
-          </Button>
-          <Button className="mr-4" size="md" loading>
-            Medium
-          </Button>
-          <Button className="mr-4" size="lg" loading>
-            Large
-          </Button>
-        </div>
-      </div>
-    </Container>
-  );
-}
+    <Box id="">
+      <Content.Header>Loading/disabled states</Content.Header>
+      <Content.Section>
+        <Content.Area>
+          <Flex gap="md">
+            <Button loading>Loading</Button>
+            <Button disabled>Disabled</Button>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
+    </Box>
+  </DefaultLayout>
+);

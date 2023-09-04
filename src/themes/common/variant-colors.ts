@@ -1,7 +1,4 @@
-import {
-  VariantColorsResolver,
-  defaultVariantColorsResolver,
-} from "@mantine/core";
+import { VariantColorsResolver, defaultVariantColorsResolver } from "@mantine/core";
 
 /*
  * Custom variant color resolved, used to override the default variant colors.
@@ -19,32 +16,28 @@ export const variantColorResolver: VariantColorsResolver = (input) => {
           background: "var(--brand-accent-main)",
           color: "white",
           hover: "var(--brand-accent-dark-1)",
-          border:
-            "calc(0.0625rem * var(--mantine-scale)) solid var(--brand-accent-main)",
+          border: "calc(0.0625rem * var(--mantine-scale)) solid var(--brand-accent-main)",
         };
       case "danger":
         return {
           background: "var(--color-red-main)",
           color: "white",
           hover: "var(--color-red-dark-1)",
-          border:
-            "calc(0.0625rem * var(--mantine-scale)) solid var(--color-red-main)",
+          border: "calc(0.0625rem * var(--mantine-scale)) solid var(--color-red-main)",
         };
       case "warning":
         return {
           background: "var(--color-orange-main)",
           color: "white",
           hover: "var(--color-orange-dark-1)",
-          border:
-            "calc(0.0625rem * var(--mantine-scale)) solid var(--color-orange-main)",
+          border: "calc(0.0625rem * var(--mantine-scale)) solid var(--color-orange-main)",
         };
       case "neutral":
         return {
           background: "var(--brand-body-light-2)",
           color: "--brand-body-dark-2",
           hover: "var(--brand-body-light-1)",
-          border:
-            "calc(0.0625rem * var(--mantine-scale)) solid var(--brand-body-light-2)",
+          border: "calc(0.0625rem * var(--mantine-scale)) solid var(--brand-body-light-2)",
         };
       default:
         return defaultResolvedColors;

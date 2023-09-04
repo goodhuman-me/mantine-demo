@@ -6,7 +6,7 @@ export default function DefaultLayout(
   props: PropsWithChildren<{
     title?: string;
     subtitle?: string;
-  }>
+  }>,
 ) {
   return (
     <Container fluid className="p-0">

@@ -6,10 +6,8 @@ export default function SampleLayout() {
   return (
     <DefaultLayout title="Buttons" subtitle="Some description of the page">
       <Content.Section title="Section title">
-        <Content.Text>
-          Some description here. More text to be filled here.
-        </Content.Text>
-        <Content.Box>
+        <Content.Text>Some description here. More text to be filled here.</Content.Text>
+        <Content.Area>
           <Button className="mr-4" variant="filled" color="accent">
             Accent
           </Button>
@@ -22,11 +20,25 @@ export default function SampleLayout() {
           <Button className="mr-4" variant="filled" color="neutral">
             Neutral
           </Button>
-        </Content.Box>
+        </Content.Area>
       </Content.Section>
 
-      <Content.Section title="All sizes" text="All sizes for the button">
-        <Content.Text>More description</Content.Text>
+      <Content.Section title="All sizes">
+        <Content.Text>Some description here. More text to be filled here.</Content.Text>
+        <Content.Area>
+          <Button className="mr-4" variant="filled" color="accent">
+            Accent
+          </Button>
+          <Button className="mr-4" variant="filled" color="warning">
+            Warning
+          </Button>
+          <Button className="mr-4" variant="filled" color="danger">
+            Danger
+          </Button>
+          <Button className="mr-4" variant="filled" color="neutral">
+            Neutral
+          </Button>
+        </Content.Area>
       </Content.Section>
     </DefaultLayout>
   );

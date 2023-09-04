@@ -15,8 +15,7 @@ export default function Home() {
       </Title>
       <div className="mt-4">
         <Text className="underline font-bold" c="var(--brand-body-dark-1)">
-          If this text has been underlined & bold, it means that Tailwind is
-          working correctly.
+          If this text has been underlined & bold, it means that Tailwind is working correctly.
         </Text>
 
         <br />

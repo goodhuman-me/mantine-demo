@@ -10,9 +10,7 @@ function App() {
   const [opened, { toggle }] = useDisclosure(true);
 
   // @ts-expect-error -- quiet, you
-  const routes = router?.routes[0]?.children.filter(
-    (route) => route.path !== "/"
-  ) as { path: string }[];
+  const routes = router?.routes[0]?.children.filter((route) => route.path !== "/") as { path: string }[];
 
   return (
     <AppShell
@@ -53,11 +51,7 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
 
     <div className="mb-4">
       <Link to="/">
-        <NavLink
-          label="Home"
-          leftSection={<Home size="1rem" />}
-          rightSection={<ChevronRight size="1rem" />}
-        />
+        <NavLink label="Home" leftSection={<Home size="1rem" />} rightSection={<ChevronRight size="1rem" />} />
       </Link>
     </div>
 

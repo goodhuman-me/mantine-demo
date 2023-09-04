@@ -1,9 +1,6 @@
 import { ButtonFactory, PartialVarsResolver } from "@mantine/core";
 
-export const buttonVars: PartialVarsResolver<ButtonFactory> = (
-  _theme,
-  props
-) => {
+export const buttonVars: PartialVarsResolver<ButtonFactory> = (_theme, props) => {
   if (props.size === "xs") {
     return {
       root: {
