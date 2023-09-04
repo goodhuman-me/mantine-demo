@@ -4,11 +4,11 @@ import {
   Route,
 } from "react-router-dom";
 import App from "../App.tsx";
-import ButtonPage from "../views/Buttons.tsx";
-import Home from "../views/Home.tsx";
-import TextInputPage from "../views/TextInput.tsx";
-import TypographyPage from "../views/TypographyPage.tsx";
-import SampleLayout from "../views/Sample-layout.tsx";
+import ButtonPage from "../pages/ButtonsPage.tsx";
+import Home from "../pages/HomePage.tsx";
+import TextInputPage from "../pages/TextInputPage.tsx";
+import TypographyPage from "../pages/TypographyPage.tsx";
+import SampleLayout from "../pages/SampleLayoutPage.tsx";
 
 const routes = (
   <>

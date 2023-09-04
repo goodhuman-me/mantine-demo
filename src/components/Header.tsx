@@ -15,7 +15,7 @@ export default function HeaderContainer({
       <Container size="md" p="xl">
         <Title
           order={1}
-          className={subtitle && "mb-4"}
+          className={subtitle && "mb-3"}
           c="var(--brand-body-dark-2)"
         >
           {title}
