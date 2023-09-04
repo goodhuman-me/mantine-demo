@@ -14,9 +14,9 @@ const routes = (
   <>
     <Route path="/" element={<App />}>
       <Route path="/" element={<Home />} />
-      <Route path="Buttons" element={<ButtonPage />} />
-      <Route path="TextInput" element={<TextInputPage />} />
-      <Route path="Typography" element={<TypographyPage />} />
+      {/* <Route path="Buttons" element={<ButtonPage />} /> */}
+      {/* <Route path="TextInput" element={<TextInputPage />} /> */}
+      {/* <Route path="Typography" element={<TypographyPage />} /> */}
       <Route path="SampleLayout" element={<SampleLayout />} />
     </Route>
     <Route path="/test" element={<div>test</div>} />

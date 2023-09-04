@@ -1,5 +1,5 @@
 import { Container, Divider, Text, Title } from "@mantine/core";
-import HeaderContainer from "../components/HeaderContainer";
+import HeaderContainer from "../components/Header";
 import { ReactNode } from "react";
 
 export default function DefaultLayout(props: {
