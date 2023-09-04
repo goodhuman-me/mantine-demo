@@ -1,12 +1,9 @@
-import React from "react";
-
-import { ActionIcon, Badge, Button } from "@mantine/core";
-import { Divider } from "@mantine/core";
-import { AirConditioning, Analyze } from "tabler-icons-react";
+import { Button, Divider, Container } from "@mantine/core";
+import { Analyze } from "tabler-icons-react";
 
 export default function ButtonPage() {
   return (
-    <div>
+    <Container size="md">
       <div>
         <h1>Buttons</h1>
       </div>
@@ -158,7 +155,7 @@ export default function ButtonPage() {
         <Divider />
 
         <div className="mb-8">
-          <h3>Right icon</h3>
+          <h3>Loading state</h3>
           <Button className="mr-4" size="xs" loading>
             Xsmall
           </Button>
@@ -172,23 +169,7 @@ export default function ButtonPage() {
             Large
           </Button>
         </div>
-
-        <div className="mb-16">
-          <h3>Badges</h3>
-          <Badge color="accent" variant="filled" className="mr-4">
-            Badge
-          </Badge>
-          <Badge color="warning" variant="filled" className="mr-4">
-            Badge
-          </Badge>
-          <Badge color="danger" variant="filled" className="mr-4">
-            Badge
-          </Badge>
-          <Badge color="neutral" variant="filled" className="mr-4">
-            Badge
-          </Badge>
-        </div>
       </div>
-    </div>
+    </Container>
   );
 }

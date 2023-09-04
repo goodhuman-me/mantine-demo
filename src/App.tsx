@@ -1,15 +1,10 @@
 import { Link, Outlet } from "react-router-dom";
 import { router } from "./routes/router";
 
-import { AppShell, Burger, Text, Title, NavLink, Divider } from "@mantine/core";
+import { AppShell, Burger, NavLink, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
-import {
-  Link as LinkIcon,
-  ChevronRight,
-  Home,
-  Components,
-} from "tabler-icons-react";
+import { ChevronRight, Components, Home } from "tabler-icons-react";
 
 function App() {
   const [opened, { toggle }] = useDisclosure(true);
@@ -27,7 +22,6 @@ function App() {
         breakpoint: "sm",
         collapsed: { desktop: !opened, mobile: !opened },
       }}
-      padding="md"
     >
       <AppShell.Header>
         <div className="flex flex-row items-center justify-content p-2.5">
@@ -52,30 +46,35 @@ function App() {
 export default App;
 
 const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
-  <div className="flex flex-col">
+  <div className="flex flex-col mt-4">
     <div className="px-3 py-2">
       <Title order={6}>Navigation</Title>
     </div>
-    <Link to="/">
-      <NavLink
-        label="Home"
-        leftSection={<Home size="1rem" />}
-        rightSection={<ChevronRight size="1rem" />}
-      />
-    </Link>
+
+    <div className="mb-4">
+      <Link to="/">
+        <NavLink
+          label="Home"
+          leftSection={<Home size="1rem" />}
+          rightSection={<ChevronRight size="1rem" />}
+        />
+      </Link>
+    </div>
 
     <div className="px-3 py-2">
       <Title order={6}>Individual components</Title>
     </div>
 
-    {routes.map((route) => (
-      <Link key={route.path} to={route.path as string}>
-        <NavLink
-          label={route.path}
-          leftSection={<Components size="1rem" />}
-          rightSection={<ChevronRight size="1rem" />}
-        />
-      </Link>
-    ))}
+    <div>
+      {routes.map((route) => (
+        <Link key={route.path} to={route.path as string}>
+          <NavLink
+            label={route.path}
+            leftSection={<Components size="1rem" />}
+            rightSection={<ChevronRight size="1rem" />}
+          />
+        </Link>
+      ))}
+    </div>
   </div>
 );
