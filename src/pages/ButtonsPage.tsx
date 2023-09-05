@@ -191,65 +191,57 @@ export const ButtonsPage = () => (
       <Content.Header>Loading states</Content.Header>
       <Content.Section title="Filled variants" mb="xl" divider={false}>
         <Content.Area>
-          <Flex gap="md">
-            <Button loading variant="filled" color="accent">
-              Accent
-            </Button>
-            <Button loading variant="filled" color="warning">
-              Warning
-            </Button>
-            <Button loading variant="filled" color="danger">
-              Danger
-            </Button>
-            <Button
-              loading
-              variant="filled"
-              color="neutral"
-              // Note - seems to be a bug in Mantine, where the loading indicator is not spinning
-              loaderProps={{
-                color: "var(--brand-body-main)",
-              }}
-            >
-              Neutral
-            </Button>
-          </Flex>
-        </Content.Area>
-      </Content.Section>
-
-      <Content.Section title="Outline variants" mb="xl" divider={false}>
-        <Content.Area>
-          <Flex gap="md">
-            <Button loading variant="outline" color="accent">
-              Accent
-            </Button>
-            <Button loading variant="outline" color="warning">
-              Warning
-            </Button>
-            <Button loading variant="outline" color="danger">
-              Danger
-            </Button>
-            <Button loading variant="outline" color="neutral">
-              Neutral
-            </Button>
-          </Flex>
-        </Content.Area>
-      </Content.Section>
-
-      <Content.Section title="Transparent variants">
-        <Content.Area>
-          <Flex gap="md">
-            <Button loading variant="transparent" color="accent">
-              Accent
-            </Button>
-            <Button loading variant="transparent" color="warning">
-              Warning
-            </Button>
-            <Button loading variant="transparent" color="danger">
-              Danger
-            </Button>
-            <Button loading variant="transparent" color="neutral">
-              Neutral
-            </Button>
+          <Flex direction="column" gap="lg">
+            <Flex gap="md">
+              <Button loading variant="filled" color="accent">
+                Accent
+              </Button>
+              <Button loading variant="filled" color="warning">
+                Warning
+              </Button>
+              <Button loading variant="filled" color="danger">
+                Danger
+              </Button>
+              <Button
+                loading
+                variant="filled"
+                color="neutral"
+                // Note - seems to be a bug in Mantine, where the loading indicator is not spinning
+                loaderProps={{
+                  color: "var(--brand-body-main)",
+                }}
+              >
+                Neutral
+              </Button>
+            </Flex>
+            <Flex gap="md">
+              <Button loading variant="outline" color="accent">
+                Accent
+              </Button>
+              <Button loading variant="outline" color="warning">
+                Warning
+              </Button>
+              <Button loading variant="outline" color="danger">
+                Danger
+              </Button>
+              <Button loading variant="outline" color="neutral">
+                Neutral
+              </Button>
+            </Flex>
+            <Flex gap="md">
+              <Button loading variant="transparent" color="accent">
+                Accent
+              </Button>
+              <Button loading variant="transparent" color="warning">
+                Warning
+              </Button>
+              <Button loading variant="transparent" color="danger">
+                Danger
+              </Button>
+              <Button loading variant="transparent" color="neutral">
+                Neutral
+              </Button>
+            </Flex>
           </Flex>
         </Content.Area>
       </Content.Section>
