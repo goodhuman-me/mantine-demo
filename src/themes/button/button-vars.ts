@@ -1,8 +1,10 @@
 import { ButtonFactory, PartialVarsResolver } from "@mantine/core";
 
 /*
- * Button specific variant color resolver.
+ * Button specific vars resolver.
  * See https://v7.mantine.dev/core/button#custom-variants
+ *
+ * Not currently in use, but left here for reference.
  */
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

@@ -1,0 +1,30 @@
+.root {
+  &[data-disabled] {
+    background-color: var(--brand-body-light-1);
+    border: 1px solid var(--brand-body-light-1);
+  }
+
+  &[data-size="xs"] {
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &[data-size="sm"] {
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+  }
+
+  &[data-size="md"] {
+    font-size: 14px;
+    width: 44px;
+    height: 44px;
+  }
+
+  &[data-size="lg"] {
+    font-size: 16px;
+    width: 56px;
+    height: 56px;
+  }
+}

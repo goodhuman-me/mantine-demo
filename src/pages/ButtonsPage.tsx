@@ -83,7 +83,9 @@ export const ButtonsPage = () => (
 
     <Box id="icons">
       <Content.Header>Icons support</Content.Header>
+
       <Content.Section title="Left icons" mb="xl" divider={false}>
+        <Content.Text>⚠️ Icon sizes to be determined</Content.Text>
         <Content.Area>
           <Flex gap="md" align="center">
             <Button size="xs" leftSection={<Analyze size={14} />}>
@@ -249,10 +251,39 @@ export const ButtonsPage = () => (
 
     <Box>
       <Content.Header>Action Icons</Content.Header>
+
+      <Content.Section title="Sizes" divider={false} mb="xl">
+        <Flex gap="md" align="center">
+          <ActionIcon size="xs">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="sm">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="md">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="lg">
+            <Analyze />
+          </ActionIcon>
+        </Flex>
+      </Content.Section>
+
       <Content.Section title="Variants">
-        <ActionIcon color="accent">
-          <Analyze size={14} />
-        </ActionIcon>
+        <Flex gap="md">
+          <ActionIcon color="accent">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="warning">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="danger">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="neutral">
+            <Analyze />
+          </ActionIcon>
+        </Flex>
       </Content.Section>
     </Box>
   </DefaultLayout>
