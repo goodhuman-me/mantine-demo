@@ -4,7 +4,7 @@ import DefaultLayout from "../layouts/DefaultLayout";
 
 export default function SampleLayout() {
   return (
-    <DefaultLayout title="Buttons" subtitle="Some description of the page">
+    <DefaultLayout title="Sample layout" subtitle="Some description of the page">
       <Content.Section title="Section title">
         <Content.Text>Some description here. More text to be filled here.</Content.Text>
         <Content.Area>
