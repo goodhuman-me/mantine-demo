@@ -1,6 +1,6 @@
 import { createTheme, TextInput } from "@mantine/core";
 
-import { buttonProps } from "./button/props";
+import { buttonProps } from "./button/button-props";
 import { variantColorResolver } from "./common/variant-colors";
 import activeClasses from "./common/active.module.css";
 
@@ -13,13 +13,13 @@ export const theme = createTheme({
   defaultRadius: 6,
   components: {
     Button: buttonProps,
-    TextInput: TextInput.extend({
-      styles: {
-        input: {
-          borderWidth: 2,
-        },
-      },
-    }),
+    // TextInput: TextInput.extend({
+    //   styles: {
+    //     input: {
+    //       borderWidth: 2,
+    //     },
+    //   },
+    // }),
   },
 });
 

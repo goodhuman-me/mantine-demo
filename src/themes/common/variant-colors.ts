@@ -1,9 +1,10 @@
 import { VariantColorsResolver, defaultVariantColorsResolver } from "@mantine/core";
 
 /*
- * Custom variant color resolved, used to override the default variant colors.
+ * Custom variant color resolver, used to add customised theme colors for components.
  * Applies to several components; see https://v7.mantine.dev/styles/variants-sizes#variantcolorresolver
  */
+
 export const variantColorResolver: VariantColorsResolver = (input) => {
   const defaultResolvedColors = defaultVariantColorsResolver(input);
 

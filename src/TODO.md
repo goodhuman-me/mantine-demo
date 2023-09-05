@@ -1,3 +1,7 @@
+# Typography
+
+Add Messina Sans to this project
+
 # Design system components
 
 • Alert hero
@@ -71,3 +75,12 @@
 • Top navigation
 
 • Widget
+
+# Storyboard set up
+
+TODO
+
+# Set up types
+
+How to override types to include variants/colors without wrapping?
+• Maybe add index.d.ts to extend it

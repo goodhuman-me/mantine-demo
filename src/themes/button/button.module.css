@@ -1,5 +1,12 @@
 /* @import "../common/colors.module.css"; */
 
+.root {
+  &[data-disabled] {
+    background-color: var(--brand-body-light-1);
+    border: 1px solid var(--brand-body-light-1);
+  }
+}
+
 /* .root {
   &[data-variant="default"] {
     background-color: var(--brand-accent-main);
