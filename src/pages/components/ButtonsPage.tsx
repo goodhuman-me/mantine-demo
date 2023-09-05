@@ -1,6 +1,6 @@
 import { ActionIcon, Box, Button, Flex, Title } from "@mantine/core";
-import { Content } from "../components/Content";
-import DefaultLayout from "../layouts/DefaultLayout";
+import { Content } from "../../components/Content";
+import DefaultLayout from "../../layouts/DefaultLayout";
 import { Analyze } from "tabler-icons-react";
 
 export const ButtonsPage = () => (
