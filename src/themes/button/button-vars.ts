@@ -7,7 +7,9 @@ import { ButtonFactory, PartialVarsResolver } from "@mantine/core";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const buttonVars: PartialVarsResolver<ButtonFactory> = (_theme, _props) => {
-  return { root: {} };
+  return {
+    root: {},
+  };
 
   // Leaving the below code commented out for reference.
   // Styling done in CSS modules instead.
