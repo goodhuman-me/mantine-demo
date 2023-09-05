@@ -1,4 +1,5 @@
-import { ActionIcon, Box, Button, Flex, Title } from "@mantine/core";
+import { ActionIcon, Box, Button, Code, Flex, Title } from "@mantine/core";
+import { CodeHighlight } from "@mantine/code-highlight";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import { Analyze } from "tabler-icons-react";
@@ -25,6 +26,21 @@ export const ButtonsPage = () => (
             </Button>
           </Flex>
         </Content.Area>
+
+        <Content.Area>
+          <Content.Text>
+            <b>Sample code</b>
+          </Content.Text>
+          <CodeHighlight
+            language="tsx"
+            mt="md"
+            code={`
+<Button variant="filled" color="accent">Accent</Button>
+<Button variant="filled" color="warning">Warning</Button>
+<Button variant="filled" color="danger">Danger</Button>
+<Button variant="filled" color="neutral">Neutral</Button>`}
+          />
+        </Content.Area>
       </Content.Section>
       <Content.Section title="Outline variant" divider={false} mb="xl">
         <Content.Text>Outline button with custom theme colors</Content.Text>
@@ -44,6 +60,21 @@ export const ButtonsPage = () => (
             </Button>
           </Flex>
         </Content.Area>
+
+        <Content.Area>
+          <Content.Text>
+            <b>Sample code</b>
+          </Content.Text>
+          <CodeHighlight
+            language="tsx"
+            mt="md"
+            code={`
+<Button variant="outline" color="accent">Accent</Button>
+<Button variant="outline" color="warning">Warning</Button>
+<Button variant="outline" color="danger">Danger</Button>
+<Button variant="outline" color="neutral">Neutral</Button>`}
+          />
+        </Content.Area>
       </Content.Section>
       <Content.Section title="Transparent variant">
         <Content.Text>Transparent button with custom theme colors</Content.Text>
@@ -62,6 +93,21 @@ export const ButtonsPage = () => (
               Neutral
             </Button>
           </Flex>
+        </Content.Area>
+
+        <Content.Area>
+          <Content.Text>
+            <b>Sample code</b>
+          </Content.Text>
+          <CodeHighlight
+            language="tsx"
+            mt="md"
+            code={`
+<Button variant="transparent" color="accent">Accent</Button>
+<Button variant="transparent" color="warning">Warning</Button>
+<Button variant="transparent" color="danger">Danger</Button>
+<Button variant="transparent" color="neutral">Neutral</Button>`}
+          />
         </Content.Area>
       </Content.Section>
     </Box>

@@ -7,6 +7,7 @@ import { MantineProvider } from "@mantine/core";
 import { theme } from "./themes/theme.ts";
 
 import "@mantine/core/styles.css";
+import "@mantine/code-highlight/styles.css";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
