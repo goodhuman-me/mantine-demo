@@ -4,6 +4,7 @@
     border: 1px solid var(--brand-body-light-1);
   }
 
+  /* * Sizes  */
   &[data-size="xs"] {
     font-size: 12px;
     padding-left: 8px;
@@ -30,6 +31,87 @@
     padding-left: 24px;
     padding-right: 24px;
     height: 56px;
+  }
+
+  /* * Active (Pressed) classes for variants  */
+  /*  ? Watch out for the css selector's whitespace between ":" & var. If it's missing, it won't work */
+
+  &[data-variant="filled"] {
+    &[style*="--button-bg: var(--brand-accent-main)"] {
+      &:active {
+        background-color: var(--brand-accent-dark-2);
+      }
+    }
+
+    &[style*="--button-bg: var(--color-orange-main)"] {
+      &:active {
+        background-color: var(--color-orange-dark-2);
+      }
+    }
+
+    &[style*="--button-bg: var(--color-red-main)"] {
+      &:active {
+        background-color: var(--color-red-dark-2);
+      }
+    }
+
+    &[style*="--button-bg: var(--brand-body-light-2)"] {
+      &:active {
+        background-color: var(--brand-body-main);
+      }
+    }
+  }
+
+  &[data-variant="outline"] {
+    &[style*="--button-color: var(--brand-accent-main)"] {
+      &:active {
+        background-color: var(--brand-accent-light-1);
+      }
+    }
+
+    &[style*="--button-color: var(--color-orange-main)"] {
+      &:active {
+        background-color: var(--color-orange-light-1);
+      }
+    }
+
+    &[style*="--button-color: var(--color-red-main)"] {
+      &:active {
+        background-color: var(--color-red-light-2);
+      }
+    }
+
+    &[style*="--button-color: var(--brand-body-dark-2)"] {
+      &:active {
+        background-color: var(--brand-body-light-1);
+      }
+    }
+  }
+
+  &[data-variant="transparent"] {
+    &[style*="--button-color: var(--brand-accent-main)"] {
+      &:active {
+        background-color: var(--brand-accent-light-1);
+      }
+    }
+
+    &[style*="--button-color: var(--color-orange-main)"] {
+      &:active {
+        background-color: var(--color-orange-light-1);
+      }
+    }
+
+    &[style*="--button-color: var(--color-red-main)"] {
+      &:active {
+        background-color: var(--color-red-light-2);
+      }
+    }
+
+    &[style*="--button-color: var(--brand-body-dark-2)"] {
+      &:active {
+        background-color: var(--brand-body-light-1);
+      }
+    }
   }
 }
 

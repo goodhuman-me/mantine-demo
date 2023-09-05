@@ -139,7 +139,7 @@ export const ButtonsPage = () => (
           </Flex>
         </Content.Area>
       </Content.Section>
-      <Content.Section title="Variants & colors">
+      <Content.Section title="Icons with variants/colors">
         <Content.Area>
           <Flex gap="md" direction="column">
             <Flex gap="md" align="center">
@@ -191,7 +191,7 @@ export const ButtonsPage = () => (
 
     <Box id="loading-states">
       <Content.Header>Loading states</Content.Header>
-      <Content.Section title="Filled variants">
+      <Content.Section title="Variants">
         <Content.Area>
           <Flex direction="column" gap="lg">
             <Flex gap="md">
