@@ -249,7 +249,7 @@ export const ButtonsPage = () => (
       </Content.Section>
     </Box>
 
-    <Box>
+    <Box id="action-icond">
       <Content.Header>Action Icons</Content.Header>
 
       <Content.Section title="Sizes" divider={false} mb="xl">
@@ -271,16 +271,44 @@ export const ButtonsPage = () => (
 
       <Content.Section title="Variants">
         <Flex gap="md">
-          <ActionIcon color="accent">
+          <ActionIcon color="accent" variant="filled">
             <Analyze />
           </ActionIcon>
-          <ActionIcon color="warning">
+          <ActionIcon color="warning" variant="filled">
             <Analyze />
           </ActionIcon>
-          <ActionIcon color="danger">
+          <ActionIcon color="danger" variant="filled">
             <Analyze />
           </ActionIcon>
-          <ActionIcon color="neutral">
+          <ActionIcon color="neutral" variant="filled">
+            <Analyze />
+          </ActionIcon>
+        </Flex>
+        <Flex gap="md">
+          <ActionIcon color="accent" variant="outline">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="warning" variant="outline">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="danger" variant="outline">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="neutral" variant="outline">
+            <Analyze />
+          </ActionIcon>
+        </Flex>
+        <Flex gap="md">
+          <ActionIcon color="accent" variant="transparent">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="warning" variant="transparent">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="danger" variant="transparent">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon color="neutral" variant="transparent">
             <Analyze />
           </ActionIcon>
         </Flex>
