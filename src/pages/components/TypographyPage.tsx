@@ -1,31 +1,198 @@
-import { Code, Text, Title } from "@mantine/core";
+import { useState } from "react";
+import { ComboboxData, Table, Text, Title, Code, Select, Flex, TitleOrder } from "@mantine/core";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 
+const textSizeValues: ComboboxData = [
+  { label: "XXSmall", value: "xxs" },
+  { label: "Xsmall", value: "xs" },
+  { label: "Small", value: "sm" },
+  { label: "Medium", value: "md" },
+  { label: "Large", value: "lg" },
+];
+
+const titleOrderValues: ComboboxData = [
+  { label: "1", value: "1" },
+  { label: "2", value: "2" },
+  { label: "3", value: "3" },
+  { label: "4", value: "4" },
+  { label: "5", value: "5" },
+  { label: "6", value: "6" },
+];
+
 export default function TypographyPage() {
+  const [paragraphSize, setParagraphSize] = useState<string | null>("md");
+  const [titleOrder, setTitleOrder] = useState<string | null>("1");
+
   return (
     <DefaultLayout title="Typography" subtitle="All things type related">
       <Content.Header>Title</Content.Header>
       <Content.Section title="Title (Heading)">
         <Content.Text>All heading sizes</Content.Text>
         <Content.Area>
-          <Title order={1}>Title - order 1</Title>
-          <Title order={2}>Title - order 2</Title>
-          <Title order={3}>Title - order 3</Title>
-          <Title order={4}>Title - order 4</Title>
-          <Title order={5}>Title - order 5</Title>
-          <Title order={6}>Title - order 6</Title>
+          <Table>
+            <Table.Thead>
+              <Table.Tr>
+                <Table.Th>Order</Table.Th>
+                <Table.Th>Example</Table.Th>
+              </Table.Tr>
+            </Table.Thead>
+            <Table.Tbody>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>1</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Title order={1}>Title - order 1</Title>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>2</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Title order={2}>Title - order 2</Title>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>3</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Title order={3}>Title - order 3</Title>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>4</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Title order={4}>Title - order 4</Title>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>5</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Title order={5}>Title - order 5</Title>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>6</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Title order={6}>Title - order 6</Title>
+                </Table.Td>
+              </Table.Tr>
+            </Table.Tbody>
+          </Table>
         </Content.Area>
       </Content.Section>
 
       <Content.Section title="Text">
         <Content.Text>All Text sizes</Content.Text>
         <Content.Area>
-          <Text size="xs">Text xs - X-small</Text>
-          <Text size="sm">Text sm - Small</Text>
-          <Text size="md">Text md - Medium</Text>
-          <Text size="lg">Text lg - Large</Text>
-          <Text size="xl">Text xl - X-large</Text>
+          <Table>
+            <Table.Thead>
+              <Table.Tr>
+                <Table.Th>Size</Table.Th>
+                <Table.Th>Example</Table.Th>
+              </Table.Tr>
+            </Table.Thead>
+            <Table.Tbody>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>xxs</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Text size="xxs">Text xs - XX-small</Text>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>xs</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Text size="xs">Text xs - X-small</Text>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>sm</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Text size="sm">Text sm - Small</Text>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>md</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Text size="md">Text md - Medium</Text>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code>lg</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Text size="lg">Text lg - Large</Text>
+                </Table.Td>
+              </Table.Tr>
+            </Table.Tbody>
+          </Table>
+        </Content.Area>
+      </Content.Section>
+
+      <Content.Section title="Sample paragraphs">
+        <div className="flex flex-row items-start">
+          <Flex gap="lg">
+            <Select
+              label="Title order"
+              data={titleOrderValues}
+              value={titleOrder?.toString()}
+              defaultValue={"1"}
+              onChange={setTitleOrder}
+            />
+            <Select
+              label="Text size"
+              data={textSizeValues}
+              value={paragraphSize}
+              defaultValue={"md"}
+              onChange={setParagraphSize}
+            />
+          </Flex>
+        </div>
+        <Content.Area>
+          <Title mb="md" order={parseInt(titleOrder as string) as TitleOrder}>
+            The Raven excerpts
+          </Title>
+          <Text size={paragraphSize as string}>
+            Merely this was here never and ember. Ever ungainly or not lamplight followed his back lenore, forgiveness
+            on that and shorn. The unto whispered stronger dreaming and of. Said what door the door, my his the darkness
+            this uttered name one, thee then guessing footfalls there my faster of maiden. That mien the pallas shadows
+            or seraphim peering, much a this than stood, nothing whispered.
+          </Text>
+          <br />
+          <Text size={paragraphSize as string}>
+            A each the evilprophet gloated velvet, shore shore shall stillness has in then a into silken. Did eagerly
+            maiden the dreaming that doubting the a. Weary i ancient morrow turning out usby ominous, tapping our so
+            door yore a ungainly hath. Discourse uttered soul bird we. Grave tapping core soul dreaming fact beating
+            this on. Sorrow mefilled or lady mortals from i a surcease. Nights presently heart nepenthe chamber while
+            yore shadow the. Weak name the head god black, thinking.
+          </Text>
+          <br />
+          <Text size={paragraphSize as string}>
+            Bust so and yore its december. Flown myself is no that whom guessing his still upon. Back upstarting ancient
+            lenore flitting my clasp floating deep the. Surely let quoth there suddenly fact door, not little bird
+            chamber thereis lamplight more, on lenore name angels whose or is came maiden. Some flown i and raven, yet
+            distant did more countenance, this kind lenore grim shrieked, chamber sainted that heard with chamber what
+            what. And ominous raven hath footfalls heard grim. Clasp here shore bore craven, than on friends back the
+            nothing days eagerly front. Thing i throws.
+          </Text>
         </Content.Area>
       </Content.Section>
     </DefaultLayout>

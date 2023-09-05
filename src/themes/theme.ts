@@ -16,8 +16,27 @@ export const theme = createTheme({
   activeClassName: activeClasses.active,
   defaultRadius: 6,
   fontFamily: defaultFontFamily,
+  fontSizes: {
+    // @ts-expect-error -- Forcefully add xxs as a size
+    xxs: "0.6875rem",
+    xs: "0.75rem",
+    sm: "0.875rem",
+    md: "1rem",
+    lg: "1.125rem",
+    xl: "1.25rem",
+  },
+  lineHeights: {
+    // @ts-expect-error -- Forcefully add xxs as a size
+    xxs: "0.875rem",
+    xs: "1rem",
+    sm: "1.375rem",
+    md: "1.375rem",
+    lg: "1.5rem",
+    xl: "1.75rem",
+  },
   headings: {
     fontFamily: defaultFontFamily,
+    sizes: {},
   },
   components: {
     Button: buttonProps,
