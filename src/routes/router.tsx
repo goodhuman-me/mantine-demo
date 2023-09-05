@@ -12,10 +12,10 @@ const routes = (
       <Route path="/" element={<Home />} />
       <Route path="Buttons" element={<ButtonsPage />} />
       <Route path="Typography" element={<TypographyPage />} />
+
+      <Route path="SampleLayout" element={<SampleLayout />} />
+      <Route path="TempTest" element={<TempTestPage />} />
     </Route>
-    <Route path="/test" element={<div>test</div>} />
-    <Route path="SampleLayout" element={<SampleLayout />} />
-    <Route path="TempTest" element={<TempTestPage />} />
   </>
 );
 
