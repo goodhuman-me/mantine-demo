@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { router } from "./routes/router";
 
-import { AppShell, Burger, NavLink, Title } from "@mantine/core";
+import { AppShell, Box, Burger, Flex, NavLink, ThemeIcon, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 import { ChevronRight, Components, Home } from "tabler-icons-react";
@@ -44,31 +44,49 @@ function App() {
 export default App;
 
 const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
-  <div className="flex flex-col mt-4">
-    <div className="px-3 py-2">
-      <Title order={6}>Navigation</Title>
-    </div>
-
-    <div className="mb-4">
+  <Flex direction="column" mt="lg" gap="md">
+    <Box>
+      <Box px="sm" pb="xs">
+        <Title order={6}>Navigation</Title>
+      </Box>
       <Link to="/">
-        <NavLink label="Home" leftSection={<Home size="1rem" />} rightSection={<ChevronRight size="1rem" />} />
+        <NavLink
+          label="Home"
+          leftSection={
+            <ThemeIcon variant="transparent" size="sm" color="gray">
+              <Home size="1rem" />
+            </ThemeIcon>
+          }
+          rightSection={
+            <ThemeIcon variant="transparent" size="sm" color="gray">
+              <ChevronRight />
+            </ThemeIcon>
+          }
+        />
       </Link>
-    </div>
+    </Box>
 
-    <div className="px-3 py-2">
-      <Title order={6}>Individual components</Title>
-    </div>
-
-    <div>
+    <Box>
+      <Box px="sm" pb="xs">
+        <Title order={6}>Individual components</Title>
+      </Box>
       {routes.map((route) => (
         <Link key={route.path} to={route.path as string}>
           <NavLink
             label={route.path}
-            leftSection={<Components size="1rem" />}
-            rightSection={<ChevronRight size="1rem" />}
+            leftSection={
+              <ThemeIcon variant="transparent" size="sm" color="gray">
+                <Components />
+              </ThemeIcon>
+            }
+            rightSection={
+              <ThemeIcon variant="transparent" size="sm" color="gray">
+                <ChevronRight />
+              </ThemeIcon>
+            }
           />
         </Link>
       ))}
-    </div>
-  </div>
+    </Box>
+  </Flex>
 );
