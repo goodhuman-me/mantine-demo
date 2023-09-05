@@ -9,6 +9,7 @@ const textSizeValues: ComboboxData = [
   { label: "Small", value: "sm" },
   { label: "Medium", value: "md" },
   { label: "Large", value: "lg" },
+  { label: "XLarge", value: "xl" },
 ];
 
 const titleOrderValues: ComboboxData = [

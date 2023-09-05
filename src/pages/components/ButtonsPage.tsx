@@ -1,4 +1,4 @@
-import { ActionIcon, Box, Button, Code, Flex, Title } from "@mantine/core";
+import { ActionIcon, Box, Button, Code, Flex, Title, Text } from "@mantine/core";
 import { CodeHighlight } from "@mantine/code-highlight";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
@@ -240,6 +240,7 @@ export const ButtonsPage = () => (
       <Content.Section title="Variants">
         <Content.Area>
           <Flex direction="column" gap="lg">
+            <Text>Filled</Text>
             <Flex gap="md">
               <Button loading variant="filled" color="accent">
                 Accent
@@ -262,6 +263,8 @@ export const ButtonsPage = () => (
                 Neutral
               </Button>
             </Flex>
+
+            <Text>Outline</Text>
             <Flex gap="md">
               <Button loading variant="outline" color="accent">
                 Accent
@@ -276,6 +279,8 @@ export const ButtonsPage = () => (
                 Neutral
               </Button>
             </Flex>
+
+            <Text>Outline</Text>
             <Flex gap="md">
               <Button loading variant="transparent" color="accent">
                 Accent
@@ -295,7 +300,64 @@ export const ButtonsPage = () => (
       </Content.Section>
     </Box>
 
-    <Box id="action-icond">
+    <Box id="loading-states">
+      <Content.Header>Disabled states</Content.Header>
+      <Content.Section title="Variants">
+        <Content.Area>
+          <Flex direction="column" gap="lg">
+            <Text>Filled</Text>
+            <Flex gap="md">
+              <Button disabled variant="filled" color="accent">
+                Accent
+              </Button>
+              <Button disabled variant="filled" color="warning">
+                Warning
+              </Button>
+              <Button disabled variant="filled" color="danger">
+                Danger
+              </Button>
+              <Button disabled variant="filled" color="neutral">
+                Neutral
+              </Button>
+            </Flex>
+
+            <Text>Outline</Text>
+            <Flex gap="md">
+              <Button disabled variant="outline" color="accent">
+                Accent
+              </Button>
+              <Button disabled variant="outline" color="warning">
+                Warning
+              </Button>
+              <Button disabled variant="outline" color="danger">
+                Danger
+              </Button>
+              <Button disabled variant="outline" color="neutral">
+                Neutral
+              </Button>
+            </Flex>
+
+            <Text>Transparent</Text>
+            <Flex gap="md">
+              <Button disabled variant="transparent" color="accent">
+                Accent
+              </Button>
+              <Button disabled variant="transparent" color="warning">
+                Warning
+              </Button>
+              <Button disabled variant="transparent" color="danger">
+                Danger
+              </Button>
+              <Button disabled variant="transparent" color="neutral">
+                Neutral
+              </Button>
+            </Flex>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
+    </Box>
+
+    <Box id="action-icons">
       <Content.Header>Action Icons</Content.Header>
 
       <Content.Section title="Sizes" divider={false} mb="xl">
@@ -316,6 +378,7 @@ export const ButtonsPage = () => (
       </Content.Section>
 
       <Content.Section title="Variants">
+        <Text>Outline</Text>
         <Flex gap="md">
           <ActionIcon color="accent" variant="filled">
             <Analyze />
@@ -330,6 +393,8 @@ export const ButtonsPage = () => (
             <Analyze />
           </ActionIcon>
         </Flex>
+
+        <Text>Filled</Text>
         <Flex gap="md">
           <ActionIcon color="accent" variant="outline">
             <Analyze />
@@ -344,6 +409,8 @@ export const ButtonsPage = () => (
             <Analyze />
           </ActionIcon>
         </Flex>
+
+        <Text>Transparent</Text>
         <Flex gap="md">
           <ActionIcon color="accent" variant="transparent">
             <Analyze />
