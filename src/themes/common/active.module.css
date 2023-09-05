@@ -1,3 +1,5 @@
+/* CSS Module for active (on click) classes */
+
 .active {
   transition: transform 50ms ease-in-out;
 

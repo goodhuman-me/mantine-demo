@@ -13,7 +13,7 @@ const ContentSection = ({
   titleOrder = 3,
   children,
   divider: hasDivider = true,
-  mb = "lg",
+  mb = "xl",
 }: ContentSectionProps) => (
   <Stack gap="md" mb={mb}>
     {title && (

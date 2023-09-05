@@ -1,8 +1,8 @@
-import { createTheme, TextInput } from "@mantine/core";
+import { createTheme } from "@mantine/core";
 
 import { buttonProps } from "./button/button-props";
-import { variantColorResolver } from "./common/variant-colors";
 import activeClasses from "./common/active.module.css";
+import { variantColorResolver } from "./common/variant-colors";
 
 import "./common/colors.module.css";
 

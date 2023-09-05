@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Title } from "@mantine/core";
+import { ActionIcon, Box, Button, Flex, Title } from "@mantine/core";
 import { Content } from "../components/Content";
 import DefaultLayout from "../layouts/DefaultLayout";
 import { Analyze } from "tabler-icons-react";
@@ -189,7 +189,7 @@ export const ButtonsPage = () => (
 
     <Box id="loading-states">
       <Content.Header>Loading states</Content.Header>
-      <Content.Section title="Filled variants" mb="xl" divider={false}>
+      <Content.Section title="Filled variants">
         <Content.Area>
           <Flex direction="column" gap="lg">
             <Flex gap="md">
@@ -244,6 +244,15 @@ export const ButtonsPage = () => (
             </Flex>
           </Flex>
         </Content.Area>
+      </Content.Section>
+    </Box>
+
+    <Box>
+      <Content.Header>Action Icons</Content.Header>
+      <Content.Section title="Variants">
+        <ActionIcon color="accent">
+          <Analyze size={14} />
+        </ActionIcon>
       </Content.Section>
     </Box>
   </DefaultLayout>
