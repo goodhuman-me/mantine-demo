@@ -7,7 +7,7 @@ export const ButtonsPage = () => (
   <DefaultLayout title="Buttons" subtitle="A collection of clickable things">
     <Box id="variants">
       <Content.Header>Variants</Content.Header>
-      <Content.Section title="Filled variant">
+      <Content.Section title="Filled variant" divider={false} mb="xl">
         <Content.Text>Solid filled button with custom theme colors</Content.Text>
         <Content.Area>
           <Flex gap="md">
@@ -26,7 +26,7 @@ export const ButtonsPage = () => (
           </Flex>
         </Content.Area>
       </Content.Section>
-      <Content.Section title="Outline variant">
+      <Content.Section title="Outline variant" divider={false} mb="xl">
         <Content.Text>Outline button with custom theme colors</Content.Text>
         <Content.Area>
           <Flex gap="md">
@@ -45,7 +45,6 @@ export const ButtonsPage = () => (
           </Flex>
         </Content.Area>
       </Content.Section>
-
       <Content.Section title="Transparent variant">
         <Content.Text>Transparent button with custom theme colors</Content.Text>
         <Content.Area>
@@ -84,7 +83,7 @@ export const ButtonsPage = () => (
 
     <Box id="icons">
       <Content.Header>Icons support</Content.Header>
-      <Content.Section title="Left icons">
+      <Content.Section title="Left icons" mb="xl" divider={false}>
         <Content.Area>
           <Flex gap="md" align="center">
             <Button size="xs" leftSection={<Analyze size={14} />}>
@@ -102,7 +101,7 @@ export const ButtonsPage = () => (
           </Flex>
         </Content.Area>
       </Content.Section>
-      <Content.Section title="Right icons">
+      <Content.Section title="Right icons" mb="xl" divider={false}>
         <Content.Area>
           <Flex align="center" gap="md">
             <Button size="xs" rightSection={<Analyze size={14} />}>
@@ -120,7 +119,7 @@ export const ButtonsPage = () => (
           </Flex>
         </Content.Area>
       </Content.Section>
-      <Content.Section title="Both sides">
+      <Content.Section title="Both sides" mb="xl" divider={false}>
         <Content.Area>
           <Flex align="center" gap="md">
             <Button size="xs" leftSection={<Analyze size={14} />} rightSection={<Analyze size={14} />}>
@@ -138,11 +137,59 @@ export const ButtonsPage = () => (
           </Flex>
         </Content.Area>
       </Content.Section>
+      <Content.Section title="Variants & colors">
+        <Content.Area>
+          <Flex gap="md" direction="column">
+            <Flex gap="md" align="center">
+              <Button color="accent" variant="filled" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="warning" variant="filled" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="danger" variant="filled" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="neutral" variant="filled" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+            </Flex>
+            <Flex gap="md" align="center">
+              <Button color="accent" variant="outline" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="warning" variant="outline" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="danger" variant="outline" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="neutral" variant="outline" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+            </Flex>
+            <Flex gap="md" align="center">
+              <Button color="accent" variant="transparent" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="warning" variant="transparent" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="danger" variant="transparent" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+              <Button color="neutral" variant="transparent" leftSection={<Analyze size={14} />}>
+                Accent
+              </Button>
+            </Flex>
+          </Flex>
+        </Content.Area>
+      </Content.Section>
     </Box>
 
     <Box id="loading-states">
       <Content.Header>Loading states</Content.Header>
-      <Content.Section title="Filled variants">
+      <Content.Section title="Filled variants" mb="xl" divider={false}>
         <Content.Area>
           <Flex gap="md">
             <Button loading variant="filled" color="accent">
@@ -169,7 +216,7 @@ export const ButtonsPage = () => (
         </Content.Area>
       </Content.Section>
 
-      <Content.Section title="Outline variants">
+      <Content.Section title="Outline variants" mb="xl" divider={false}>
         <Content.Area>
           <Flex gap="md">
             <Button loading variant="outline" color="accent">

@@ -1,24 +1,28 @@
-import { Box, Divider, Stack, Text, Title, TitleOrder } from "@mantine/core";
+import { Box, Divider, Stack, StylePropSpacingValue, Text, Title, TitleOrder } from "@mantine/core";
 import { PropsWithChildren, ReactNode } from "react";
+
+type ContentSectionProps = PropsWithChildren<{
+  title?: string | ReactNode;
+  titleOrder?: TitleOrder;
+  divider?: boolean;
+  mb?: StylePropSpacingValue;
+}>;
 
 const ContentSection = ({
   title,
   titleOrder = 3,
   children,
   divider: hasDivider = true,
-}: PropsWithChildren<{
-  title?: string | ReactNode;
-  titleOrder?: number;
-  divider?: boolean;
-}>) => (
-  <Stack gap="md">
+  mb = "lg",
+}: ContentSectionProps) => (
+  <Stack gap="md" mb={mb}>
     {title && (
       <Title c="var(--brand-body-dark-2)" order={titleOrder}>
         {title}
       </Title>
     )}
     {children}
-    {hasDivider && <Divider my="lg" />}
+    {hasDivider && <Divider mt="lg" />}
   </Stack>
 );
 
@@ -30,11 +34,15 @@ const ContentHeader = ({ order = 2, children }: PropsWithChildren<{ order?: Titl
 
 const ContentText = (props: PropsWithChildren) => <Text c="var(--brand-body-dark-2)">{props.children}</Text>;
 
-const ContentBox = (props: PropsWithChildren) => <Box mt="xs">{props.children}</Box>;
+const ContentArea = (props: PropsWithChildren<{ mb?: StylePropSpacingValue }>) => (
+  <Box mt="xs" mb={props.mb}>
+    {props.children}
+  </Box>
+);
 
 export const Content = {
   Header: ContentHeader,
   Section: ContentSection,
   Text: ContentText,
-  Area: ContentBox,
+  Area: ContentArea,
 };
