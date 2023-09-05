@@ -1,86 +1,91 @@
-# Typography
+# Design System TODOs
+
+## Typography
 
 Add Messina Sans to this project
 
-# Design system components
+## Design system components
 
-• Alert hero
+### Alert hero
 
-• Alert Inline
+### Alert Inline
 
-• Alert toast
+### Alert toast
 
-• Breadcrumb
+### Breadcrumb
 
-• 🕕 Button
+### 🕕 Button
 
-• Calendar
+- Almost all done except for Split button
 
-• Checkbox & Radio
+### Calendar
 
-• Data display
+### Checkbox & Radio
 
-• Date picker
+### Data display
 
-• Drawer
+### Date picker
 
-• Dropdown
+### Drawer
 
-• Filter button
+### Dropdown
 
-• Inline (Edit table)
+### Filter button
 
-• Label
+### Inline (Edit table)
 
-• Link
+### Label
 
-• List field - Contextual menu
+### Link
 
-• List field - Display
+### List field - Contextual menu
 
-• List field - Select
+### List field - Display
 
-• Modal
+### List field - Select
 
-• Pagination
+### Modal
 
-• Popover
+### Pagination
 
-• Progress bar
+### Popover
 
-• Progress circle
+### Progress bar
 
-• Search Field
+### Progress circle
 
-• Search general
+### Search Field
 
-• Select Field
+### Search general
 
-• Steps horizontal
+### Select Field
 
-• Steps vertical
+### Steps horizontal
 
-• Tab button
+### Steps vertical
 
-• Tab underlined
+### Tab button
 
-• Table
+### Tab underlined
 
-• Text field
+### Table
 
-• Title group
+### Text field
 
-• Tooltip
+### Title group
 
-• Top navigation
+### Tooltip
 
-• Widget
+### Top navigation
+
+### Widget
 
 # Storyboard set up
 
 TODO
 
-# Set up types
+## Set up types
 
-How to override types to include variants/colors without wrapping?
+• How to override types to include variants/colors without wrapping?
+
 • Maybe add index.d.ts to extend it
