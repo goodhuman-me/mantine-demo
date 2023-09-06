@@ -5,6 +5,7 @@ import SampleLayout from "../pages/SampleLayoutPage.tsx";
 import { ButtonsPage } from "../pages/components/ButtonsPage.tsx";
 import TempTestPage from "../pages/TempTestPage.tsx";
 import TypographyPage from "../pages/components/TypographyPage.tsx";
+import TextInputPage from "../pages/components/TextInputPage.tsx";
 
 const routes = (
   <>
@@ -12,6 +13,7 @@ const routes = (
       <Route path="/" element={<Home />} />
       <Route path="Buttons" element={<ButtonsPage />} />
       <Route path="Typography" element={<TypographyPage />} />
+      <Route path="TextInput" element={<TextInputPage />} />
 
       <Route path="SampleLayout" element={<SampleLayout />} />
       <Route path="TempTest" element={<TempTestPage />} />
