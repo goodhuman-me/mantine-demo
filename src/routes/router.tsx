@@ -7,6 +7,7 @@ import TempTestPage from "../pages/TempTestPage.tsx";
 import TypographyPage from "../pages/components/TypographyPage.tsx";
 import TextInputPage from "../pages/components/TextInputPage.tsx";
 import OtherStylesPage from "../pages/components/OtherStylesPage.tsx";
+import SelectPage from "../pages/components/SelectPage.tsx";
 
 const routes = (
   <>
@@ -14,11 +15,12 @@ const routes = (
       <Route path="/" element={<Home />} />
       <Route path="Buttons" element={<ButtonsPage />} />
       <Route path="Typography" element={<TypographyPage />} />
-      <Route path="TextInput" element={<TextInputPage />} />
-      <Route path="OtherStyles" element={<OtherStylesPage />} />
+      <Route path="Text-field" element={<TextInputPage />} />
+      <Route path="Select-field" element={<SelectPage />} />
+      <Route path="Other-styles" element={<OtherStylesPage />} />
 
-      <Route path="SampleLayout" element={<SampleLayout />} />
-      <Route path="TempTest" element={<TempTestPage />} />
+      <Route path="Sample-layout" element={<SampleLayout />} />
+      <Route path="Temp-test-page" element={<TempTestPage />} />
     </Route>
   </>
 );

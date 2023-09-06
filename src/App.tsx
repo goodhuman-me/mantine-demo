@@ -73,7 +73,7 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
       {routes.map((route) => (
         <Link key={route.path} to={route.path as string}>
           <NavLink
-            label={route.path}
+            label={route.path.replaceAll("-", " ")}
             leftSection={
               <ThemeIcon variant="transparent" size="sm" color="gray">
                 <Components />

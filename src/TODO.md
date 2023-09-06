@@ -10,9 +10,15 @@
 
 ### Alert hero
 
+- In progress
+
 ### Alert Inline
 
+- In progress
+
 ### Alert toast
+
+- In progress
 
 ### Breadcrumb
 
@@ -28,9 +34,15 @@
 
 ### Date picker
 
+- In progress
+
 ### Drawer
 
+- In progress
+
 ### Dropdown
+
+- In progress
 
 ### Filter button
 
@@ -62,6 +74,8 @@
 
 ### Select Field
 
+- In progress
+
 ### Steps horizontal
 
 ### Steps vertical
@@ -72,7 +86,13 @@
 
 ### Table
 
+- Mantine spike
+
+- If not, then tanstack react table
+
 ### Text field
+
+- Should be done...?
 
 ### Title group
 
