@@ -2,7 +2,7 @@ import { PartialVarsResolver, TextInput, TextInputFactory } from "@mantine/core"
 
 import textInputClasses from "./text-input.module.css";
 
-const textInputVars: PartialVarsResolver<TextInputFactory> = (theme, props) => {
+const textInputVars: PartialVarsResolver<TextInputFactory> = (_theme, props) => {
   switch (props.size) {
     case "xs":
       return {
