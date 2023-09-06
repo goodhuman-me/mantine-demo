@@ -7,11 +7,7 @@ export default function TextInputPage() {
     <DefaultLayout title="TextInput" subtitle="Boxes for you to enter text">
       <Content.Header>Basic Text field</Content.Header>
       <Content.Section>
-        <TextInput
-          label="First name"
-          description="Your legal first name"
-          placeholder="First name..."
-        />
+        <TextInput label="First name" description="Your legal first name" placeholder="First name..." />
       </Content.Section>
 
       <Content.Header>Sizes</Content.Header>
@@ -49,8 +45,7 @@ export default function TextInputPage() {
       <Content.Section>
         <Stack align="flex-start" gap="xl">
           <TextInput label="Error state" placeholder="TextField placeholder text" error />
-          <TextInput label="TextField label (lg)" placeholder="TextField placeholder text" />
-          <TextInput label="TextField label (lg)" placeholder="TextField placeholder text" />
+          <TextInput label="Error state" placeholder="TextField placeholder text" disabled />
         </Stack>
       </Content.Section>
     </DefaultLayout>

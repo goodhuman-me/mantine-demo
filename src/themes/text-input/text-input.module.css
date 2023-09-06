@@ -1,4 +1,4 @@
-/* ? Not sure why certain attributes require !important Might be a Mantine v7 bug, to investigate later. */
+/* ? Not sure why certain attributes require !important; might be a Mantine v7 bug. */
 
 .label {
   font-weight: var(--mantine-heading-font-weight) !important;
@@ -15,6 +15,12 @@
 }
 
 .input {
+  &[disabled] {
+    background-color: var(--brand-body-light-2);
+    border-width: 1px;
+    border-color: var(--brand-body-main);
+  }
+
   input:not(&[data-error]) {
     --_input-placeholder-color: var(--brand-body-dark-1);
 
