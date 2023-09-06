@@ -8,6 +8,7 @@ import { actionIconProps } from "./action-icon/action-icon-props";
 import "./common/colors.module.css";
 
 import { cardProps } from "./card/card-props";
+import { textInputProps } from "./text-input/text-input-props";
 
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";
@@ -44,6 +45,9 @@ export const theme = createTheme({
     Button: buttonProps,
     ActionIcon: actionIconProps,
     Card: cardProps,
+    TextInput: textInputProps,
+
+    // TODO Text vars (color overrides)
     Text: Text.extend({
       // vars: () => ({}),
     }),

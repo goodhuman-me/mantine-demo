@@ -1,0 +1,50 @@
+/* ? Not sure why certain attributes require !important Might be a Mantine v7 bug, to investigate later. */
+
+.label {
+  font-weight: var(--mantine-heading-font-weight) !important;
+  font-size: var(--mantine-font-size-sm) !important;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  :not(&[data-error]) {
+    --_input-placeholder-color: var(--brand-body-dark-1);
+
+    @mixin hover {
+      border-color: var(--brand-body-dark-1);
+    }
+
+    &:focus {
+      border-width: 2px;
+      border-color: var(--brand-accent-main) !important;
+    }
+
+    &:focus-within {
+      border-width: 2px;
+      border-color: var(--brand-accent-main) !important;
+    }
+  }
+
+  &[data-error] {
+    border-width: 2px;
+    border-color: var(--color-red-main);
+    color: var(--color-red-main);
+
+    /* --_input-placeholder-color: var(--color-red-ref); */
+    --_input-placeholder-color: var(--brand-body-dark-1);
+
+    @mixin hover {
+      border-color: var(--color-red-dark-2);
+    }
+
+    &:focus {
+      border-width: 2px;
+      border-color: var(--color-red-dark-1) !important;
+    }
+
+    &:focus-within {
+      border-width: 2px;
+      border-color: var(--color-red-dark-1) !important;
+    }
+  }
+}

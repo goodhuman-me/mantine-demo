@@ -111,7 +111,7 @@ export default function TypographyPage() {
               <Table.Tr>
                 <Table.Td>
                   <Code mr="xs">xxs</Code>
-                  <Code>(22px)</Code>
+                  <Code>(11px)</Code>
                 </Table.Td>
                 <Table.Td>
                   <Text size="xxs">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
@@ -120,6 +120,7 @@ export default function TypographyPage() {
               <Table.Tr>
                 <Table.Td>
                   <Code mr="xs">xs</Code>
+                  <Code>(12px)</Code>
                 </Table.Td>
                 <Table.Td>
                   <Text size="xs">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
@@ -128,6 +129,7 @@ export default function TypographyPage() {
               <Table.Tr>
                 <Table.Td>
                   <Code mr="xs">sm</Code>
+                  <Code>(14px)</Code>
                 </Table.Td>
                 <Table.Td>
                   <Text size="sm">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
@@ -136,6 +138,7 @@ export default function TypographyPage() {
               <Table.Tr>
                 <Table.Td>
                   <Code mr="xs">md</Code>
+                  <Code>(16px)</Code>
                 </Table.Td>
                 <Table.Td>
                   <Text size="md">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
@@ -144,6 +147,7 @@ export default function TypographyPage() {
               <Table.Tr>
                 <Table.Td>
                   <Code mr="xs">lg</Code>
+                  <Code>(18px)</Code>
                 </Table.Td>
                 <Table.Td>
                   <Text size="lg">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
