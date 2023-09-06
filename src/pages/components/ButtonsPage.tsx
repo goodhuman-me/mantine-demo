@@ -1,5 +1,5 @@
 import { CodeHighlight } from "@mantine/code-highlight";
-import { ActionIcon, Box, Button, Group, Text } from "@mantine/core";
+import { ActionIcon, Box, Button, Group, Text, Title } from "@mantine/core";
 import { Analyze } from "tabler-icons-react";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
@@ -29,7 +29,7 @@ export const ButtonsPage = () => (
 
         <Content.Area>
           <Content.Text>
-            <b>Sample code</b>
+            <Title order={4}>Sample code</Title>
           </Content.Text>
           <CodeHighlight
             language="tsx"

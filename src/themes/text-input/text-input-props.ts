@@ -6,5 +6,6 @@ export const textInputProps = TextInput.extend({
   classNames: {
     input: textInputClasses.input,
     label: textInputClasses.label,
+    description: textInputClasses.description,
   },
 });

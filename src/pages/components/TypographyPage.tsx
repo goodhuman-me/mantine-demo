@@ -1,5 +1,5 @@
+import { Code, ComboboxData, Group, Select, Table, Text, Title, TitleOrder } from "@mantine/core";
 import { useState } from "react";
-import { ComboboxData, Table, Text, Title, Code, Select, Flex, TitleOrder, Group } from "@mantine/core";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 
@@ -179,7 +179,8 @@ export default function TypographyPage() {
         </div>
         <Content.Area>
           <Title mb="md" order={parseInt(titleOrder as string) as TitleOrder}>
-            The Raven excerpts
+            The Raven excerpts <br />
+            From the poem by Edgar Allen Poe
           </Title>
           <Text size={paragraphSize as string}>
             Merely this was here never and ember. Ever ungainly or not lamplight followed his back lenore, forgiveness

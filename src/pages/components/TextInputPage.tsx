@@ -9,7 +9,7 @@ export default function TextInputPage() {
       <Content.Section>
         <TextInput
           label="First name"
-          // description="Your legal first name"
+          description="Your legal first name"
           placeholder="First name..."
         />
       </Content.Section>
