@@ -1,14 +1,14 @@
 import { createTheme, Text } from "@mantine/core";
 
-import { buttonProps } from "./button/button-props";
-import activeClasses from "./common/active.module.css";
 import { variantColorResolver } from "./common/variant-colors";
 
+import { buttonProps } from "./button/button-props";
 import { actionIconProps } from "./action-icon/action-icon-props";
-import "./common/colors.module.css";
-
 import { cardProps } from "./card/card-props";
 import { textInputProps } from "./text-input/text-input-props";
+
+import activeClasses from "./common/active.module.css";
+import "./common/colors.module.css";
 
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";
@@ -19,6 +19,35 @@ export const theme = createTheme({
   activeClassName: activeClasses.active,
   defaultRadius: 6,
   fontFamily: defaultFontFamily,
+  headings: {
+    fontFamily: defaultFontFamily,
+    sizes: {
+      h1: {
+        fontSize: "2rem",
+        lineHeight: "2.5rem",
+      },
+      h2: {
+        fontSize: "1.5rem",
+        lineHeight: "2.25rem",
+      },
+      h3: {
+        fontSize: "1.25rem",
+        lineHeight: "2rem",
+      },
+      h4: {
+        fontSize: "1rem",
+        lineHeight: "1.75rem",
+      },
+      h5: {
+        fontSize: "0.875rem",
+        lineHeight: "1.25rem",
+      },
+      h6: {
+        fontSize: "0.75rem",
+        lineHeight: "1.125rem",
+      },
+    },
+  },
   fontSizes: {
     // @ts-expect-error -- Forcefully add xxs as a size
     xxs: "0.6875rem",
@@ -37,10 +66,7 @@ export const theme = createTheme({
     lg: "1.5rem",
     xl: "1.75rem",
   },
-  headings: {
-    fontFamily: defaultFontFamily,
-    sizes: {},
-  },
+
   components: {
     Button: buttonProps,
     ActionIcon: actionIconProps,
