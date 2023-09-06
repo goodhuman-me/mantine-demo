@@ -1,4 +1,4 @@
-import { ActionIcon, createTheme } from "@mantine/core";
+import { ActionIcon, Card, createTheme } from "@mantine/core";
 
 import { buttonProps } from "./button/button-props";
 import activeClasses from "./common/active.module.css";
@@ -6,6 +6,8 @@ import { variantColorResolver } from "./common/variant-colors";
 
 import "./common/colors.module.css";
 import { ActionIconProps } from "./action-icon/action-icon-props";
+
+import cardClassNames from "./card/card.module.css";
 
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";
@@ -41,6 +43,9 @@ export const theme = createTheme({
   components: {
     Button: buttonProps,
     ActionIcon: ActionIconProps,
+    Card: Card.extend({
+      classNames: cardClassNames,
+    }),
 
     // TextInput: TextInput.extend({
     //   styles: {

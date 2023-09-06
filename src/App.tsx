@@ -7,7 +7,7 @@ import { useDisclosure } from "@mantine/hooks";
 import { ChevronRight, Components, Home } from "tabler-icons-react";
 
 function App() {
-  const [opened, { toggle }] = useDisclosure(true);
+  const [opened, { toggle }] = useDisclosure(false);
 
   // @ts-expect-error -- quiet, you
   const routes = router?.routes[0]?.children.filter((route) => route.path !== "/") as { path: string }[];

@@ -2,7 +2,9 @@
 
 ## Typography
 
-Add Messina Sans to this project
+- ✅ Add Messina Sans to this project
+
+- 🕕 Colors for text
 
 ## Design system components
 
