@@ -40,50 +40,56 @@ export default function TypographyPage() {
             <Table.Tbody>
               <Table.Tr>
                 <Table.Td>
-                  <Code>1</Code>
+                  <Code mr="xs">1</Code>
+                  <Code>(34px)</Code>
                 </Table.Td>
                 <Table.Td>
-                  <Title order={1}>Title - order 1</Title>
-                </Table.Td>
-              </Table.Tr>
-              <Table.Tr>
-                <Table.Td>
-                  <Code>2</Code>
-                </Table.Td>
-                <Table.Td>
-                  <Title order={2}>Title - order 2</Title>
+                  <Title order={1}>Quick brown foxes</Title>
                 </Table.Td>
               </Table.Tr>
               <Table.Tr>
                 <Table.Td>
-                  <Code>3</Code>
+                  <Code mr="xs">2</Code>
+                  <Code>(26px)</Code>
                 </Table.Td>
                 <Table.Td>
-                  <Title order={3}>Title - order 3</Title>
-                </Table.Td>
-              </Table.Tr>
-              <Table.Tr>
-                <Table.Td>
-                  <Code>4</Code>
-                </Table.Td>
-                <Table.Td>
-                  <Title order={4}>Title - order 4</Title>
+                  <Title order={2}>Quick brown foxes</Title>
                 </Table.Td>
               </Table.Tr>
               <Table.Tr>
                 <Table.Td>
-                  <Code>5</Code>
+                  <Code mr="xs">3</Code>
+                  <Code>(22px)</Code>
                 </Table.Td>
                 <Table.Td>
-                  <Title order={5}>Title - order 5</Title>
+                  <Title order={3}>Quick brown foxes</Title>
                 </Table.Td>
               </Table.Tr>
               <Table.Tr>
                 <Table.Td>
-                  <Code>6</Code>
+                  <Code mr="xs">4</Code>
+                  <Code>(18px)</Code>
                 </Table.Td>
                 <Table.Td>
-                  <Title order={6}>Title - order 6</Title>
+                  <Title order={4}>Quick brown foxes</Title>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code mr="xs">5</Code>
+                  <Code>(16px)</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Title order={5}>Quick brown foxes</Title>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code mr="xs">6</Code>
+                  <Code>(14px)</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Title order={6}>Quick brown foxes</Title>
                 </Table.Td>
               </Table.Tr>
             </Table.Tbody>
@@ -104,42 +110,43 @@ export default function TypographyPage() {
             <Table.Tbody>
               <Table.Tr>
                 <Table.Td>
-                  <Code>xxs</Code>
+                  <Code mr="xs">xxs</Code>
+                  <Code>(22px)</Code>
                 </Table.Td>
                 <Table.Td>
-                  <Text size="xxs">Text xs - XX-small</Text>
-                </Table.Td>
-              </Table.Tr>
-              <Table.Tr>
-                <Table.Td>
-                  <Code>xs</Code>
-                </Table.Td>
-                <Table.Td>
-                  <Text size="xs">Text xs - X-small</Text>
+                  <Text size="xxs">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
                 </Table.Td>
               </Table.Tr>
               <Table.Tr>
                 <Table.Td>
-                  <Code>sm</Code>
+                  <Code mr="xs">xs</Code>
                 </Table.Td>
                 <Table.Td>
-                  <Text size="sm">Text sm - Small</Text>
-                </Table.Td>
-              </Table.Tr>
-              <Table.Tr>
-                <Table.Td>
-                  <Code>md</Code>
-                </Table.Td>
-                <Table.Td>
-                  <Text size="md">Text md - Medium</Text>
+                  <Text size="xs">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
                 </Table.Td>
               </Table.Tr>
               <Table.Tr>
                 <Table.Td>
-                  <Code>lg</Code>
+                  <Code mr="xs">sm</Code>
                 </Table.Td>
                 <Table.Td>
-                  <Text size="lg">Text lg - Large</Text>
+                  <Text size="sm">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code mr="xs">md</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Text size="md">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
+                </Table.Td>
+              </Table.Tr>
+              <Table.Tr>
+                <Table.Td>
+                  <Code mr="xs">lg</Code>
+                </Table.Td>
+                <Table.Td>
+                  <Text size="lg">Happy old squirrel, hop o squirrel, hop to the trees!</Text>
                 </Table.Td>
               </Table.Tr>
             </Table.Tbody>
