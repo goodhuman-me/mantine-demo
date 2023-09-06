@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { router } from "./routes/router";
 
-import { AppShell, Box, Burger, Flex, NavLink, ThemeIcon, Title } from "@mantine/core";
+import { AppShell, Box, Burger, Group, NavLink, Stack, ThemeIcon, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 import { ChevronRight, Components, Home } from "tabler-icons-react";
@@ -22,12 +22,12 @@ function App() {
       }}
     >
       <AppShell.Header>
-        <div className="flex flex-row items-center justify-content p-2.5">
+        <Group p="sm" gap={"xs"}>
           <Burger opened={opened} onClick={toggle} />
           <Title order={4} className="ml-2">
             Mantine v7 exploration
           </Title>
-        </div>
+        </Group>
       </AppShell.Header>
 
       <AppShell.Navbar>
@@ -44,7 +44,7 @@ function App() {
 export default App;
 
 const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
-  <Flex direction="column" mt="lg" gap="md">
+  <Stack mt="lg" gap="md">
     <Box>
       <Box px="sm" pb="xs">
         <Title order={6}>Navigation</Title>
@@ -88,5 +88,5 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
         </Link>
       ))}
     </Box>
-  </Flex>
+  </Stack>
 );

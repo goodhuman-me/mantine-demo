@@ -1,4 +1,4 @@
-import { Box, Card, CardProps, Flex, Stack, Text } from "@mantine/core";
+import { Box, Card, CardProps, Group, Stack, Text } from "@mantine/core";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 
@@ -26,14 +26,14 @@ export default function OtherStylesPage() {
         <Content.Text>Boxes with elevation</Content.Text>
 
         <Content.Area>
-          <Flex gap="4rem">
+          <Group gap="4rem">
             <CardWithTitle shadow="xs" />
             <CardWithTitle shadow="sm" />
             <CardWithTitle shadow="md" />
             <CardWithTitle shadow="lg" />
             <CardWithTitle shadow="xl" />
             <CardWithTitle shadow="xxl" />
-          </Flex>
+          </Group>
         </Content.Area>
       </Content.Section>
     </DefaultLayout>

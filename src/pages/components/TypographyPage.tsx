@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ComboboxData, Table, Text, Title, Code, Select, Flex, TitleOrder } from "@mantine/core";
+import { ComboboxData, Table, Text, Title, Code, Select, Flex, TitleOrder, Group } from "@mantine/core";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 
@@ -27,7 +27,6 @@ export default function TypographyPage() {
 
   return (
     <DefaultLayout title="Typography" subtitle="All things type related">
-      <Content.Header>Title</Content.Header>
       <Content.Section title="Title (Heading)">
         <Content.Text>All heading sizes</Content.Text>
         <Content.Area>
@@ -150,7 +149,7 @@ export default function TypographyPage() {
 
       <Content.Section title="Sample paragraphs">
         <div className="flex flex-row items-start">
-          <Flex gap="lg">
+          <Group gap="lg">
             <Select
               label="Title order"
               data={titleOrderValues}
@@ -165,7 +164,7 @@ export default function TypographyPage() {
               defaultValue={"md"}
               onChange={setParagraphSize}
             />
-          </Flex>
+          </Group>
         </div>
         <Content.Area>
           <Title mb="md" order={parseInt(titleOrder as string) as TitleOrder}>

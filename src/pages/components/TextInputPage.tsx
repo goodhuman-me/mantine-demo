@@ -1,4 +1,4 @@
-import { Flex, TextInput, Button } from "@mantine/core";
+import { Stack, TextInput } from "@mantine/core";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 
@@ -13,7 +13,7 @@ export default function TextInputPage() {
       <Content.Header>Sizes</Content.Header>
 
       <Content.Section>
-        <Flex direction="column" align="flex-start" gap="xl">
+        <Stack align="flex-start" gap="xl">
           <TextInput
             label="TextField label (xs)"
             description="TextField description"
@@ -38,7 +38,7 @@ export default function TextInputPage() {
             placeholder="TextField placeholder text"
             size="lg"
           />
-        </Flex>
+        </Stack>
       </Content.Section>
 
       <Content.Header>Sizes</Content.Header>
