@@ -2,12 +2,12 @@ import { Container, Divider, Text, Title } from "@mantine/core";
 import HeaderContainer from "../components/Header";
 import { PropsWithChildren } from "react";
 
-export default function DefaultLayout(
-  props: PropsWithChildren<{
-    title?: string;
-    subtitle?: string;
-  }>,
-) {
+type DefaultLayoutProps = PropsWithChildren<{
+  title?: string;
+  subtitle?: string;
+}>;
+
+export default function DefaultLayout(props: DefaultLayoutProps) {
   return (
     <Container fluid className="p-0">
       <HeaderContainer title={props.title} subtitle={props.subtitle} />
