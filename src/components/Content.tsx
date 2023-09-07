@@ -1,4 +1,4 @@
-import { Box, Divider, Stack, StylePropSpacingValue, Text, Title, TitleOrder } from "@mantine/core";
+import { Box, Divider, MantineSize, Stack, StylePropSpacingValue, Text, Title, TitleOrder } from "@mantine/core";
 import { PropsWithChildren, ReactNode } from "react";
 
 type ContentSectionProps = PropsWithChildren<{
@@ -6,6 +6,7 @@ type ContentSectionProps = PropsWithChildren<{
   titleOrder?: TitleOrder;
   divider?: boolean;
   mb?: StylePropSpacingValue;
+  stackGap?: MantineSize | string | undefined;
 }>;
 
 const ContentSection = ({
@@ -14,8 +15,9 @@ const ContentSection = ({
   children,
   divider: hasDivider = true,
   mb = "xl",
+  stackGap = "md",
 }: ContentSectionProps) => (
-  <Stack gap="md" mb={mb}>
+  <Stack gap={stackGap} mb={mb}>
     {title && (
       <Title c="var(--brand-body-dark-2)" order={titleOrder}>
         {title}

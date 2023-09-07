@@ -4,12 +4,12 @@ import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 
 const textSizeValues: ComboboxData = [
-  { label: "XXSmall", value: "xxs" },
-  { label: "Xsmall", value: "xs" },
-  { label: "Small", value: "sm" },
-  { label: "Medium", value: "md" },
-  { label: "Large", value: "lg" },
-  { label: "XLarge", value: "xl" },
+  { label: "xx-small (xxs)", value: "xxs" },
+  { label: "x-small (xs)", value: "xs" },
+  { label: "small (sm)", value: "sm" },
+  { label: "medium (md)", value: "md" },
+  { label: "large (lg)", value: "lg" },
+  { label: "x-large (xl)", value: "xl" },
 ];
 
 const titleOrderValues: ComboboxData = [
@@ -158,25 +158,23 @@ export default function TypographyPage() {
         </Content.Area>
       </Content.Section>
 
-      <Content.Section title="Sample paragraphs">
-        <div className="flex flex-row items-start">
-          <Group gap="lg">
-            <Select
-              label="Title order"
-              data={titleOrderValues}
-              value={titleOrder?.toString()}
-              defaultValue={"1"}
-              onChange={setTitleOrder}
-            />
-            <Select
-              label="Text size"
-              data={textSizeValues}
-              value={paragraphSize}
-              defaultValue={"md"}
-              onChange={setParagraphSize}
-            />
-          </Group>
-        </div>
+      <Content.Section title="Sample paragraphs" stackGap="sm">
+        <Group gap="lg">
+          <Select
+            label="Title order"
+            data={titleOrderValues}
+            value={titleOrder?.toString()}
+            defaultValue={"1"}
+            onChange={setTitleOrder}
+          />
+          <Select
+            label="Text size"
+            data={textSizeValues}
+            value={paragraphSize}
+            defaultValue={"md"}
+            onChange={setParagraphSize}
+          />
+        </Group>
         <Content.Area>
           <Title mb="md" order={parseInt(titleOrder as string) as TitleOrder}>
             The Raven excerpts <br />

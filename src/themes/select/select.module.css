@@ -1,0 +1,7 @@
+/* .root {
+} */
+.label {
+  font-weight: var(--mantine-heading-font-weight) !important;
+  font-size: var(--mantine-font-size-sm) !important;
+  margin-bottom: 0.5rem;
+}

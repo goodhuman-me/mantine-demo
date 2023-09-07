@@ -2,12 +2,12 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 import App from "../App.tsx";
 import Home from "../pages/HomePage.tsx";
 import SampleLayout from "../pages/SampleLayoutPage.tsx";
-import { ButtonsPage } from "../pages/components/ButtonsPage.tsx";
+import { ButtonsPage } from "../pages/individual/ButtonsPage.tsx";
 import TempTestPage from "../pages/TempTestPage.tsx";
-import TypographyPage from "../pages/components/TypographyPage.tsx";
-import TextInputPage from "../pages/components/TextInputPage.tsx";
-import OtherStylesPage from "../pages/components/OtherStylesPage.tsx";
-import SelectPage from "../pages/components/SelectPage.tsx";
+import TypographyPage from "../pages/individual/TypographyPage.tsx";
+import TextInputPage from "../pages/individual/TextInputPage.tsx";
+import OtherStylesPage from "../pages/individual/OtherStylesPage.tsx";
+import SelectPage from "../pages/individual/SelectPage.tsx";
 
 const routes = (
   <>
