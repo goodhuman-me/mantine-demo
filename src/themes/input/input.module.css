@@ -1,4 +1,7 @@
-/* ? Not sure why certain attributes require !important; might be a Mantine v7 bug. */
+/*
+  ? Not sure why !important is needed for some of these css attributes. 
+  ? Seems to have other inline styles overriding it; might be a Mantine v7 bug...?
+*/
 
 .label {
   font-weight: var(--mantine-heading-font-weight) !important;
@@ -7,10 +10,10 @@
 }
 
 .description {
-  color: var(--brand-body-dark-1);
+  color: var(--brand-body-main);
   font-size: var(--mantine-font-size-sm) !important;
   margin-bottom: 0.5rem !important;
-  line-height: var(--mantine-line-height-sm) !important;
+  line-height: var(--mantine-line-height-xs) !important;
 }
 
 .input {
@@ -20,22 +23,20 @@
     border-color: var(--brand-body-main);
   }
 
-  input:not(&[data-error]) {
-    --_input-placeholder-color: var(--brand-body-dark-1);
+  --_input-placeholder-color: var(--brand-body-dark-1);
 
-    @mixin hover {
-      border-color: var(--brand-body-dark-1);
-    }
+  @mixin hover {
+    border-color: var(--brand-body-dark-1);
+  }
 
-    &:focus {
-      border-width: 2px;
-      border-color: var(--brand-accent-main) !important;
-    }
+  &:focus {
+    border-width: 2px;
+    border-color: var(--brand-accent-main) !important;
+  }
 
-    &:focus-within {
-      border-width: 2px;
-      border-color: var(--brand-accent-main) !important;
-    }
+  &:focus-within {
+    border-width: 2px;
+    border-color: var(--brand-accent-main) !important;
   }
 
   input&[data-error] {
@@ -43,7 +44,6 @@
     border-color: var(--color-red-main);
     color: var(--color-red-main);
 
-    /* --_input-placeholder-color: var(--color-red-ref); */
     --_input-placeholder-color: var(--brand-body-dark-1);
 
     @mixin hover {

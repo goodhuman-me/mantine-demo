@@ -1,12 +1,12 @@
-import { Title, Text, Select, Stack, Code } from "@mantine/core";
-import DefaultLayout from "../../layouts/DefaultLayout";
+import { Code, Select, Stack } from "@mantine/core";
 import { Content } from "../../components/Content";
+import DefaultLayout from "../../layouts/DefaultLayout";
 
 //  TODO
-const SelectPage: React.FunctionComponent = (props) => {
+const SelectPage: React.FunctionComponent = () => {
   return (
     <DefaultLayout title="Select field" subtitle="Input field with multiple selectable values">
-      <Content.Header>Basic select field</Content.Header>
+      <Content.Header>Basic select field (WIP)</Content.Header>
       <Content.Section title="Section header">
         <Content.Text>Section textInvidunt no dolores accusam gubergren et sea, erat.</Content.Text>
 
@@ -43,27 +43,54 @@ const SelectPage: React.FunctionComponent = (props) => {
           Various sizes for <Code>Select</Code> component
         </Content.Text>
         <Content.Area>
-          <Stack gap="md">
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="xs" />
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="sm" />
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="md" />
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="lg" />
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="xl" />
+          <Stack gap="md" align="flex-start">
+            <Select
+              label="x-small"
+              placeholder="x-small size"
+              data={[{ value: "item-1", label: "Item 1" }]}
+              size="xs"
+              style={{ width: "320px" }}
+            />
+            <Select
+              label="small"
+              placeholder="small size"
+              data={[{ value: "item-1", label: "Item 1" }]}
+              size="sm"
+              style={{ width: "320px" }}
+            />
+            <Select
+              label="medium"
+              placeholder="medium size"
+              data={[{ value: "item-1", label: "Item 1" }]}
+              size="md"
+              style={{ width: "320px" }}
+            />
+            <Select
+              label="large"
+              placeholder="large size"
+              data={[{ value: "item-1", label: "Item 1" }]}
+              size="lg"
+              style={{ width: "320px" }}
+            />
+            <Select
+              label="x-large"
+              placeholder="x-large size"
+              data={[{ value: "item-1", label: "Item 1" }]}
+              size="xl"
+              style={{ width: "320px" }}
+            />
           </Stack>
         </Content.Area>
       </Content.Section>
 
-      <Content.Section title="Various statees">
+      <Content.Section title="Various states">
         <Content.Text>
           Various states for <Code>Select</Code> component
         </Content.Text>
         <Content.Area>
-          <Stack gap="md">
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="xs" />
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="sm" />
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="md" />
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="lg" />
-            <Select label="Small" data={[{ value: "item-1", label: "Item 1" }]} size="xl" />
+          <Stack gap="lg">
+            <Select label="Error state" placeholder="Something's gone wrong!" data={[{ value: "item-1", label: "Item 1" }]} error />
+            <Select label="Disabled state" data={[{ value: "item-1", label: "Item 1" }]} disabled />
           </Stack>
         </Content.Area>
       </Content.Section>
