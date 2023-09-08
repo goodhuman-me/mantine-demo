@@ -1,8 +1,8 @@
 import { CodeHighlight } from "@mantine/code-highlight";
 import { ActionIcon, Anchor, Box, Button, Code, CopyButton, FileButton, Group, Text, Title } from "@mantine/core";
 import { Analyze, Clipboard, ClipboardCopy, Upload } from "tabler-icons-react";
-import { Content } from "../../components/Content";
-import DefaultLayout from "../../layouts/DefaultLayout";
+import { Content } from "../../../components/Content";
+import DefaultLayout from "../../../layouts/DefaultLayout";
 
 export const ButtonsPage = () => (
   <DefaultLayout title="Buttons" subtitle="A collection of clickable things">

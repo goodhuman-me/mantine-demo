@@ -1,6 +1,6 @@
 import { Title, Text, Code, TagsInput, Stack } from "@mantine/core";
-import DefaultLayout from "../../layouts/DefaultLayout";
-import { Content } from "../../components/Content";
+import DefaultLayout from "../../../layouts/DefaultLayout";
+import { Content } from "../../../components/Content";
 import { useState } from "react";
 
 export default function TagsInputPage() {

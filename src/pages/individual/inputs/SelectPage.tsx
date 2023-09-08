@@ -1,6 +1,6 @@
 import { Code, Select, Stack } from "@mantine/core";
-import { Content } from "../../components/Content";
-import DefaultLayout from "../../layouts/DefaultLayout";
+import { Content } from "../../../components/Content";
+import DefaultLayout from "../../../layouts/DefaultLayout";
 
 //  TODO
 const SelectPage: React.FunctionComponent = () => {

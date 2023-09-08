@@ -1,4 +1,4 @@
-import { CopyButton, createTheme, Text } from "@mantine/core";
+import { CopyButton, createTheme, Text, Notification } from "@mantine/core";
 
 import { variantColorResolver } from "./colors/variant-colors";
 
@@ -14,6 +14,7 @@ import activeClasses from "./common/active.module.css";
 import { autocompleteProps } from "./autocomplete/autocomplete-props";
 import { multiselectProps } from "./multiselect/multiselect-props";
 import { tagsInputProps } from "./tagsinput/tagsinputs-props";
+import { notificationProps } from "./notification/notification-props";
 
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";
@@ -86,6 +87,9 @@ export const theme = createTheme({
     Autocomplete: autocompleteProps,
     MultiSelect: multiselectProps,
     TagsInput: tagsInputProps,
+
+    // notifications
+    Notification: notificationProps,
   },
 });
 

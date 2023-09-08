@@ -1,6 +1,6 @@
 import { Title, Text, Code, MultiSelect, Stack } from "@mantine/core";
-import DefaultLayout from "../../layouts/DefaultLayout";
-import { Content } from "../../components/Content";
+import DefaultLayout from "../../../layouts/DefaultLayout";
+import { Content } from "../../../components/Content";
 
 export default function MultiSelectPage() {
   return (

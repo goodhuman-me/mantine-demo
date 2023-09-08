@@ -1,7 +1,7 @@
 import { Stack, TextInput, ThemeIcon } from "@mantine/core";
 import { CurrencyDollarAustralian, Mail, MailOff } from "tabler-icons-react";
-import { Content } from "../../components/Content";
-import DefaultLayout from "../../layouts/DefaultLayout";
+import { Content } from "../../../components/Content";
+import DefaultLayout from "../../../layouts/DefaultLayout";
 
 export default function TextInputPage() {
   return (

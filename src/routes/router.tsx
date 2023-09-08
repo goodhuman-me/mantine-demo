@@ -2,15 +2,16 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 import App from "../App.tsx";
 import Home from "../pages/HomePage.tsx";
 import SampleLayout from "../pages/SampleLayoutPage.tsx";
-import { ButtonsPage } from "../pages/individual/ButtonsPage.tsx";
+import { ButtonsPage } from "../pages/individual/buttons/ButtonsPage.tsx";
 import TempTestPage from "../pages/TempTestPage.tsx";
 import TypographyPage from "../pages/individual/TypographyPage.tsx";
-import TextInputPage from "../pages/individual/TextInputPage.tsx";
+import TextInputPage from "../pages/individual/inputs/TextInputPage.tsx";
 import OtherStylesPage from "../pages/individual/OtherStylesPage.tsx";
-import SelectPage from "../pages/individual/SelectPage.tsx";
-import AutocompletePage from "../pages/individual/AutocompletePage.tsx";
-import MultiSelectPage from "../pages/individual/MultiSelectPage.tsx";
-import TagsInputPage from "../pages/individual/TagsInputPage.tsx";
+import SelectPage from "../pages/individual/inputs/SelectPage.tsx";
+import AutocompletePage from "../pages/individual/inputs/AutocompletePage.tsx";
+import MultiSelectPage from "../pages/individual/inputs/MultiSelectPage.tsx";
+import TagsInputPage from "../pages/individual/inputs/TagsInputPage.tsx";
+import NotificationsPage from "../pages/individual/NotificationsPage.tsx";
 
 const routes = (
   <>
@@ -25,6 +26,7 @@ const routes = (
       <Route path="Multiselect-field" element={<MultiSelectPage />} />
       <Route path="TagsInput-field" element={<TagsInputPage />} />
 
+      <Route path="Notifications" element={<NotificationsPage />} />
       <Route path="Other-styles" element={<OtherStylesPage />} />
 
       <Route path="Sample-layout" element={<SampleLayout />} />
