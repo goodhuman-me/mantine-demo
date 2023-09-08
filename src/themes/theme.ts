@@ -18,6 +18,7 @@ import { notificationProps } from "./notification/notification-props";
 import { tagsInputProps } from "./tagsinput/tagsinputs-props";
 
 import "./colors/colors.module.css";
+import { segmentedControlProps } from "./segmented-control/segmented-control-props";
 
 // TODO: Move fonts to a separate file
 const defaultFontFamily =
@@ -93,6 +94,7 @@ export const theme = createTheme({
     TagsInput: tagsInputProps,
     DateInput: dateInputProps,
     DateTimePicker: dateTimePickerProps,
+    SegmentedControl: segmentedControlProps,
 
     // notifications
     Notification: notificationProps,

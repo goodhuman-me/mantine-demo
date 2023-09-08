@@ -80,11 +80,7 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
 
     <Box>
       <NavHeader title="Controls" />
-      <NavLinkWithIcon label="Text input" to="text-input" SideIcon={EditCircle} />
-      <NavLinkWithIcon label="Select" to="select" SideIcon={EditCircle} />
-      <NavLinkWithIcon label="Autocomplete" to="autocomplete" SideIcon={EditCircle} />
-      <NavLinkWithIcon label="MultiSelect" to="multiselect" SideIcon={EditCircle} />
-      <NavLinkWithIcon label="TagsInput" to="tags-input" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Segmented Control" to="segmented-control" SideIcon={EditCircle} />
     </Box>
 
     <Box>
