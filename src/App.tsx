@@ -91,6 +91,7 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
       <NavLinkWithIcon label="Radio" to="radio" SideIcon={CircleDot} />
       <NavLinkWithIcon label="Breadcrumbs" to="breadcrumbs" SideIcon={LinkIcon} />
       <NavLinkWithIcon label="Pagination" to="pagination" SideIcon={LinkIcon} />
+      <NavLinkWithIcon label="Tabs" to="tabs" SideIcon={LinkIcon} />
     </Box>
 
     <Box>

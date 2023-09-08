@@ -20,6 +20,7 @@ import CheckBoxPage from "../pages/individual/CheckBoxPage.tsx";
 import RadioButtonPage from "../pages/individual/RadioButtonPage.tsx";
 import PaginationPage from "../pages/individual/PaginationPage.tsx";
 import BreadCrumbsPage from "../pages/individual/BreadCrumbsPage.tsx";
+import TabsPage from "../pages/individual/TabsPage.tsx";
 
 const routes = (
   <>
@@ -42,6 +43,7 @@ const routes = (
       <Route path="segmented-control" element={<SegmentedControlPage />} />
       <Route path="breadcrumbs" element={<BreadCrumbsPage />} />
       <Route path="pagination" element={<PaginationPage />} />
+      <Route path="tabs" element={<TabsPage />} />
 
       {/*Date/time  */}
       <Route path="calendar" element={<CalendarPage />} />
