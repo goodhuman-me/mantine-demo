@@ -20,24 +20,25 @@ const routes = (
   <>
     <Route path="/" element={<App />}>
       <Route path="/" element={<Home />} />
-      <Route path="Buttons" element={<ButtonsPage />} />
-      <Route path="Typography" element={<TypographyPage />} />
 
-      <Route path="Text-field" element={<TextInputPage />} />
-      <Route path="Select-field" element={<SelectPage />} />
-      <Route path="Autocomplete-field" element={<AutocompletePage />} />
-      <Route path="Multiselect-field" element={<MultiSelectPage />} />
-      <Route path="TagsInput-field" element={<TagsInputPage />} />
+      <Route path="buttons" element={<ButtonsPage />} />
 
-      <Route path="Calendar" element={<CalendarPage />} />
-      <Route path="DateInput-field" element={<DateInputPage />} />
-      <Route path="DateTimePicker-field" element={<DateTimePickerPage />} />
+      <Route path="text-input" element={<TextInputPage />} />
+      <Route path="select" element={<SelectPage />} />
+      <Route path="autocomplete" element={<AutocompletePage />} />
+      <Route path="multiselect" element={<MultiSelectPage />} />
+      <Route path="tags-input" element={<TagsInputPage />} />
 
-      <Route path="Notifications" element={<NotificationsPage />} />
-      <Route path="Other-styles" element={<OtherStylesPage />} />
+      <Route path="calendar" element={<CalendarPage />} />
+      <Route path="dateinput" element={<DateInputPage />} />
+      <Route path="datetime-picker" element={<DateTimePickerPage />} />
 
-      <Route path="Sample-layout" element={<SampleLayout />} />
-      <Route path="Temp-test-page" element={<TempTestPage />} />
+      <Route path="typography" element={<TypographyPage />} />
+      <Route path="notifications" element={<NotificationsPage />} />
+      <Route path="other-styles" element={<OtherStylesPage />} />
+
+      <Route path="sample-layout" element={<SampleLayout />} />
+      <Route path="temp-test" element={<TempTestPage />} />
     </Route>
   </>
 );

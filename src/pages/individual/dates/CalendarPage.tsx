@@ -15,7 +15,7 @@ export default function CalendarPage() {
         <Content.Text>
           Base calendar component used in various <Code>DatePicker</Code> components. <br />
           <i>
-            Note - this component is a base component. For an interactive date control, use <Code>DateInput</Code> or{" "}
+            Note - this component is a base component. For an interactive date control, use <Code>DateInput</Code> or
             <Code>DatePicker</Code> instead.
           </i>
         </Content.Text>
