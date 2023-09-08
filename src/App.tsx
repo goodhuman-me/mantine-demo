@@ -18,6 +18,7 @@ import {
   Icon,
   Notification,
   Paperclip,
+  Link as LinkIcon,
 } from "tabler-icons-react";
 
 function App() {
@@ -82,7 +83,9 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
       <NavHeader title="Controls" />
       <NavLinkWithIcon label="Segmented Control" to="segmented-control" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Checkbox" to="checkbox" SideIcon={CircleCheck} />
-      <NavLinkWithIcon label="Radio" to="radiio" SideIcon={CircleDot} />
+      <NavLinkWithIcon label="Radio" to="radio" SideIcon={CircleDot} />
+      <NavLinkWithIcon label="Breadcrumbs" to="breadcrumbs" SideIcon={LinkIcon} />
+      <NavLinkWithIcon label="Pagination" to="pagination" SideIcon={LinkIcon} />
     </Box>
 
     <Box>
