@@ -1,4 +1,4 @@
-import { createTheme, Text } from "@mantine/core";
+import { CopyButton, createTheme, Text } from "@mantine/core";
 
 import { variantColorResolver } from "./colors/variant-colors";
 
@@ -75,9 +75,12 @@ export const theme = createTheme({
   },
 
   components: {
+    // buttons
     Button: buttonProps,
     ActionIcon: actionIconProps,
     Card: cardProps,
+
+    // inputs
     TextInput: textInputProps,
     Select: selectProps,
     Autocomplete: autocompleteProps,

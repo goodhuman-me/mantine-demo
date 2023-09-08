@@ -1,6 +1,6 @@
 import { CodeHighlight } from "@mantine/code-highlight";
-import { ActionIcon, Anchor, Box, Button, Group, Text, Title } from "@mantine/core";
-import { Analyze } from "tabler-icons-react";
+import { ActionIcon, Anchor, Box, Button, Code, CopyButton, FileButton, Group, Text, Title } from "@mantine/core";
+import { Analyze, Clipboard, ClipboardCopy, Upload } from "tabler-icons-react";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 
@@ -453,6 +453,38 @@ export const ButtonsPage = () => (
             <Analyze />
           </ActionIcon>
         </Group>
+      </Content.Section>
+    </Box>
+
+    <Box>
+      <Content.Header>Other aux buttons</Content.Header>
+      <Content.Section title="Copy to clipboard" divider={false}>
+        <Content.Text>
+          Clicking on this will copy the value <Code>https://team.goodhuman.me</Code> to your clipboard.
+        </Content.Text>
+        <Content.Area>
+          <CopyButton value="https://team.goodhuman.me">
+            {({ copied, copy }) => (
+              <Button color={copied ? "teal" : "accent"} onClick={copy} size="md" leftSection={<ClipboardCopy />}>
+                {copied ? "Copied" : "Copy"}
+              </Button>
+            )}
+          </CopyButton>
+        </Content.Area>
+      </Content.Section>
+
+      <Content.Section title="File handing">
+        <Content.Text>Clicking on this will open the file picker.</Content.Text>
+
+        <Content.Area>
+          <FileButton onChange={() => {}} accept="image/png,image/jpeg">
+            {(props) => (
+              <Button {...props} size="md" leftSection={<Upload />}>
+                Upload file
+              </Button>
+            )}
+          </FileButton>
+        </Content.Area>
       </Content.Section>
     </Box>
   </DefaultLayout>
