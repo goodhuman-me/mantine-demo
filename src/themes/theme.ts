@@ -1,23 +1,25 @@
-import { CopyButton, createTheme, Text, Notification } from "@mantine/core";
+import { createTheme } from "@mantine/core";
 
 import { variantColorResolver } from "./colors/variant-colors";
 
-import { buttonProps } from "./button/button-props";
 import { actionIconProps } from "./action-icon/action-icon-props";
+import { buttonProps } from "./button/button-props";
 import { cardProps } from "./card/card-props";
-import { textInputProps } from "./textinput/text-input-props";
 import { selectProps } from "./select/select-props";
+import { textInputProps } from "./textinput/text-input-props";
+
+import { autocompleteProps } from "./autocomplete/autocomplete-props";
+import { calendarProps } from "./calendar/calendar-props";
+import activeClasses from "./common/active.module.css";
+import { dateInputProps } from "./dateinput/dateinput-props";
+import { dateTimePickerProps } from "./datetime-picker/datetime-picker-props";
+import { multiselectProps } from "./multiselect/multiselect-props";
+import { notificationProps } from "./notification/notification-props";
+import { tagsInputProps } from "./tagsinput/tagsinputs-props";
 
 import "./colors/colors.module.css";
 
-import activeClasses from "./common/active.module.css";
-import { autocompleteProps } from "./autocomplete/autocomplete-props";
-import { multiselectProps } from "./multiselect/multiselect-props";
-import { tagsInputProps } from "./tagsinput/tagsinputs-props";
-import { notificationProps } from "./notification/notification-props";
-import { Calendar, DateInput } from "@mantine/dates";
-import { dateInputProps } from "./dateinput/dateinput-props";
-
+// TODO: Move fonts to a separate file
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";
 
@@ -90,10 +92,11 @@ export const theme = createTheme({
     MultiSelect: multiselectProps,
     TagsInput: tagsInputProps,
     DateInput: dateInputProps,
+    DateTimePicker: dateTimePickerProps,
 
     // notifications
     Notification: notificationProps,
-    Calendar: Calendar.extend({}),
+    Calendar: calendarProps,
   },
 });
 

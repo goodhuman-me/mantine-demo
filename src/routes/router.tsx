@@ -14,6 +14,7 @@ import TagsInputPage from "../pages/individual/inputs/TagsInputPage.tsx";
 import NotificationsPage from "../pages/individual/NotificationsPage.tsx";
 import CalendarPage from "../pages/individual/dates/CalendarPage.tsx";
 import DateInputPage from "../pages/individual/dates/DateInputPage.tsx";
+import DateTimePickerPage from "../pages/individual/dates/DateTimePickerPage.tsx";
 
 const routes = (
   <>
@@ -30,6 +31,7 @@ const routes = (
 
       <Route path="Calendar" element={<CalendarPage />} />
       <Route path="DateInput-field" element={<DateInputPage />} />
+      <Route path="DateTimePicker-field" element={<DateTimePickerPage />} />
 
       <Route path="Notifications" element={<NotificationsPage />} />
       <Route path="Other-styles" element={<OtherStylesPage />} />
