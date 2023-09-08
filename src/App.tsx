@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { router } from "./routes/router";
 
-import { AppShell, Box, Burger, Group, NavLink, Space, Stack, ThemeIcon, Title } from "@mantine/core";
+import { AppShell, Box, Burger, Code, Group, NavLink, Space, Stack, ThemeIcon, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 import {
@@ -19,6 +19,7 @@ import {
   Notification,
   Paperclip,
   Link as LinkIcon,
+  SourceCode,
 } from "tabler-icons-react";
 
 function App() {
@@ -39,9 +40,13 @@ function App() {
       <AppShell.Header>
         <Group p="sm" gap={"xs"}>
           <Burger opened={opened} onClick={toggle} />
-          <Title order={4} className="ml-2">
-            <code>@good/mantine</code> <span className="font-normal text-gray-700">components</span>
-          </Title>
+
+          <Group gap="xs">
+            <SourceCode className="text-gray-400" size={"1.5rem"} />
+            <Title order={4}>
+              <Code>@good/mantine</Code> <span className="font-normal text-gray-700">components</span>
+            </Title>
+          </Group>
         </Group>
       </AppShell.Header>
 
