@@ -18,6 +18,8 @@ import DateTimePickerPage from "../pages/individual/dates/DateTimePickerPage.tsx
 import SegmentedControlPage from "../pages/individual/SegmentedControlPage.tsx";
 import CheckBoxPage from "../pages/individual/CheckBoxPage.tsx";
 import RadioButtonPage from "../pages/individual/RadioButtonPage.tsx";
+import PaginationPage from "../pages/individual/PaginationPage.tsx";
+import BreadCrumbsPage from "../pages/individual/BreadCrumbsPage.tsx";
 
 const routes = (
   <>
@@ -38,6 +40,8 @@ const routes = (
       <Route path="checkbox" element={<CheckBoxPage />} />
       <Route path="radio" element={<RadioButtonPage />} />
       <Route path="segmented-control" element={<SegmentedControlPage />} />
+      <Route path="breadcrumbs" element={<BreadCrumbsPage />} />
+      <Route path="pagination" element={<PaginationPage />} />
 
       {/*Date/time  */}
       <Route path="calendar" element={<CalendarPage />} />

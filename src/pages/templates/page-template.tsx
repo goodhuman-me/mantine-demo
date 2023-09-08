@@ -8,6 +8,9 @@ export default function PageTemplate() {
       <Content.Header>Header</Content.Header>
       <Content.Section title="Section header">
         <Content.Text>Section text</Content.Text>
+        <Content.Area>
+          <Text>Content goes here</Text>
+        </Content.Area>
       </Content.Section>
     </DefaultLayout>
   );
