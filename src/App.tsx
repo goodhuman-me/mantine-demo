@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { router } from "./routes/router";
 
-import { AppShell, Box, Burger, Group, NavLink, Space, Stack, ThemeIcon, Title } from "@mantine/core";
+import { AppShell, Box, Burger, Group, NavLink, Space, Stack, ThemeIcon, Title, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 import {
@@ -39,7 +39,7 @@ function App() {
         <Group p="sm" gap={"xs"}>
           <Burger opened={opened} onClick={toggle} />
           <Title order={4} className="ml-2">
-            Mantine v7 exploration
+            <code>@good/mantine</code> <span className="font-normal text-gray-700">components</span>
           </Title>
         </Group>
       </AppShell.Header>
