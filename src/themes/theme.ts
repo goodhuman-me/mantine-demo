@@ -5,7 +5,7 @@ import { variantColorResolver } from "./colors/variant-colors";
 import { buttonProps } from "./button/button-props";
 import { actionIconProps } from "./action-icon/action-icon-props";
 import { cardProps } from "./card/card-props";
-import { textInputProps } from "./text-input/text-input-props";
+import { textInputProps } from "./textinput/text-input-props";
 import { selectProps } from "./select/select-props";
 
 import "./colors/colors.module.css";
@@ -15,6 +15,8 @@ import { autocompleteProps } from "./autocomplete/autocomplete-props";
 import { multiselectProps } from "./multiselect/multiselect-props";
 import { tagsInputProps } from "./tagsinput/tagsinputs-props";
 import { notificationProps } from "./notification/notification-props";
+import { Calendar, DateInput } from "@mantine/dates";
+import { dateInputProps } from "./dateinput/dateinput-props";
 
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";
@@ -87,9 +89,11 @@ export const theme = createTheme({
     Autocomplete: autocompleteProps,
     MultiSelect: multiselectProps,
     TagsInput: tagsInputProps,
+    DateInput: dateInputProps,
 
     // notifications
     Notification: notificationProps,
+    Calendar: Calendar.extend({}),
   },
 });
 

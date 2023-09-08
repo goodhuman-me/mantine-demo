@@ -12,6 +12,8 @@ import AutocompletePage from "../pages/individual/inputs/AutocompletePage.tsx";
 import MultiSelectPage from "../pages/individual/inputs/MultiSelectPage.tsx";
 import TagsInputPage from "../pages/individual/inputs/TagsInputPage.tsx";
 import NotificationsPage from "../pages/individual/NotificationsPage.tsx";
+import CalendarPage from "../pages/individual/dates/CalendarPage.tsx";
+import DateInputPage from "../pages/individual/dates/DateInputPage.tsx";
 
 const routes = (
   <>
@@ -25,6 +27,9 @@ const routes = (
       <Route path="Autocomplete-field" element={<AutocompletePage />} />
       <Route path="Multiselect-field" element={<MultiSelectPage />} />
       <Route path="TagsInput-field" element={<TagsInputPage />} />
+
+      <Route path="Calendar" element={<CalendarPage />} />
+      <Route path="DateInput-field" element={<DateInputPage />} />
 
       <Route path="Notifications" element={<NotificationsPage />} />
       <Route path="Other-styles" element={<OtherStylesPage />} />

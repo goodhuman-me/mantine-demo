@@ -41,6 +41,9 @@ dependencies:
   '@mantine/tiptap':
     specifier: 7.0.0-beta.3
     version: 7.0.0-beta.3(@mantine/core@7.0.0-beta.3)(@mantine/hooks@7.0.0-beta.3)(@tabler/icons-react@2.32.0)(@tiptap/extension-link@2.1.7)(@tiptap/react@2.1.7)(react-dom@18.2.0)(react@18.2.0)
+  dayjs:
+    specifier: ^1.11.9
+    version: 1.11.9
   match-sorter:
     specifier: ^6.3.1
     version: 6.3.1

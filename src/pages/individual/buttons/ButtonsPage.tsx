@@ -117,7 +117,7 @@ export const ButtonsPage = () => (
         <Content.Text>4 different sizes for the button</Content.Text>
         <Content.Area>
           <Group gap="md" align="center">
-            <Button size="xs">Xsmall</Button>
+            <Button size="xs">X-small</Button>
             <Button size="sm">Small</Button>
             <Button size="md">Medium</Button>
             <Button size="lg">Large</Button>
