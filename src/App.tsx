@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { router } from "./routes/router";
 
-import { AppShell, Box, Burger, Group, NavLink, Space, Stack, ThemeIcon, Title, Text } from "@mantine/core";
+import { AppShell, Box, Burger, Group, NavLink, Space, Stack, ThemeIcon, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 import {
@@ -9,16 +9,16 @@ import {
   BoxModel2,
   CalendarPlus,
   ChevronRight,
+  CircleCheck,
+  CircleDot,
   Click,
   Components,
   EditCircle,
   Forms,
-  Home,
   Icon,
   Notification,
   Paperclip,
 } from "tabler-icons-react";
-import { Component, ReactNode } from "react";
 
 function App() {
   const [opened, { toggle }] = useDisclosure(false);
@@ -81,6 +81,8 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
     <Box>
       <NavHeader title="Controls" />
       <NavLinkWithIcon label="Segmented Control" to="segmented-control" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Checkbox" to="checkbox" SideIcon={CircleCheck} />
+      <NavLinkWithIcon label="Radio" to="radiio" SideIcon={CircleDot} />
     </Box>
 
     <Box>

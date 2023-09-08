@@ -16,6 +16,8 @@ import CalendarPage from "../pages/individual/dates/CalendarPage.tsx";
 import DateInputPage from "../pages/individual/dates/DateInputPage.tsx";
 import DateTimePickerPage from "../pages/individual/dates/DateTimePickerPage.tsx";
 import SegmentedControlPage from "../pages/individual/SegmentedControlPage.tsx";
+import CheckBoxPage from "../pages/individual/CheckBoxPage.tsx";
+import RadioButtonPage from "../pages/individual/RadioButtonPage.tsx";
 
 const routes = (
   <>
@@ -33,6 +35,8 @@ const routes = (
       <Route path="tags-input" element={<TagsInputPage />} />
 
       {/* Controls */}
+      <Route path="checkbox" element={<CheckBoxPage />} />
+      <Route path="radio" element={<RadioButtonPage />} />
       <Route path="segmented-control" element={<SegmentedControlPage />} />
 
       {/*Date/time  */}
