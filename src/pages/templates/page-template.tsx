@@ -1,4 +1,4 @@
-import { Title, Text } from "@mantine/core";
+import { Title, Text, Code } from "@mantine/core";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import { Content } from "../../components/Content";
 

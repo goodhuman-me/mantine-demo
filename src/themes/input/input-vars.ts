@@ -1,6 +1,6 @@
-import { AutocompleteFactory, PartialVarsResolver, SelectFactory, TextInputFactory } from "@mantine/core";
+import { AutocompleteFactory, MultiSelectFactory, PartialVarsResolver, SelectFactory, TextInputFactory } from "@mantine/core";
 
-type InputTypes = TextInputFactory | SelectFactory | AutocompleteFactory;
+type InputTypes = TextInputFactory | SelectFactory | AutocompleteFactory | MultiSelectFactory;
 
 export const inputVars: PartialVarsResolver<InputTypes> = (_theme, props) => {
   switch (props.size) {

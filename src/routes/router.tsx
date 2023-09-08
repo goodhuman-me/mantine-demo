@@ -9,6 +9,7 @@ import TextInputPage from "../pages/individual/TextInputPage.tsx";
 import OtherStylesPage from "../pages/individual/OtherStylesPage.tsx";
 import SelectPage from "../pages/individual/SelectPage.tsx";
 import AutocompletePage from "../pages/individual/AutocompletePage.tsx";
+import MultiSelectPage from "../pages/individual/MultiSelectPage.tsx";
 
 const routes = (
   <>
@@ -20,6 +21,7 @@ const routes = (
       <Route path="Text-field" element={<TextInputPage />} />
       <Route path="Select-field" element={<SelectPage />} />
       <Route path="Autocomplete-field" element={<AutocompletePage />} />
+      <Route path="Multiselect-field" element={<MultiSelectPage />} />
 
       <Route path="Other-styles" element={<OtherStylesPage />} />
 
