@@ -13,6 +13,7 @@ import "./colors/colors.module.css";
 import activeClasses from "./common/active.module.css";
 import { autocompleteProps } from "./autocomplete/autocomplete-props";
 import { multiselectProps } from "./multiselect/multiselect-props";
+import { tagsInputProps } from "./tagsinput/tagsinputs-props";
 
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";
@@ -73,10 +74,6 @@ export const theme = createTheme({
     xl: "1.75rem",
   },
 
-  spacing: {
-    xs: "0.5rem",
-  },
-
   components: {
     Button: buttonProps,
     ActionIcon: actionIconProps,
@@ -85,6 +82,7 @@ export const theme = createTheme({
     Select: selectProps,
     Autocomplete: autocompleteProps,
     MultiSelect: multiselectProps,
+    TagsInput: tagsInputProps,
   },
 });
 

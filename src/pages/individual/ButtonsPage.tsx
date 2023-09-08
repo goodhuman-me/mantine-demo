@@ -356,24 +356,57 @@ export const ButtonsPage = () => (
       <Content.Header>Action Icons</Content.Header>
 
       <Content.Section title="Sizes" divider={false} mb="xl">
+        <Content.Text>Outline</Content.Text>
         <Group gap="md" align="center">
-          <ActionIcon size="xs">
+          <ActionIcon size="xs" variant="filled">
             <Analyze />
           </ActionIcon>
-          <ActionIcon size="sm">
+          <ActionIcon size="sm" variant="filled">
             <Analyze />
           </ActionIcon>
-          <ActionIcon size="md">
+          <ActionIcon size="md" variant="filled">
             <Analyze />
           </ActionIcon>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" variant="filled">
+            <Analyze />
+          </ActionIcon>
+        </Group>
+
+        <Content.Text>Outline</Content.Text>
+        <Group gap="md" align="center">
+          <ActionIcon size="xs" variant="outline">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="sm" variant="outline">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="md" variant="outline">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="lg" variant="outline">
+            <Analyze />
+          </ActionIcon>
+        </Group>
+
+        <Content.Text>Transparent</Content.Text>
+        <Group gap="md" align="center">
+          <ActionIcon size="xs" variant="transparent">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="sm" variant="transparent">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="md" variant="transparent">
+            <Analyze />
+          </ActionIcon>
+          <ActionIcon size="lg" variant="transparent">
             <Analyze />
           </ActionIcon>
         </Group>
       </Content.Section>
 
       <Content.Section title="Variants">
-        <Text>Outline</Text>
+        <Content.Text>Outline</Content.Text>
         <Group gap="md">
           <ActionIcon color="accent" variant="filled">
             <Analyze />

@@ -4,32 +4,9 @@
     border: 1px solid var(--brand-body-light-1);
   }
 
-  &[data-size="xs"] {
-    font-size: 12px;
-    width: 24px;
-    height: 24px;
-  }
-
-  &[data-size="sm"] {
-    font-size: 14px;
-    width: 32px;
-    height: 32px;
-  }
-
-  &[data-size="md"] {
-    font-size: 14px;
-    width: 44px;
-    height: 44px;
-  }
-
-  &[data-size="lg"] {
-    font-size: 16px;
-    width: 56px;
-    height: 56px;
-  }
-
   &[data-variant="filled"] {
     &[style*="--ai-bg: var(--brand-accent-main)"] {
+      /* onClick states */
       &:active {
         background-color: var(--brand-accent-dark-2);
       }
@@ -52,6 +29,31 @@
         background-color: var(--brand-body-main);
       }
     }
+
+    /* Sizes scoped within variant selector to avoid disruption with other components eg Tags  */
+    /* &[data-size="xs"] {
+      font-size: 12px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &[data-size="sm"] {
+      font-size: 14px;
+      width: 32px;
+      height: 32px;
+    }
+
+    &[data-size="md"] {
+      font-size: 14px;
+      width: 44px;
+      height: 44px;
+    }
+
+    &[data-size="lg"] {
+      font-size: 16px;
+      width: 56px;
+      height: 56px;
+    } */
   }
 
   &[data-variant="outline"] {
@@ -78,6 +80,31 @@
         background-color: var(--brand-body-light-1);
       }
     }
+
+    /* Sizes scoped within variant selector to avoid disruption with other components eg Tags  */
+    /* &[data-size="xs"] {
+      font-size: 12px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &[data-size="sm"] {
+      font-size: 14px;
+      width: 32px;
+      height: 32px;
+    }
+
+    &[data-size="md"] {
+      font-size: 14px;
+      width: 44px;
+      height: 44px;
+    }
+
+    &[data-size="lg"] {
+      font-size: 16px;
+      width: 56px;
+      height: 56px;
+    } */
   }
 
   &[data-variant="transparent"] {
@@ -104,5 +131,30 @@
         background-color: var(--brand-body-light-1);
       }
     }
+
+    /* Sizes scoped within variant selector to avoid disruption with other components eg Tags  */
+    /* &[data-size="xs"] {
+      font-size: 12px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &[data-size="sm"] {
+      font-size: 14px;
+      width: 32px;
+      height: 32px;
+    }
+
+    &[data-size="md"] {
+      font-size: 14px;
+      width: 44px;
+      height: 44px;
+    }
+
+    &[data-size="lg"] {
+      font-size: 16px;
+      width: 56px;
+      height: 56px;
+    } */
   }
 }
