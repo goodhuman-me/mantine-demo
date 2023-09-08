@@ -4,7 +4,21 @@ import { router } from "./routes/router";
 import { AppShell, Box, Burger, Group, NavLink, Space, Stack, ThemeIcon, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
-import { ChevronRight, Components, Home } from "tabler-icons-react";
+import {
+  AlphabetLatin,
+  BoxModel2,
+  CalendarPlus,
+  ChevronRight,
+  Click,
+  Components,
+  EditCircle,
+  Forms,
+  Home,
+  Icon,
+  Notification,
+  Paperclip,
+} from "tabler-icons-react";
+import { Component, ReactNode } from "react";
 
 function App() {
   const [opened, { toggle }] = useDisclosure(false);
@@ -30,7 +44,7 @@ function App() {
         </Group>
       </AppShell.Header>
 
-      <AppShell.Navbar>
+      <AppShell.Navbar style={{ overflowY: "auto" }}>
         <NavMenu routes={routes} />
       </AppShell.Navbar>
 
@@ -44,41 +58,50 @@ function App() {
 export default App;
 
 const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
-  <Stack mt="lg" gap="md">
+  <Stack mt="md" gap="lg">
     <Box>
       <NavHeader title="Home" />
       <NavLinkWithIcon label="Home" to="/" />
     </Box>
 
     <Box>
-      <NavHeader title="Buttons components" />
-      <NavLinkWithIcon label="Buttons" to="buttons" />
+      <NavHeader title="Buttons" />
+      <NavLinkWithIcon label="Buttons" to="buttons" SideIcon={Click} />
     </Box>
 
     <Box>
-      <NavHeader title="Input components" />
-      <NavLinkWithIcon label="Text input" to="text-input" />
-      <NavLinkWithIcon label="Select" to="select" />
-      <NavLinkWithIcon label="Autocomplete" to="autocomplete" />
-      <NavLinkWithIcon label="MultiSelect" to="multiselect" />
-      <NavLinkWithIcon label="TagsInput" to="tags-input" />
+      <NavHeader title="Inputs" />
+      <NavLinkWithIcon label="Text input" to="text-input" SideIcon={Forms} />
+      <NavLinkWithIcon label="Select" to="select" SideIcon={Forms} />
+      <NavLinkWithIcon label="Autocomplete" to="autocomplete" SideIcon={Forms} />
+      <NavLinkWithIcon label="MultiSelect" to="multiselect" SideIcon={Forms} />
+      <NavLinkWithIcon label="TagsInput" to="tags-input" SideIcon={Forms} />
     </Box>
 
     <Box>
-      <NavHeader title="Date/time components" />
-      <NavLinkWithIcon label="Calendar" to="calendar" />
-      <NavLinkWithIcon label="DateInput" to="dateinput" />
-      <NavLinkWithIcon label="DateTime Picker" to="datetime-picker" />
+      <NavHeader title="Controls" />
+      <NavLinkWithIcon label="Text input" to="text-input" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Select" to="select" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Autocomplete" to="autocomplete" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="MultiSelect" to="multiselect" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="TagsInput" to="tags-input" SideIcon={EditCircle} />
+    </Box>
+
+    <Box>
+      <NavHeader title="Date/time" />
+      <NavLinkWithIcon label="Calendar" to="calendar" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="DateInput" to="dateinput" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="DateTime Picker" to="datetime-picker" SideIcon={CalendarPlus} />
     </Box>
 
     <Box>
       <NavHeader title="Others" />
-      <NavLinkWithIcon label="Typography" to="typography" />
-      <NavLinkWithIcon label="Notifications" to="notifications" />
-      <NavLinkWithIcon label="Other styles" to="other-styles" />
+      <NavLinkWithIcon label="Typography" to="typography" SideIcon={AlphabetLatin} />
+      <NavLinkWithIcon label="Notifications" to="notifications" SideIcon={Notification} />
+      <NavLinkWithIcon label="Other styles" to="other-styles" SideIcon={BoxModel2} />
       <Space h="xl" />
-      <NavLinkWithIcon label="Sample layout" to="sample-layout" />
-      <NavLinkWithIcon label="Test page" to="temp-test" />
+      <NavLinkWithIcon label="Sample layout" to="sample-layout" SideIcon={Paperclip} />
+      <NavLinkWithIcon label="Test page" to="temp-test" SideIcon={Paperclip} />
     </Box>
   </Stack>
 );
@@ -89,12 +112,12 @@ const NavHeader = (props: { title: string }) => (
   </Box>
 );
 
-const NavLinkWithIcon = (props: { label: string; to: string }) => (
-  <Link to={props.to}>
+const NavLinkWithIcon = ({ to, label, SideIcon = Components }: { label: string; to: string; SideIcon?: Icon }) => (
+  <Link to={to}>
     <NavLink
       leftSection={
         <ThemeIcon variant="transparent" size="sm" color="gray">
-          <Components />
+          <SideIcon />
         </ThemeIcon>
       }
       rightSection={
@@ -102,7 +125,7 @@ const NavLinkWithIcon = (props: { label: string; to: string }) => (
           <ChevronRight />
         </ThemeIcon>
       }
-      label={props.label}
+      label={label}
     />
   </Link>
 );
