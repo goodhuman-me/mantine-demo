@@ -6,11 +6,12 @@ import { buttonProps } from "./button/button-props";
 import { actionIconProps } from "./action-icon/action-icon-props";
 import { cardProps } from "./card/card-props";
 import { textInputProps } from "./text-input/text-input-props";
+import { selectProps } from "./select/select-props";
 
 import "./colors/colors.module.css";
 
 import activeClasses from "./common/active.module.css";
-import { selectProps } from "./select/select-props";
+import { autocompleteProps } from "./autocomplete/autocomplete-props";
 
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";
@@ -75,29 +76,13 @@ export const theme = createTheme({
     xs: "0.5rem",
   },
 
-  // Individual component overrides
   components: {
     Button: buttonProps,
     ActionIcon: actionIconProps,
     Card: cardProps,
     TextInput: textInputProps,
     Select: selectProps,
-
-    // TODO Select
-    // TODO Datepicker
-
-    // TODO Text vars (color overrides)
-    // Text: Text.extend({
-    // vars: () => ({}),
-    // }),
-
-    // TextInput: TextInput.extend({
-    //   styles: {
-    //     input: {
-    //       borderWidth: 2,
-    //     },
-    //   },
-    // }),
+    Autocomplete: autocompleteProps,
   },
 });
 

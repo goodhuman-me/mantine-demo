@@ -8,6 +8,7 @@ import TypographyPage from "../pages/individual/TypographyPage.tsx";
 import TextInputPage from "../pages/individual/TextInputPage.tsx";
 import OtherStylesPage from "../pages/individual/OtherStylesPage.tsx";
 import SelectPage from "../pages/individual/SelectPage.tsx";
+import AutocompletePage from "../pages/individual/AutocompletePage.tsx";
 
 const routes = (
   <>
@@ -15,8 +16,11 @@ const routes = (
       <Route path="/" element={<Home />} />
       <Route path="Buttons" element={<ButtonsPage />} />
       <Route path="Typography" element={<TypographyPage />} />
+
       <Route path="Text-field" element={<TextInputPage />} />
       <Route path="Select-field" element={<SelectPage />} />
+      <Route path="Autocomplete-field" element={<AutocompletePage />} />
+
       <Route path="Other-styles" element={<OtherStylesPage />} />
 
       <Route path="Sample-layout" element={<SampleLayout />} />

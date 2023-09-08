@@ -1,11 +1,11 @@
 import { Select } from "@mantine/core";
 
-import { textInputVars } from "../input/input-resolver";
+import { inputVars } from "../input/input-vars";
 import classes from "../input/input.module.css";
-import { inputDefaultProps } from "../input/input-constants";
+import { defaultInputProps } from "../input/default-props";
 
 export const selectProps = Select.extend({
   classNames: classes,
-  defaultProps: inputDefaultProps,
-  vars: textInputVars,
+  defaultProps: defaultInputProps,
+  vars: inputVars,
 });

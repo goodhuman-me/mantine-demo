@@ -1,5 +1,5 @@
-import { Container, Group, ThemeIcon, Title } from "@mantine/core";
-import { Components } from "tabler-icons-react";
+import { Anchor, Box, Container, Group, ThemeIcon, Title, Text } from "@mantine/core";
+import { Components, Link } from "tabler-icons-react";
 
 export default function HeaderContainer({ title, subtitle }: { title?: string; subtitle?: string }) {
   return (
@@ -13,19 +13,18 @@ export default function HeaderContainer({ title, subtitle }: { title?: string; s
             {title}
           </Title>
         </Group>
+
         {subtitle && (
-          <Title
-            order={4}
-            fw="normal"
-            styles={{
-              root: {
-                color: "var(--brand-body-dark-2)",
-              },
-            }}
-          >
+          <Title order={4} fw="normal" c="var(--brand-body-dark-1)" mb="0">
             {subtitle}
           </Title>
         )}
+
+        {/* <Box>
+          <Text>
+            Full documentation at <Anchor href="https://v7.mantine.dev/core/button">https://v7.mantine.dev/core/button</Anchor>
+          </Text>
+        </Box> */}
       </Container>
     </Container>
   );

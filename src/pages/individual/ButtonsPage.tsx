@@ -1,5 +1,5 @@
 import { CodeHighlight } from "@mantine/code-highlight";
-import { ActionIcon, Box, Button, Group, Text, Title } from "@mantine/core";
+import { ActionIcon, Anchor, Box, Button, Group, Text, Title } from "@mantine/core";
 import { Analyze } from "tabler-icons-react";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
@@ -111,7 +111,6 @@ export const ButtonsPage = () => (
         </Content.Area>
       </Content.Section>
     </Box>
-
     <Box id="sizes">
       <Content.Header>Sizes</Content.Header>
       <Content.Section title="Sizes">
@@ -126,7 +125,6 @@ export const ButtonsPage = () => (
         </Content.Area>
       </Content.Section>
     </Box>
-
     <Box id="icons">
       <Content.Header>Icons support</Content.Header>
 
@@ -234,7 +232,6 @@ export const ButtonsPage = () => (
         </Content.Area>
       </Content.Section>
     </Box>
-
     <Box id="loading-states">
       <Content.Header>Loading states</Content.Header>
       <Content.Section title="Variants">
@@ -299,7 +296,6 @@ export const ButtonsPage = () => (
         </Content.Area>
       </Content.Section>
     </Box>
-
     <Box id="loading-states">
       <Content.Header>Disabled states</Content.Header>
       <Content.Section title="Variants">
@@ -356,7 +352,6 @@ export const ButtonsPage = () => (
         </Content.Area>
       </Content.Section>
     </Box>
-
     <Box id="action-icons">
       <Content.Header>Action Icons</Content.Header>
 
