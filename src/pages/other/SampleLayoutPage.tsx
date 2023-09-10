@@ -1,6 +1,6 @@
 import { Button, Text } from "@mantine/core";
-import { Content } from "../components/Content";
-import DefaultLayout from "../layouts/DefaultLayout";
+import { Content } from "../../components/Content";
+import DefaultLayout from "../../layouts/DefaultLayout";
 
 export default function SampleLayout() {
   return (

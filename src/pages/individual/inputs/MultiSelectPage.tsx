@@ -31,11 +31,11 @@ export default function MultiSelectPage() {
         </Content.Text>
         <Content.Area>
           <Stack gap="lg">
-            <MultiSelect label="x-small" placeholder="Pick a value" data={["chocobo"]} size="xs" />
-            <MultiSelect label="small" placeholder="Pick a value" data={["chocobo"]} size="sm" />
-            <MultiSelect label="medium" placeholder="Pick a value" data={["chocobo"]} size="md" />
-            <MultiSelect label="large" placeholder="Pick a value" data={["chocobo"]} size="lg" />
-            <MultiSelect label="x-large" placeholder="Pick a value" data={["chocobo"]} size="xl" />
+            <MultiSelect label="x-small" placeholder="Pick a value" data={["Chocobo"]} size="xs" />
+            <MultiSelect label="small" placeholder="Pick a value" data={["Chocobo"]} size="sm" />
+            <MultiSelect label="medium" placeholder="Pick a value" data={["Chocobo"]} size="md" />
+            <MultiSelect label="large" placeholder="Pick a value" data={["Chocobo"]} size="lg" />
+            <MultiSelect label="x-large" placeholder="Pick a value" data={["Chocobo"]} size="xl" />
           </Stack>
         </Content.Area>
       </Content.Section>
@@ -47,8 +47,8 @@ export default function MultiSelectPage() {
         </Content.Text>
         <Content.Area>
           <Stack gap="lg">
-            <MultiSelect label="Error" placeholder="Pick a value" data={["chocobo"]} error />
-            <MultiSelect label="Disabled" placeholder="Pick a value" data={["chocobo"]} disabled />
+            <MultiSelect label="Error" placeholder="Pick a value" data={["Chocobo"]} error />
+            <MultiSelect label="Disabled" placeholder="Pick a value" data={["Chocobo"]} disabled />
           </Stack>
         </Content.Area>
       </Content.Section>

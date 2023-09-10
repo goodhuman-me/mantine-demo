@@ -4,10 +4,10 @@ import { Content } from "../../components/Content";
 
 export default function PageTemplate() {
   return (
-    <DefaultLayout title="Page title" subtitle="Sub title here">
-      <Content.Header>Header</Content.Header>
-      <Content.Section title="Section header">
-        <Content.Text>Section text</Content.Text>
+    <DefaultLayout title="Page" subtitle="Subtitle">
+      {/* <Content.Header>Header</Content.Header> */}
+      <Content.Section title="Sectionheader">
+        <Content.Text>Typical usage</Content.Text>
         <Content.Area>
           <Text>Content goes here</Text>
         </Content.Area>

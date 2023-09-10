@@ -16,10 +16,10 @@ import {
   EditCircle,
   Forms,
   Icon,
-  Notification,
-  Paperclip,
   Link as LinkIcon,
+  Notification,
   SourceCode,
+  Webhook,
 } from "tabler-icons-react";
 
 function App() {
@@ -64,7 +64,7 @@ function App() {
 export default App;
 
 const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
-  <Stack mt="md" gap="lg">
+  <Stack mt="md" gap="md">
     <Box>
       <NavHeader title="Home" />
       <NavLinkWithIcon label="Home" to="/" />
@@ -102,19 +102,27 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
     </Box>
 
     <Box>
+      <NavHeader title="Alerts" />
+      <NavLinkWithIcon label="Alert Hero" to="calendar" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="Alert Inline" to="calendar" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="Alert Toast" to="calendar" SideIcon={CalendarPlus} />
+    </Box>
+
+    <Box>
       <NavHeader title="Others" />
       <NavLinkWithIcon label="Typography" to="typography" SideIcon={AlphabetLatin} />
       <NavLinkWithIcon label="Notifications" to="notifications" SideIcon={Notification} />
       <NavLinkWithIcon label="Other styles" to="other-styles" SideIcon={BoxModel2} />
       <Space h="xl" />
-      <NavLinkWithIcon label="Sample layout" to="sample-layout" SideIcon={Paperclip} />
-      <NavLinkWithIcon label="Test page" to="temp-test" SideIcon={Paperclip} />
+      <NavLinkWithIcon label="Sample layout" to="sample-layout" SideIcon={Webhook} />
+      <NavLinkWithIcon label="Test page" to="temp-test" SideIcon={Webhook} />
+      <NavLinkWithIcon label="Components progress" to="components-progress" SideIcon={Webhook} />
     </Box>
   </Stack>
 );
 
 const NavHeader = (props: { title: string }) => (
-  <Box px="sm" pb="xs">
+  <Box px="xs" pb="xs">
     <Title order={5}>{props.title}</Title>
   </Box>
 );
@@ -133,6 +141,7 @@ const NavLinkWithIcon = ({ to, label, SideIcon = Components }: { label: string; 
         </ThemeIcon>
       }
       label={label}
+      p="0.3rem"
     />
   </Link>
 );

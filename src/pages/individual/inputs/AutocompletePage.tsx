@@ -33,11 +33,11 @@ export default function AutocompletePage() {
 
         <Content.Area>
           <Stack gap="lg">
-            <Autocomplete size="xs" label="x-small" placeholder="Pick a value" data={["chocobo"]} />
-            <Autocomplete size="sm" label="small" placeholder="Pick a value" data={["chocobo"]} />
-            <Autocomplete size="md" label="medium" placeholder="Pick a value" data={["chocobo"]} />
-            <Autocomplete size="lg" label="large" placeholder="Pick a value" data={["chocobo"]} />
-            <Autocomplete size="xl" label="x-large" placeholder="Pick a value" data={["chocobo"]} />
+            <Autocomplete size="xs" label="x-small" placeholder="Pick a value" data={["Chocobo"]} />
+            <Autocomplete size="sm" label="small" placeholder="Pick a value" data={["Chocobo"]} />
+            <Autocomplete size="md" label="medium" placeholder="Pick a value" data={["Chocobo"]} />
+            <Autocomplete size="lg" label="large" placeholder="Pick a value" data={["Chocobo"]} />
+            <Autocomplete size="xl" label="x-large" placeholder="Pick a value" data={["Chocobo"]} />
           </Stack>
         </Content.Area>
       </Content.Section>
@@ -48,8 +48,8 @@ export default function AutocompletePage() {
         </Content.Text>
         <Content.Area>
           <Stack gap="lg">
-            <Autocomplete label="Error" placeholder="Pick a value" data={["chocobo"]} error />
-            <Autocomplete label="Disabled" placeholder="Pick a value" data={["chocobo"]} disabled />
+            <Autocomplete label="Error" placeholder="Pick a value" data={["Chocobo"]} error />
+            <Autocomplete label="Disabled" placeholder="Pick a value" data={["Chocobo"]} disabled />
           </Stack>
         </Content.Area>
       </Content.Section>

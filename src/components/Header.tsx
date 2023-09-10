@@ -15,7 +15,7 @@ export default function HeaderContainer({ title, subtitle }: { title?: string; s
         </Group>
 
         {subtitle && (
-          <Title order={4} fw="normal" c="var(--brand-body-dark-1)" mb="0">
+          <Title order={3} fw="normal" c="var(--brand-body-dark-1)" mb="0">
             {subtitle}
           </Title>
         )}

@@ -1,6 +1,6 @@
 import { Text, Button } from "@mantine/core";
-import DefaultLayout from "../layouts/DefaultLayout";
-import { Content } from "../components/Content";
+import DefaultLayout from "../../layouts/DefaultLayout";
+import { Content } from "../../components/Content";
 
 export default function TempTestPage() {
   return (

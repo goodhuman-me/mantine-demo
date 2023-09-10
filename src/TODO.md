@@ -10,17 +10,19 @@
 
 ### Alert hero
 
-- In progress
+- Page created
 
 ### Alert Inline
 
-- In progress
+- Page created
 
 ### Alert toast
 
-- In progress
+- Page created
 
 ### Breadcrumb
+
+- Page created
 
 ### 🕕 Button
 
@@ -28,17 +30,23 @@
 
 ### Calendar
 
+- Unstyled
+
 ### Checkbox & Radio
+
+- Unstyled
 
 ### Data display
 
+- Design not done
+
 ### Date picker
 
-- In progress
+- Unstyled
 
 ### Drawer
 
-- In progress
+- Unstyled
 
 ### Dropdown
 

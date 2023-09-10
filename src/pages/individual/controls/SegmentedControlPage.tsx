@@ -1,6 +1,6 @@
 import { Title, Text, Code, SegmentedControl, Stack, Center } from "@mantine/core";
-import DefaultLayout from "../../layouts/DefaultLayout";
-import { Content } from "../../components/Content";
+import DefaultLayout from "../../../layouts/DefaultLayout";
+import { Content } from "../../../components/Content";
 import { BrandNeteaseMusic, GuitarPick, Mailbox, Music } from "tabler-icons-react";
 
 export default function SegmentedControlPage() {
