@@ -74,7 +74,7 @@ export default function ColorsPage() {
               <ColorItem span={2} bg="var(--color-lavender-main)" category="Lavender" color="lavender-main" tc="white" />
               <ColorItem span={2} bg="var(--color-lavender-light-1)" category="Lavender" color="lavender-l-1" tc="var(--color-lavender-dark-2)" />
               <ColorItem span={2} bg="var(--color-lavender-light-2)" category="Lavender" color="lavender-l-2" tc="var(--color-lavender-dark-2)" />
-              <ColorItem span={2} bg="var(--color-lavender-light-2)" category="Lavender" color="lavender-ref" tc="var(--color-lavender-dark-2)" />
+              <ColorItem span={2} bg="var(--color-lavender-ref)" category="Lavender" color="lavender-ref" tc="var(--color-lavender-light-2)" />
             </Grid>
           </Box>
 
@@ -89,7 +89,7 @@ export default function ColorsPage() {
               <ColorItem span={2} bg="var(--color-canary-main)" category="Canary" color="canary-main" tc="white" />
               <ColorItem span={2} bg="var(--color-canary-light-1)" category="Canary" color="canary-l-1" tc="var(--color-canary-dark-2)" />
               <ColorItem span={2} bg="var(--color-canary-light-2)" category="Canary" color="canary-l-2" tc="var(--color-canary-dark-2)" />
-              <ColorItem span={2} bg="var(--color-canary-light-2)" category="Canary" color="canary-ref" tc="var(--color-canary-dark-2)" />
+              <ColorItem span={2} bg="var(--color-canary-ref)" category="Canary" color="canary-ref" tc="var(--color-canary-light-2)" />
             </Grid>
           </Box>
 
@@ -104,7 +104,7 @@ export default function ColorsPage() {
               <ColorItem span={2} bg="var(--color-lilac-main)" category="Lilac" color="lilac-main" tc="white" />
               <ColorItem span={2} bg="var(--color-lilac-light-1)" category="Lilac" color="lilac-l-1" tc="var(--color-lilac-dark-2)" />
               <ColorItem span={2} bg="var(--color-lilac-light-2)" category="Lilac" color="lilac-l-2" tc="var(--color-lilac-dark-2)" />
-              <ColorItem span={2} bg="var(--color-lilac-light-2)" category="Lilac" color="lilac-ref" tc="var(--color-lilac-dark-2)" />
+              <ColorItem span={2} bg="var(--color-lilac-ref)" category="Lilac" color="lilac-ref" tc="var(--color-lilac-light-2)" />
             </Grid>
           </Box>
 
@@ -119,7 +119,7 @@ export default function ColorsPage() {
               <ColorItem span={2} bg="var(--color-blue-main)" category="Blue" color="blue-main" tc="white" />
               <ColorItem span={2} bg="var(--color-blue-light-1)" category="Blue" color="blue-l-1" tc="var(--color-blue-dark-2)" />
               <ColorItem span={2} bg="var(--color-blue-light-2)" category="Blue" color="blue-l-2" tc="var(--color-blue-dark-2)" />
-              <ColorItem span={2} bg="var(--color-blue-light-2)" category="Blue" color="blue-ref" tc="var(--color-blue-dark-2)" />
+              <ColorItem span={2} bg="var(--color-blue-ref)" category="Blue" color="blue-ref" tc="var(--color-blue-light-2)" />
             </Grid>
           </Box>
 
@@ -134,7 +134,7 @@ export default function ColorsPage() {
               <ColorItem span={2} bg="var(--color-green-main)" category="Green" color="green-main" tc="white" />
               <ColorItem span={2} bg="var(--color-green-light-1)" category="Green" color="green-l-1" tc="var(--color-green-dark-2)" />
               <ColorItem span={2} bg="var(--color-green-light-2)" category="Green" color="green-l-2" tc="var(--color-green-dark-2)" />
-              <ColorItem span={2} bg="var(--color-green-light-2)" category="Green" color="green-ref" tc="var(--color-green-dark-2)" />
+              <ColorItem span={2} bg="var(--color-green-ref)" category="Green" color="green-ref" tc="var(--color-green-light-2)" />
             </Grid>
           </Box>
 
@@ -149,7 +149,7 @@ export default function ColorsPage() {
               <ColorItem span={2} bg="var(--color-orange-main)" category="Orange" color="orange-main" tc="white" />
               <ColorItem span={2} bg="var(--color-orange-light-1)" category="Orange" color="orange-l-1" tc="var(--color-orange-dark-2)" />
               <ColorItem span={2} bg="var(--color-orange-light-2)" category="Orange" color="orange-l-2" tc="var(--color-orange-dark-2)" />
-              <ColorItem span={2} bg="var(--color-orange-light-2)" category="Orange" color="orange-ref" tc="var(--color-orange-dark-2)" />
+              <ColorItem span={2} bg="var(--color-orange-ref)" category="Orange" color="orange-ref" tc="var(--color-orange-light-2)" />
             </Grid>
           </Box>
 
@@ -164,7 +164,7 @@ export default function ColorsPage() {
               <ColorItem span={2} bg="var(--color-red-main)" category="Red" color="red-main" tc="white" />
               <ColorItem span={2} bg="var(--color-red-light-1)" category="Red" color="red-l-1" tc="var(--color-red-dark-2)" />
               <ColorItem span={2} bg="var(--color-red-light-2)" category="Red" color="red-l-2" tc="var(--color-red-dark-2)" />
-              <ColorItem span={2} bg="var(--color-red-light-2)" category="Red" color="red-ref" tc="var(--color-red-dark-2)" />
+              <ColorItem span={2} bg="var(--color-red-ref)" category="Red" color="red-ref" tc="var(--color-red-light-2)" />
             </Grid>
           </Box>
 
@@ -194,7 +194,7 @@ export default function ColorsPage() {
               <ColorItem span={2} bg="var(--color-ocean-main)" category="Ocean" color="ocean-main" tc="white" />
               <ColorItem span={2} bg="var(--color-ocean-light-1)" category="Ocean" color="ocean-l-1" tc="var(--color-ocean-dark-2)" />
               <ColorItem span={2} bg="var(--color-ocean-light-2)" category="Ocean" color="ocean-l-2" tc="var(--color-ocean-dark-2)" />
-              <ColorItem span={2} bg="var(--color-ocean-light-2)" category="Ocean" color="ocean-ref" tc="var(--color-ocean-dark-2)" />
+              {/* <ColorItem span={2} bg="var(--color-ocean-main)" category="Ocean" color="ocean-ref" tc="var(--color-ocean-ref)" /> */}
             </Grid>
           </Box>
 
