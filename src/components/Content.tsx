@@ -34,7 +34,11 @@ const ContentHeader = ({ order = 2, children }: PropsWithChildren<{ order?: Titl
   </Box>
 );
 
-const ContentText = (props: PropsWithChildren) => <Text c="var(--brand-body-dark-2)">{props.children}</Text>;
+const ContentText = ({ fw = "normal", children }: PropsWithChildren<{ fw?: string }>) => (
+  <Text c="var(--brand-body-dark-2)" fw={fw}>
+    {children}
+  </Text>
+);
 
 const ContentArea = (props: PropsWithChildren<{ mb?: StylePropSpacingValue }>) => (
   <Box mt="xs" mb={props.mb}>

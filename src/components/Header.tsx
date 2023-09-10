@@ -1,10 +1,16 @@
 import { Anchor, Box, Container, Group, ThemeIcon, Title, Text } from "@mantine/core";
 import { Components, Link } from "tabler-icons-react";
 
-export default function HeaderContainer({ title, subtitle }: { title?: string; subtitle?: string }) {
+type HeaderContainerProps = {
+  title?: string;
+  subtitle?: string;
+  headerSize?: string;
+};
+
+export default function HeaderContainer({ title, subtitle, headerSize = "md" }: HeaderContainerProps) {
   return (
     <Container bg="var(--brand-body-light-3)" className="border-gray-200 border-solid border-0 border-b">
-      <Container size="md" p="xl">
+      <Container size={headerSize} p="xl">
         <Group align="center" gap={"0.1rem"} className={subtitle && "mb-3"}>
           <ThemeIcon variant="filled" mr="xs" color="var(--brand-accent-main)">
             <Components />

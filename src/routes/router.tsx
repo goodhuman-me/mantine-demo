@@ -25,6 +25,7 @@ import AlertHeroPage from "../pages/individual/alerts/AlertHeroPage.tsx";
 import AlertInlinePage from "../pages/individual/alerts/AlertInlinePage.tsx";
 import AlertToastPage from "../pages/individual/alerts/AlertToastPage.tsx";
 import ComponentProgressPage from "../pages/other/ComponentProgressPage.tsx";
+import ColorsPage from "../pages/other/ColorsPage.tsx";
 
 const routes = (
   <>
@@ -63,6 +64,7 @@ const routes = (
       <Route path="typography" element={<TypographyPage />} />
       <Route path="notifications" element={<NotificationsPage />} />
       <Route path="other-styles" element={<OtherStylesPage />} />
+      <Route path="colors" element={<ColorsPage />} />
 
       {/* Samples/tests */}
       <Route path="sample-layout" element={<SampleLayout />} />

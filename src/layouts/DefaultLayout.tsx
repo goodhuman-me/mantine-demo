@@ -5,15 +5,17 @@ import { PropsWithChildren } from "react";
 type DefaultLayoutProps = PropsWithChildren<{
   title?: string;
   subtitle?: string;
+  headerSize?: string;
+  containerSize?: string;
 }>;
 
-export default function DefaultLayout(props: DefaultLayoutProps) {
+export default function DefaultLayout({ title, subtitle, headerSize = "md", containerSize = "md", children }: DefaultLayoutProps) {
   return (
     <Container fluid className="p-0">
-      <HeaderContainer title={props.title} subtitle={props.subtitle} />
+      <HeaderContainer title={title} subtitle={subtitle} headerSize={headerSize} />
 
-      <Container size="md" p="xl">
-        {props.children}
+      <Container size={containerSize} p="xl">
+        {children}
       </Container>
     </Container>
   );

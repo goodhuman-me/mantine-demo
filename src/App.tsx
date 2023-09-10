@@ -12,6 +12,7 @@ import {
   CircleCheck,
   CircleDot,
   Click,
+  ColorFilter,
   Components,
   EditCircle,
   Forms,
@@ -110,6 +111,7 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
 
     <Box>
       <NavHeader title="Others" />
+      <NavLinkWithIcon label="Colors" to="colors" SideIcon={ColorFilter} />
       <NavLinkWithIcon label="Typography" to="typography" SideIcon={AlphabetLatin} />
       <NavLinkWithIcon label="Notifications" to="notifications" SideIcon={Notification} />
       <NavLinkWithIcon label="Other styles" to="other-styles" SideIcon={BoxModel2} />
