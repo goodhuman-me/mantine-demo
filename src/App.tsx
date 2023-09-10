@@ -103,9 +103,9 @@ const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
 
     <Box>
       <NavHeader title="Alerts" />
-      <NavLinkWithIcon label="Alert Hero" to="calendar" SideIcon={CalendarPlus} />
-      <NavLinkWithIcon label="Alert Inline" to="calendar" SideIcon={CalendarPlus} />
-      <NavLinkWithIcon label="Alert Toast" to="calendar" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="Alert Hero" to="alert-hero" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="Alert Inline" to="alert-inline" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="Alert Toast" to="alert-toast" SideIcon={CalendarPlus} />
     </Box>
 
     <Box>
