@@ -17,7 +17,6 @@ import {
   ColorFilter,
   Components,
   EditCircle,
-  FileHorizontal,
   FileSearch,
   Filter,
   Forms,
@@ -101,26 +100,34 @@ const NavMenu = () => (
 
     <Box>
       <NavHeader title="Controls" />
-      <NavLinkWithIcon label="Segmented Control" to="segmented-control" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Checkbox" to="checkbox" SideIcon={CircleCheck} />
-      <NavLinkWithIcon label="Radio" to="radio" SideIcon={CircleDot} />
-      <NavLinkWithIcon label="Breadcrumbs" to="breadcrumbs" SideIcon={EditCircle} />
-      <NavLinkWithIcon label="Pagination" to="pagination" SideIcon={EditCircle} />
-      <NavLinkWithIcon label="Tabs" to="tabs" SideIcon={EditCircle} />
-      <NavLinkWithIcon label="Drawer" to="drawer" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Dropdown" to="dropdown" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Filter" to="filter" SideIcon={Filter} />
       <NavLinkWithIcon label="Label" to="label" SideIcon={Tag} />
       <NavLinkWithIcon label="Link" to="link" SideIcon={LinkIcon} />
-      <NavLinkWithIcon label="Modal" to="modal" SideIcon={Target} />
-      <NavLinkWithIcon label="Popover" to="popover" SideIcon={StackPop} />
       <NavLinkWithIcon label="Progress Bar" to="progress-bar" SideIcon={Barbell} />
+      <NavLinkWithIcon label="Radio" to="radio" SideIcon={CircleDot} />
       <NavLinkWithIcon label="Search File" to="search-file" SideIcon={FileSearch} />
       <NavLinkWithIcon label="Search General" to="search-general" SideIcon={InputSearch} />
+      <NavLinkWithIcon label="Text" to="text" SideIcon={TextCaption} />
+    </Box>
+
+    <Box>
+      <NavHeader title="Popovers & modals" />
+      <NavLinkWithIcon label="Drawer" to="drawer" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Modal" to="modal" SideIcon={Target} />
+      <NavLinkWithIcon label="Popover" to="popover" SideIcon={StackPop} />
+      <NavLinkWithIcon label="Tooltip" to="tooltip" SideIcon={Tooltip} />
+    </Box>
+
+    <Box>
+      <NavHeader title="Navigation" />
+      <NavLinkWithIcon label="Breadcrumbs" to="breadcrumbs" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Pagination" to="pagination" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Segmented Control" to="segmented-control" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Steps Horizontal" to="steps-horizontal" SideIcon={GripHorizontal} />
       <NavLinkWithIcon label="Steps Vertical" to="steps-vertical" SideIcon={GripVertical} />
-      <NavLinkWithIcon label="Text" to="text" SideIcon={TextCaption} />
-      <NavLinkWithIcon label="Tooltip" to="tooltip" SideIcon={Tooltip} />
+      <NavLinkWithIcon label="Tabs" to="tabs" SideIcon={EditCircle} />
     </Box>
 
     <Box>
