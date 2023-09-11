@@ -1,6 +1,7 @@
 import { Title, Text, Code, Center, Breadcrumbs, Anchor } from "@mantine/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
+import { ChevronRight } from "tabler-icons-react";
 
 // const items = [
 //   { title: "Mantine", href: "#" },
@@ -33,6 +34,26 @@ export default function BreadCrumbsPage() {
               Delays
             </Anchor>
             <Text c="var(--brand-body-dark-1)">Replika XT</Text>
+          </Breadcrumbs>
+        </Content.Area>
+      </Content.Section>
+
+      <Content.Section title="Alternate separator">
+        <Content.Text>
+          Alternate <Code>Breadcrumbs</Code> separator <br />
+        </Content.Text>
+        <Content.Area>
+          <Breadcrumbs separator={<ChevronRight size={14} color="var(--brand-body-main)" />}>
+            <Anchor c="var(--brand-accent-main)" href="#wallet">
+              D16
+            </Anchor>
+            <Anchor c="var(--brand-accent-main)" href="#wallet">
+              Instruments
+            </Anchor>
+            <Anchor c="var(--brand-accent-main)" href="#wallet">
+              Drums
+            </Anchor>
+            <Text c="var(--brand-body-dark-1)">Drumazon 2</Text>
           </Breadcrumbs>
         </Content.Area>
       </Content.Section>
