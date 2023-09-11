@@ -5,7 +5,9 @@ import { AppShell, Box, Burger, Code, Group, NavLink, Space, Stack, ThemeIcon, T
 import { useDisclosure } from "@mantine/hooks";
 
 import {
+  AlertCircle,
   AlphabetLatin,
+  Barbell,
   BoxModel2,
   CalendarPlus,
   ChevronRight,
@@ -15,11 +17,22 @@ import {
   ColorFilter,
   Components,
   EditCircle,
+  FileHorizontal,
+  FileSearch,
+  Filter,
   Forms,
+  GripHorizontal,
+  GripVertical,
   Icon,
+  InputSearch,
   Link as LinkIcon,
   Notification,
   SourceCode,
+  StackPop,
+  Tag,
+  Target,
+  TextCaption,
+  Tooltip,
   Webhook,
 } from "tabler-icons-react";
 
@@ -91,9 +104,23 @@ const NavMenu = () => (
       <NavLinkWithIcon label="Segmented Control" to="segmented-control" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Checkbox" to="checkbox" SideIcon={CircleCheck} />
       <NavLinkWithIcon label="Radio" to="radio" SideIcon={CircleDot} />
-      <NavLinkWithIcon label="Breadcrumbs" to="breadcrumbs" SideIcon={LinkIcon} />
-      <NavLinkWithIcon label="Pagination" to="pagination" SideIcon={LinkIcon} />
-      <NavLinkWithIcon label="Tabs" to="tabs" SideIcon={LinkIcon} />
+      <NavLinkWithIcon label="Breadcrumbs" to="breadcrumbs" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Pagination" to="pagination" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Tabs" to="tabs" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Drawer" to="drawer" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Dropdown" to="dropdown" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Filter" to="filter" SideIcon={Filter} />
+      <NavLinkWithIcon label="Label" to="label" SideIcon={Tag} />
+      <NavLinkWithIcon label="Link" to="link" SideIcon={LinkIcon} />
+      <NavLinkWithIcon label="Modal" to="modal" SideIcon={Target} />
+      <NavLinkWithIcon label="Popover" to="popover" SideIcon={StackPop} />
+      <NavLinkWithIcon label="Progress Bar" to="progress-bar" SideIcon={Barbell} />
+      <NavLinkWithIcon label="Search File" to="search-file" SideIcon={FileSearch} />
+      <NavLinkWithIcon label="Search General" to="search-general" SideIcon={InputSearch} />
+      <NavLinkWithIcon label="Steps Horizontal" to="steps-horizontal" SideIcon={GripHorizontal} />
+      <NavLinkWithIcon label="Steps Vertical" to="steps-vertical" SideIcon={GripVertical} />
+      <NavLinkWithIcon label="Text" to="text" SideIcon={TextCaption} />
+      <NavLinkWithIcon label="Tooltip" to="tooltip" SideIcon={Tooltip} />
     </Box>
 
     <Box>
@@ -105,9 +132,9 @@ const NavMenu = () => (
 
     <Box>
       <NavHeader title="Alerts" />
-      <NavLinkWithIcon label="Alert Hero" to="alert-hero" SideIcon={CalendarPlus} />
-      <NavLinkWithIcon label="Alert Inline" to="alert-inline" SideIcon={CalendarPlus} />
-      <NavLinkWithIcon label="Alert Toast" to="alert-toast" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="Alert Hero" to="alert-hero" SideIcon={AlertCircle} />
+      <NavLinkWithIcon label="Alert Inline" to="alert-inline" SideIcon={AlertCircle} />
+      <NavLinkWithIcon label="Alert Toast" to="alert-toast" SideIcon={AlertCircle} />
     </Box>
 
     <Box>

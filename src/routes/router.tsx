@@ -26,6 +26,20 @@ import AlertInlinePage from "../pages/individual/alerts/AlertInlinePage.tsx";
 import AlertToastPage from "../pages/individual/alerts/AlertToastPage.tsx";
 import ComponentProgressPage from "../pages/other/ComponentProgressPage.tsx";
 import ColorsPage from "../pages/other/ColorsPage.tsx";
+import DrawerPage from "../pages/individual/controls/DrawerPage.tsx";
+import DropdownPage from "../pages/individual/controls/DropdownPage.tsx";
+import FilterPage from "../pages/individual/controls/FilterPage.tsx";
+import LabelPage from "../pages/individual/controls/LabelPage.tsx";
+import LinkPage from "../pages/individual/controls/LinkPage.tsx";
+import ModalPage from "../pages/individual/controls/ModalPage.tsx";
+import PopoverPage from "../pages/individual/controls/PopoverPage.tsx";
+import ProgressBarPage from "../pages/individual/controls/ProgressBarPage.tsx";
+import SearchFilePage from "../pages/individual/controls/SearchFilePage.tsx";
+import SearchGeneralPage from "../pages/individual/controls/SearchGeneralPage.tsx";
+import StepsHorizontalPage from "../pages/individual/controls/StepsHorizoontalPage.tsx";
+import StepsVerticalPage from "../pages/individual/controls/StepsVerticalPage.tsx";
+import TextPage from "../pages/individual/controls/TextPage.tsx";
+import TooltipPage from "../pages/individual/controls/TooltipPage.tsx";
 
 const routes = (
   <>
@@ -49,6 +63,20 @@ const routes = (
       <Route path="breadcrumbs" element={<BreadCrumbsPage />} />
       <Route path="pagination" element={<PaginationPage />} />
       <Route path="tabs" element={<TabsPage />} />
+      <Route path="drawer" element={<DrawerPage />} />
+      <Route path="dropdown" element={<DropdownPage />} />
+      <Route path="filter" element={<FilterPage />} />
+      <Route path="label" element={<LabelPage />} />
+      <Route path="link" element={<LinkPage />} />
+      <Route path="modal" element={<ModalPage />} />
+      <Route path="popover" element={<PopoverPage />} />
+      <Route path="progress-bar" element={<ProgressBarPage />} />
+      <Route path="search-file" element={<SearchFilePage />} />
+      <Route path="search-general" element={<SearchGeneralPage />} />
+      <Route path="steps-horizontal" element={<StepsHorizontalPage />} />
+      <Route path="steps-vertical" element={<StepsVerticalPage />} />
+      <Route path="text" element={<TextPage />} />
+      <Route path="tooltip" element={<TooltipPage />} />
 
       {/*Date/time  */}
       <Route path="calendar" element={<CalendarPage />} />

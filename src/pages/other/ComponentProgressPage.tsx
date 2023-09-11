@@ -1,17 +1,10 @@
-import { Table, Title, Text, Code, Progress } from "@mantine/core";
+import { Table, Title, Text, Code, Progress, Box } from "@mantine/core";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import { Content } from "../../components/Content";
 
 const { Thead, Tbody, Th, Tr, Td } = Table;
 
 const progressStatus = {
-  // p0: "Design not done",
-  // p1: "Ready for development",
-  // p2: "In progress",
-  // p3: "Page created",
-  // p4: "Unstyled component",
-  // p5: "Minor touch ups",
-  // p6: "Complete",
   p0: {
     label: "🕕 Design",
     color: "cyan",
@@ -62,11 +55,59 @@ function ComponentRow(props: { component: string; progress: keyof typeof progres
   );
 }
 
+function StatusDescriptionTable() {
+  return (
+    <Content.Section divider={false} mb="5rem">
+      <Content.Area>
+        <Table>
+          <Thead>
+            <Tr>
+              <Th>Status</Th>
+              <Th>Description</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            <Tr>
+              <Td>Design</Td>
+              <Td>Component still in design phase; no code has been written yet.</Td>
+            </Tr>
+            <Tr>
+              <Td>Development</Td>
+              <Td>Design complete; component is ready for development.</Td>
+            </Tr>
+            <Tr>
+              <Td>In progress</Td>
+              <Td>Component is currently being developed.</Td>
+            </Tr>
+            <Tr>
+              <Td>Page created</Td>
+              <Td>Page created for component but component not done yet.</Td>
+            </Tr>
+            <Tr>
+              <Td>Unstyled component</Td>
+              <Td>Component page created and component is done but not styled yet.</Td>
+            </Tr>
+            <Tr>
+              <Td>Minor touch-ups</Td>
+              <Td>Component is styled but needs some minor touch-ups to be done before it can be considered complete.</Td>
+            </Tr>
+            <Tr>
+              <Td>Complete</Td>
+              <Td>Component is complete and ready to be used in production.</Td>
+            </Tr>
+          </Tbody>
+        </Table>
+      </Content.Area>
+    </Content.Section>
+  );
+}
+
 export default function ComponentProgressPage() {
   return (
     <DefaultLayout title="Components progress" subtitle="Progress for completed components">
-      {/* <Content.Header>Header</Content.Header> */}
-      <Content.Section title="List of components">
+      <StatusDescriptionTable />
+
+      <Content.Section title="List of components" divider={false}>
         <Content.Text>Current state of components</Content.Text>
         <Content.Area>
           <Table verticalSpacing="sm">
@@ -86,30 +127,30 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Checkbox" progress="p3" />
               <ComponentRow component="Data display" progress="p0" />
               <ComponentRow component="Date picker" progress="p4" />
-              <ComponentRow component="Drawer" progress="p1" />
-              <ComponentRow component="Dropdown" progress="p1" />
-              <ComponentRow component="Filter button" progress="p1" />
+              <ComponentRow component="Drawer" progress="p3" />
+              <ComponentRow component="Dropdown" progress="p3" />
+              <ComponentRow component="Filter button" progress="p3" />
               <ComponentRow component="Inline (edit table)" progress="p1" />
-              <ComponentRow component="Label" progress="p1" />
-              <ComponentRow component="Link" progress="p1" />
+              <ComponentRow component="Label" progress="p3" />
+              <ComponentRow component="Link" progress="p3" />
               <ComponentRow component="List field - Contextual menu" progress="p1" />
               <ComponentRow component="List field - Display" progress="p1" />
               <ComponentRow component="List field - Select" progress="p1" />
-              <ComponentRow component="Modal" progress="p1" />
-              <ComponentRow component="Pagination" progress="p1" />
-              <ComponentRow component="Popover" progress="p1" />
-              <ComponentRow component="Progress bar" progress="p1" />
+              <ComponentRow component="Modal" progress="p3" />
+              <ComponentRow component="Pagination" progress="p3" />
+              <ComponentRow component="Popover" progress="p3" />
+              <ComponentRow component="Progress bar" progress="p3" />
               <ComponentRow component="Progress circle" progress="p1" />
-              <ComponentRow component="Search file" progress="p1" />
-              <ComponentRow component="Search general" progress="p1" />
+              <ComponentRow component="Search file" progress="p3" />
+              <ComponentRow component="Search general" progress="p3" />
               <ComponentRow component="Select field" progress="p4" />
-              <ComponentRow component="Steps Horizontal" progress="p1" />
-              <ComponentRow component="Steps Vertical" progress="p1" />
+              <ComponentRow component="Steps Horizontal" progress="p3" />
+              <ComponentRow component="Steps Vertical" progress="p3" />
               <ComponentRow component="Tab button" progress="p3" />
               <ComponentRow component="Tables" progress="p0" />
               <ComponentRow component="Text field" progress="p5" />
               <ComponentRow component="Title group" progress="p1" />
-              <ComponentRow component="Tooltip" progress="p1" />
+              <ComponentRow component="Tooltip" progress="p3" />
               <ComponentRow component="Top navigation" progress="p1" />
               <ComponentRow component="Widget" progress="p0" />
             </Tbody>
