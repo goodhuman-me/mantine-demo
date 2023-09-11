@@ -36,8 +36,7 @@ import PopoverPage from "../pages/individual/controls/PopoverPage.tsx";
 import ProgressBarPage from "../pages/individual/controls/ProgressBarPage.tsx";
 import SearchFilePage from "../pages/individual/controls/SearchFilePage.tsx";
 import SearchGeneralPage from "../pages/individual/controls/SearchGeneralPage.tsx";
-import StepsHorizontalPage from "../pages/individual/controls/StepsHorizoontalPage.tsx";
-import StepsVerticalPage from "../pages/individual/controls/StepsVerticalPage.tsx";
+import StepsPage from "../pages/individual/controls/StepsPage.tsx";
 import TextPage from "../pages/individual/controls/TextPage.tsx";
 import TooltipPage from "../pages/individual/controls/TooltipPage.tsx";
 
@@ -73,8 +72,7 @@ const routes = (
       <Route path="progress-bar" element={<ProgressBarPage />} />
       <Route path="search-file" element={<SearchFilePage />} />
       <Route path="search-general" element={<SearchGeneralPage />} />
-      <Route path="steps-horizontal" element={<StepsHorizontalPage />} />
-      <Route path="steps-vertical" element={<StepsVerticalPage />} />
+      <Route path="steps-horizontal" element={<StepsPage />} />
       <Route path="text" element={<TextPage />} />
       <Route path="tooltip" element={<TooltipPage />} />
 

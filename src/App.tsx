@@ -126,7 +126,6 @@ const NavMenu = () => (
       <NavLinkWithIcon label="Pagination" to="pagination" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Segmented Control" to="segmented-control" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Steps Horizontal" to="steps-horizontal" SideIcon={GripHorizontal} />
-      <NavLinkWithIcon label="Steps Vertical" to="steps-vertical" SideIcon={GripVertical} />
       <NavLinkWithIcon label="Tabs" to="tabs" SideIcon={EditCircle} />
     </Box>
 
