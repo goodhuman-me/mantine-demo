@@ -52,7 +52,7 @@ function App() {
       </AppShell.Header>
 
       <AppShell.Navbar style={{ overflowY: "auto" }}>
-        <NavMenu routes={routes} />
+        <NavMenu />
       </AppShell.Navbar>
 
       <AppShell.Main>
@@ -64,7 +64,8 @@ function App() {
 
 export default App;
 
-const NavMenu = ({ routes }: { routes: { path: string }[] }) => (
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const NavMenu = () => (
   <Stack mt="md" gap="md">
     <Box>
       <NavHeader title="Home" />

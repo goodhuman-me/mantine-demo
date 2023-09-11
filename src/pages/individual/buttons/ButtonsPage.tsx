@@ -185,7 +185,7 @@ export const ButtonsPage = () => (
       </Content.Section>
       <Content.Section title="Icons with variants/colors">
         <Content.Area>
-          <Group gap="md" direction="column">
+          <Group gap="md">
             <Group gap="md" align="center">
               <Button color="accent" variant="filled" leftSection={<Analyze size={14} />}>
                 Accent
@@ -236,7 +236,7 @@ export const ButtonsPage = () => (
       <Content.Header>Loading states</Content.Header>
       <Content.Section title="Variants">
         <Content.Area>
-          <Group direction="column" gap="lg">
+          <Group gap="lg">
             <Text>Filled</Text>
             <Group gap="md">
               <Button loading variant="filled" color="accent">
@@ -300,7 +300,7 @@ export const ButtonsPage = () => (
       <Content.Header>Disabled states</Content.Header>
       <Content.Section title="Variants">
         <Content.Area>
-          <Group direction="column" gap="lg">
+          <Group gap="lg">
             <Text>Filled</Text>
             <Group gap="md">
               <Button disabled variant="filled" color="accent">
