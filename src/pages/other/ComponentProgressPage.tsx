@@ -139,7 +139,7 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Modal" progress="p3" />
               <ComponentRow component="Pagination" progress="p4" />
               <ComponentRow component="Popover" progress="p3" />
-              <ComponentRow component="Progress bar" progress="p3" />
+              <ComponentRow component="Progress bar" progress="p4" />
               <ComponentRow component="Progress circle" progress="p1" />
               <ComponentRow component="Search file" progress="p3" />
               <ComponentRow component="Search general" progress="p3" />

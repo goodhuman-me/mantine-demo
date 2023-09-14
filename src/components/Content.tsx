@@ -1,11 +1,11 @@
-import { Box, Divider, MantineSize, Stack, StylePropSpacingValue, Text, Title, TitleOrder } from "@mantine/core";
+import { Box, Divider, MantineSize, MantineSpacing, Stack, StyleProp, Text, Title, TitleOrder } from "@mantine/core";
 import { PropsWithChildren, ReactNode } from "react";
 
 type ContentSectionProps = PropsWithChildren<{
   title?: string | ReactNode;
   titleOrder?: TitleOrder;
   divider?: boolean;
-  mb?: StylePropSpacingValue;
+  mb?: StyleProp<MantineSpacing>;
   stackGap?: MantineSize | string | undefined;
 }>;
 
@@ -40,7 +40,7 @@ const ContentText = ({ fw = "normal", children }: PropsWithChildren<{ fw?: strin
   </Text>
 );
 
-const ContentArea = (props: PropsWithChildren<{ mb?: StylePropSpacingValue }>) => (
+const ContentArea = (props: PropsWithChildren<{ mb?: StyleProp<MantineSpacing> }>) => (
   <Box mt="xs" mb={props.mb}>
     {props.children}
   </Box>

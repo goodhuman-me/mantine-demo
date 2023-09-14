@@ -82,6 +82,7 @@ const NavMenu = () => (
     <Box>
       <NavHeader title="Home" />
       <NavLinkWithIcon label="Home" to="/" />
+      <NavLinkWithIcon label="Components progress" to="components-progress" SideIcon={Webhook} />
     </Box>
 
     <Box>
