@@ -1,4 +1,4 @@
-import { createTheme } from "@mantine/core";
+import { Checkbox, Radio, Stepper, createTheme } from "@mantine/core";
 
 import { variantColorResolver } from "./colors/variant-colors";
 
@@ -19,6 +19,10 @@ import { tagsInputProps } from "./tagsinput/tagsinputs-props";
 
 import "./colors/colors.module.css";
 import { segmentedControlProps } from "./segmented-control/segmented-control-props";
+import { checkboxProps } from "./checkbox/checkbox-props";
+import { radioProps } from "./radio/radio-props";
+import { paginationProps } from "./pagination/pagination-props";
+import { stepperProps } from "./stepper/stepper-props";
 
 // TODO: Move fonts to a separate file
 const defaultFontFamily =
@@ -92,13 +96,21 @@ export const theme = createTheme({
     Autocomplete: autocompleteProps,
     MultiSelect: multiselectProps,
     TagsInput: tagsInputProps,
+
+    // controls
+    SegmentedControl: segmentedControlProps,
+    Checkbox: checkboxProps,
+    Radio: radioProps,
+    Pagination: paginationProps,
+    Stepper: stepperProps,
+
+    // date/time
     DateInput: dateInputProps,
     DateTimePicker: dateTimePickerProps,
-    SegmentedControl: segmentedControlProps,
+    Calendar: calendarProps,
 
     // notifications
     Notification: notificationProps,
-    Calendar: calendarProps,
   },
 });
 
