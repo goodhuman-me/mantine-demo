@@ -1,3 +1,7 @@
 import { Checkbox } from "@mantine/core";
 
-export const checkboxProps = Checkbox.extend({});
+import classes from "./checkbox.module.css";
+
+export const checkboxProps = Checkbox.extend({
+  classNames: classes,
+});

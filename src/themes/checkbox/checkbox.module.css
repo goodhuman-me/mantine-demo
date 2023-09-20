@@ -1,0 +1,11 @@
+.input {
+  --checkbox-color: var(--brand-accent-main);
+
+  input&[data-error] {
+    --_checkbox-bd-color: var(--color-red-dark-2) !important;
+  }
+}
+
+.error {
+  color: var(--color-red-dark-2) !important;
+}
