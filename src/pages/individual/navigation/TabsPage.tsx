@@ -3,8 +3,6 @@ import { CodeHighlight } from "@mantine/code-highlight";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 
-const arr: Item[] = [];
-
 export default function TabsPage() {
   return (
     <DefaultLayout title="Tabs navigator" subtitle="Switch between different views">
@@ -60,7 +58,7 @@ export default function TabsPage() {
 
                 <Tabs.Panel value="apples" className="border-r border-l border-b border-t-0 border-solid border-gray-200">
                   <Box p="lg">
-                    <CodeHighlight code="const items: Things[] = [];" bg="white" />
+                    <CodeHighlight code="const apples: Fruit[] = [];" bg="white" />
                   </Box>
                 </Tabs.Panel>
               </Tabs>
@@ -79,7 +77,7 @@ export default function TabsPage() {
 
                 <Tabs.Panel value="apples" className="border-r border-l border-b border-t-0 border-solid border-gray-200">
                   <Box p="lg">
-                    <CodeHighlight code="const items: Things[] = [];" bg="white" />
+                    <CodeHighlight code="const apples: Fruit[] = [];" bg="white" />
                   </Box>
                 </Tabs.Panel>
               </Tabs>
@@ -98,7 +96,7 @@ export default function TabsPage() {
 
                 <Tabs.Panel value="apples" className="border border-solid border-gray-200" mt="lg">
                   <Box p="lg">
-                    <CodeHighlight code="const items: Things[] = [];" bg="white" />
+                    <CodeHighlight code="const apples: Fruit[] = [];" bg="white" />
                   </Box>
                 </Tabs.Panel>
               </Tabs>

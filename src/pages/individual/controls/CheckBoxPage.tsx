@@ -11,9 +11,9 @@ export default function CheckBoxPage() {
         </Content.Text>
         <Content.Area>
           <Checkbox
-            label="By checking this, I agree to finish this bowl of chili without consuming any fluids later."
+            label="By checking this, I agree to finish this bowl of chili without consuming any fluids after."
             defaultChecked
-            description="I understand that this is a very bad idea."
+            description="Yes, I understand that this is a very bad idea."
           />
         </Content.Area>
         <Content.Area>
