@@ -124,7 +124,7 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Breadcrumb" progress="p3" />
               <ComponentRow component="Button" progress="p5" />
               <ComponentRow component="Calendar" progress="p4" />
-              <ComponentRow component="Checkbox" progress="p4" />
+              <ComponentRow component="Checkbox" progress="p5" />
               <ComponentRow component="Data display" progress="p0" />
               <ComponentRow component="Date picker" progress="p4" />
               <ComponentRow component="Drawer" progress="p3" />
@@ -139,7 +139,7 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Modal" progress="p3" />
               <ComponentRow component="Pagination" progress="p4" />
               <ComponentRow component="Popover" progress="p3" />
-              <ComponentRow component="Progress bar" progress="p4" />
+              <ComponentRow component="Progress bar" progress="p5" />
               <ComponentRow component="Progress circle" progress="p1" />
               <ComponentRow component="Search file" progress="p3" />
               <ComponentRow component="Search general" progress="p3" />

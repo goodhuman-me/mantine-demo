@@ -4,9 +4,9 @@ import { Content } from "../../../components/Content";
 
 export default function SearchFilePage() {
   return (
-    <DefaultLayout title="Page" subtitle="Subtitle">
+    <DefaultLayout title="Search file inputs" subtitle="Search file inputs">
       {/* <Content.Header>Header</Content.Header> */}
-      <Content.Section title="Sectionheader">
+      <Content.Section title="Under construction">
         <Content.Text>Typical usage</Content.Text>
         <Content.Area>
           <Center bg="gray.0" p="3rem" style={{ borderRadius: "1rem" }}>

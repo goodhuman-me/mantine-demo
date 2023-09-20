@@ -4,9 +4,9 @@ import { Content } from "../../../components/Content";
 
 export default function DropdownPage() {
   return (
-    <DefaultLayout title="Page" subtitle="Subtitle">
+    <DefaultLayout title="Dropdown" subtitle="Dropdown menu">
       {/* <Content.Header>Header</Content.Header> */}
-      <Content.Section title="Sectionheader">
+      <Content.Section title="Under construction">
         <Content.Text>Typical usage</Content.Text>
         <Content.Area>
           <Center bg="gray.0" p="3rem" style={{ borderRadius: "1rem" }}>
