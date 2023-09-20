@@ -11,7 +11,7 @@ type DefaultLayoutProps = PropsWithChildren<{
 
 export default function DefaultLayout({ title, subtitle, headerSize = "md", containerSize = "md", children }: DefaultLayoutProps) {
   return (
-    <Container fluid className="p-0">
+    <Container className="p-0">
       <HeaderContainer title={title} subtitle={subtitle} headerSize={headerSize} />
 
       <Container size={containerSize} p="xl">

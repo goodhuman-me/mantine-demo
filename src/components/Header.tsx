@@ -9,7 +9,7 @@ type HeaderContainerProps = {
 
 export default function HeaderContainer({ title, subtitle, headerSize = "md" }: HeaderContainerProps) {
   return (
-    <Container bg="var(--brand-body-light-3)" className="border-gray-200 border-solid border-0 border-b">
+    <Container className="border-gray-200 border-solid border-0 border-b px-0" size="md">
       <Container size={headerSize} p="xl">
         <Group align="center" gap={"0.1rem"} className={subtitle && "mb-3"}>
           <ThemeIcon variant="filled" mr="xs" color="var(--brand-accent-main)">
