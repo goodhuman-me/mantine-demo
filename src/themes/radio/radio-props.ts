@@ -1,3 +1,7 @@
 import { Radio } from "@mantine/core";
 
-export const radioProps = Radio.extend({});
+import classes from "./radio.module.css";
+
+export const radioProps = Radio.extend({
+  classNames: classes,
+});
