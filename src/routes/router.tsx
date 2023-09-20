@@ -26,19 +26,19 @@ import AlertInlinePage from "../pages/individual/alerts/AlertInlinePage.tsx";
 import AlertToastPage from "../pages/individual/alerts/AlertToastPage.tsx";
 import ComponentProgressPage from "../pages/other/ComponentProgressPage.tsx";
 import ColorsPage from "../pages/other/ColorsPage.tsx";
-import DrawerPage from "../pages/individual/controls/DrawerPage.tsx";
+import DrawerPage from "../pages/individual/popovers/DrawerPage.tsx";
 import DropdownPage from "../pages/individual/controls/DropdownPage.tsx";
 import FilterPage from "../pages/individual/controls/FilterPage.tsx";
 import LabelPage from "../pages/individual/controls/LabelPage.tsx";
 import LinkPage from "../pages/individual/controls/LinkPage.tsx";
-import ModalPage from "../pages/individual/controls/ModalPage.tsx";
-import PopoverPage from "../pages/individual/controls/PopoverPage.tsx";
+import ModalPage from "../pages/individual/popovers/ModalPage.tsx";
+import PopoverPage from "../pages/individual/popovers/PopoverPage.tsx";
 import ProgressBarPage from "../pages/individual/controls/ProgressBarPage.tsx";
 import SearchFilePage from "../pages/individual/controls/SearchFilePage.tsx";
 import SearchGeneralPage from "../pages/individual/controls/SearchGeneralPage.tsx";
 import StepsPage from "../pages/individual/navigation/StepsPage.tsx";
 import TextPage from "../pages/individual/controls/TextPage.tsx";
-import TooltipPage from "../pages/individual/controls/TooltipPage.tsx";
+import TooltipPage from "../pages/individual/popovers/TooltipPage.tsx";
 
 const routes = (
   <>

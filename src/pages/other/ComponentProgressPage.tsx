@@ -144,7 +144,7 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Search file" progress="p3" />
               <ComponentRow component="Search general" progress="p3" />
               <ComponentRow component="Select field" progress="p4" />
-              <ComponentRow component="Steps Horizontal" progress="p4" />
+              <ComponentRow component="Steps" progress="p4" />
               <ComponentRow component="Steps Vertical" progress="p4" />
               <ComponentRow component="Tab button" progress="p3" />
               <ComponentRow component="Tables" progress="p0" />
