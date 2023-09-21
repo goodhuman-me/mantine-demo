@@ -38,6 +38,13 @@ import SearchFilePage from "../pages/individual/controls/SearchFilePage.tsx";
 import SearchGeneralPage from "../pages/individual/controls/SearchGeneralPage.tsx";
 import StepsPage from "../pages/individual/navigation/StepsPage.tsx";
 import TooltipPage from "../pages/individual/popovers/TooltipPage.tsx";
+import DatePickerPage from "../pages/individual/date-time/DatePickerPage.tsx";
+import { DatePickerInput } from "@mantine/dates";
+import MonthPickerPage from "../pages/individual/date-time/MonthPickerPage.tsx";
+import MonthPickerInputPage from "../pages/individual/date-time/MonthPickerInputPage.tsx";
+import YearPickerInputPage from "../pages/individual/date-time/YearPickerInputPage.tsx";
+import YearPickerPage from "../pages/individual/date-time/YearPickerPage.tsx";
+import TimeInputPage from "../pages/individual/date-time/TimeInputPage.tsx";
 
 const routes = (
   <>
@@ -78,6 +85,13 @@ const routes = (
       <Route path="calendar" element={<CalendarPage />} />
       <Route path="dateinput" element={<DateInputPage />} />
       <Route path="datetime-picker" element={<DateTimePickerPage />} />
+      <Route path="date-picker" element={<DatePickerPage />} />
+      <Route path="date-picker-input" element={<DatePickerInput />} />
+      <Route path="month-picker" element={<MonthPickerPage />} />
+      <Route path="month-picker-input" element={<MonthPickerInputPage />} />
+      <Route path="year-picker" element={<YearPickerPage />} />
+      <Route path="year-picker-input" element={<YearPickerInputPage />} />
+      <Route path="time-input" element={<TimeInputPage />} />
 
       {/* Alerts */}
       <Route path="alert-hero" element={<AlertHeroPage />} />

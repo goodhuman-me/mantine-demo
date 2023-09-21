@@ -5,7 +5,7 @@ import { DateInput } from "@mantine/dates";
 
 export default function DateInputPage() {
   return (
-    <DefaultLayout title="DateInput" subtitle="Date input with dropdown calendar">
+    <DefaultLayout title="DateInput" subtitle="Free form date input">
       <Content.Section title="Basic DateInput usage">
         <Content.Text>
           Basic <Code>DateInput</Code> usage

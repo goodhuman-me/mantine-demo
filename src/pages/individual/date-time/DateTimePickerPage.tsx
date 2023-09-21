@@ -5,7 +5,7 @@ import { DateTimePicker } from "@mantine/dates";
 
 export default function DateTimePickerPage() {
   return (
-    <DefaultLayout title="DateTimePicker" subtitle="DateTime picker (date & time input)">
+    <DefaultLayout title="DateTimePicker" subtitle="Capture datetime from the user">
       <Content.Section title="Date time picker">
         <Content.Text>
           Sample <Code>DateTimePicker</Code> usage

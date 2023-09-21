@@ -134,7 +134,14 @@ const NavMenu = () => (
       <NavHeader title="Date/time" />
       <NavLinkWithIcon label="Calendar" to="calendar" SideIcon={CalendarPlus} />
       <NavLinkWithIcon label="DateInput" to="dateinput" SideIcon={CalendarPlus} />
-      <NavLinkWithIcon label="DateTime Picker" to="datetime-picker" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="DateTimePicker" to="datetime-picker" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="DatePicker" to="date-picker" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="DatePickerInput" to="date-picker-input" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="MonthPicker" to="month-picker" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="MonthPickerInput" to="month-picker-input" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="YearPicker" to="year-picker" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="YearPickerInput" to="year-picker-input" SideIcon={CalendarPlus} />
+      <NavLinkWithIcon label="TimeInput" to="time-input" SideIcon={CalendarPlus} />
     </Box>
 
     <Box>

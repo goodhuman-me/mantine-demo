@@ -2,15 +2,13 @@ import { Title, Text, Code, Center } from "@mantine/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 
-export default function AlertHeroPage() {
+export default function DatePickerInputPage() {
   return (
-    <DefaultLayout title="Alert hero" subtitle="Alert hero">
-      <Content.Section title="Alert here">
-        <Content.Text>Typical Alert Hero usage</Content.Text>
+    <DefaultLayout title="DatePickerInput" subtitle="Date, multiple dates and dates range picker input">
+      {/* <Content.Header>Header</Content.Header> */}
+      <Content.Section title="Under construction">
+        <Content.Text>Typical usage</Content.Text>
         <Content.Area>
-          <Content.Text>
-            To be imported from <Code>@good/components</Code>
-          </Content.Text>
           <Center bg="gray.0" p="3rem" style={{ borderRadius: "1rem" }}>
             <Text fz="lg" c="gray.6">
               🚧&nbsp;&nbsp;&nbsp;Coming soon&nbsp;&nbsp;&nbsp;🚧
