@@ -1,4 +1,4 @@
-import { Anchor, Breadcrumbs, Tabs, createTheme } from "@mantine/core";
+import { createTheme } from "@mantine/core";
 
 import { variantColorResolver } from "./colors/variant-colors";
 
@@ -17,6 +17,8 @@ import { multiselectProps } from "./multiselect/multiselect-props";
 import { notificationProps } from "./notification/notification-props";
 import { tagsInputProps } from "./tagsinput/tagsinput-props";
 
+import { anchorProps } from "./anchor/anchor-props";
+import { breadcrumbsProps } from "./breadcrumbs/breadcrumbs-props";
 import { checkboxProps } from "./checkbox/checkbox-props";
 import "./colors/colors.module.css";
 import { paginationProps } from "./pagination/pagination-props";
@@ -24,8 +26,6 @@ import { radioProps } from "./radio/radio-props";
 import { segmentedControlProps } from "./segmented-control/segmented-control-props";
 import { stepperProps } from "./stepper/stepper-props";
 import { tabsProps } from "./tabs/tabs-props";
-import { breadcrumbsProps } from "./breadcrumbs/breadcrumbs-props";
-import { anchorProps } from "./anchor/anchor-props";
 
 // TODO: Move fonts to a separate file
 const defaultFontFamily =
