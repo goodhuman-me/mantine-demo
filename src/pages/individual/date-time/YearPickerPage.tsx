@@ -19,7 +19,7 @@ export default function YearPickerPage() {
         </Content.Area>
       </Content.Section>
 
-      <Content.Section title="MonthPicker options">
+      <Content.Section title="YearPicker options">
         <Stack gap="xl" align="flex-start">
           <Box className="text-center">
             <Text>Allow multiple selects</Text>
