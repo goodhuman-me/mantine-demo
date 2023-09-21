@@ -45,6 +45,7 @@ import MonthPickerInputPage from "../pages/individual/date-time/MonthPickerInput
 import YearPickerInputPage from "../pages/individual/date-time/YearPickerInputPage.tsx";
 import YearPickerPage from "../pages/individual/date-time/YearPickerPage.tsx";
 import TimeInputPage from "../pages/individual/date-time/TimeInputPage.tsx";
+import DatePickerInputPage from "../pages/individual/date-time/DatePickerInputPage.tsx";
 
 const routes = (
   <>
@@ -86,7 +87,7 @@ const routes = (
       <Route path="dateinput" element={<DateInputPage />} />
       <Route path="datetime-picker" element={<DateTimePickerPage />} />
       <Route path="date-picker" element={<DatePickerPage />} />
-      <Route path="date-picker-input" element={<DatePickerInput />} />
+      <Route path="date-picker-input" element={<DatePickerInputPage />} />
       <Route path="month-picker" element={<MonthPickerPage />} />
       <Route path="month-picker-input" element={<MonthPickerInputPage />} />
       <Route path="year-picker" element={<YearPickerPage />} />
