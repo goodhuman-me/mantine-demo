@@ -41,7 +41,6 @@ const DrawerPage: React.FunctionComponent = () => {
 
   return (
     <DefaultLayout title="Drawer" subtitle="Display overlay area at any side of the screen">
-      {/* <Content.Header>Header</Content.Header> */}
       <Content.Section title="Drawer">
         <Content.Text>
           Typical <Code>Drawer</Code> usage
