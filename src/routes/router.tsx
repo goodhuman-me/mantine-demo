@@ -27,7 +27,7 @@ import AlertToastPage from "../pages/individual/alerts/AlertToastPage.tsx";
 import ComponentProgressPage from "../pages/other/ComponentProgressPage.tsx";
 import ColorsPage from "../pages/other/ColorsPage.tsx";
 import DrawerPage from "../pages/individual/popovers/DrawerPage.tsx";
-import DropdownPage from "../pages/individual/controls/DropdownPage.tsx";
+import DropdownPage from "../pages/individual/popovers/DropdownPage.tsx";
 import FilterPage from "../pages/individual/controls/FilterPage.tsx";
 import LabelPage from "../pages/individual/controls/LabelPage.tsx";
 import LinkPage from "../pages/individual/controls/LinkPage.tsx";
@@ -70,7 +70,7 @@ const routes = (
       <Route path="pagination" element={<PaginationPage />} />
       <Route path="tabs" element={<TabsPage />} />
       <Route path="drawer" element={<DrawerPage />} />
-      <Route path="dropdown" element={<DropdownPage />} />
+      <Route path="dropdown-menu" element={<DropdownPage />} />
       <Route path="filter" element={<FilterPage />} />
       <Route path="label" element={<LabelPage />} />
       <Route path="link" element={<LinkPage />} />

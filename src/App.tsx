@@ -102,7 +102,7 @@ const NavMenu = () => (
     <Box>
       <NavHeader title="Controls" />
       <NavLinkWithIcon label="Checkbox" to="checkbox" SideIcon={CircleCheck} />
-      <NavLinkWithIcon label="Dropdown" to="dropdown" SideIcon={EditCircle} />
+      <NavLinkWithIcon label="Dropdown menu" to="dropdown-menu" SideIcon={EditCircle} />
       <NavLinkWithIcon label="Filter" to="filter" SideIcon={Filter} />
       <NavLinkWithIcon label="Label" to="label" SideIcon={Tag} />
       <NavLinkWithIcon label="Link" to="link" SideIcon={LinkIcon} />
@@ -110,7 +110,6 @@ const NavMenu = () => (
       <NavLinkWithIcon label="Radio" to="radio" SideIcon={CircleDot} />
       <NavLinkWithIcon label="Search File" to="search-file" SideIcon={FileSearch} />
       <NavLinkWithIcon label="Search General" to="search-general" SideIcon={InputSearch} />
-      <NavLinkWithIcon label="Text" to="text" SideIcon={TextCaption} />
     </Box>
 
     <Box>
