@@ -10,9 +10,9 @@ import { router } from "./routes/router.tsx";
 import { theme } from "./themes/theme.ts";
 
 import "@mantine/core/styles.css";
-import "@mantine/code-highlight/styles.css";
-import "@mantine/notifications/styles.css";
 import "@mantine/dates/styles.css";
+import "@mantine/notifications/styles.css";
+import "@mantine/code-highlight/styles.css";
 
 import "./index.css";
 
