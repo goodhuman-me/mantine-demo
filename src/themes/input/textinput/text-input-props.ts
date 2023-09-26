@@ -1,8 +1,8 @@
 import { TextInput } from "@mantine/core";
 
-import { inputVars } from "../input/input-vars";
-import classes from "../input/input.module.css";
-import { defaultInputProps } from "../input/default-props";
+import { inputVars } from "../input-vars";
+import classes from "../input.module.css";
+import { defaultInputProps } from "../default-props";
 
 export const textInputProps = TextInput.extend({
   classNames: classes,

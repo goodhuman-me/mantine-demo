@@ -26,18 +26,21 @@ const DrawerPage: React.FunctionComponent = () => {
     openSizeDrawer();
   };
 
-  const SpammyText = () =>
-    times(
-      () => (
-        <Box>
-          <Text fw="bold" fz="xl" mb="xs">
-            The awesome dog
-          </Text>
-          <Text mb="xl">The quick brown fox jumped over the lazy dog </Text>
-        </Box>
-      ),
-      100,
-    );
+  const SpammyText = () => (
+    <>
+      {times(
+        () => (
+          <Box>
+            <Text fw="bold" fz="xl" mb="xs">
+              The awesome dog
+            </Text>
+            <Text mb="xl">The quick brown fox jumped over the lazy dog </Text>
+          </Box>
+        ),
+        100,
+      )}
+    </>
+  );
 
   return (
     <DefaultLayout title="Drawer" subtitle="Display overlay area at any side of the screen">
