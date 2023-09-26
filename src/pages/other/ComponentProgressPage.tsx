@@ -127,8 +127,8 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Checkbox" progress="p5" />
               <ComponentRow component="Data display" progress="p0" />
               <ComponentRow component="Date picker" progress="p4" />
-              <ComponentRow component="Drawer" progress="p3" />
-              <ComponentRow component="Dropdown" progress="p3" />
+              <ComponentRow component="Drawer" progress="p4" />
+              <ComponentRow component="Dropdown" progress="p4" />
               <ComponentRow component="Filter button" progress="p3" />
               <ComponentRow component="Inline (edit table)" progress="p1" />
               <ComponentRow component="Label" progress="p3" />
@@ -136,9 +136,9 @@ export default function ComponentProgressPage() {
               <ComponentRow component="List field - Contextual menu" progress="p1" />
               <ComponentRow component="List field - Display" progress="p1" />
               <ComponentRow component="List field - Select" progress="p1" />
-              <ComponentRow component="Modal" progress="p3" />
+              <ComponentRow component="Modal" progress="p4" />
               <ComponentRow component="Pagination" progress="p4" />
-              <ComponentRow component="Popover" progress="p3" />
+              <ComponentRow component="Popover" progress="p4" />
               <ComponentRow component="Progress bar" progress="p5" />
               <ComponentRow component="Progress circle" progress="p1" />
               <ComponentRow component="Search file" progress="p3" />
@@ -146,11 +146,11 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Select field" progress="p4" />
               <ComponentRow component="Steps" progress="p4" />
               <ComponentRow component="Steps Vertical" progress="p4" />
-              <ComponentRow component="Tab button" progress="p3" />
+              <ComponentRow component="Tab button" progress="p4" />
               <ComponentRow component="Tables" progress="p0" />
               <ComponentRow component="Text field" progress="p4" />
               <ComponentRow component="Title group" progress="p1" />
-              <ComponentRow component="Tooltip" progress="p3" />
+              <ComponentRow component="Tooltip" progress="p4" />
               <ComponentRow component="Top navigation" progress="p1" />
               <ComponentRow component="Widget" progress="p0" />
             </Tbody>
