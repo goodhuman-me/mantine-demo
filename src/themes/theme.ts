@@ -11,7 +11,7 @@ import { textInputProps } from "./textinput/text-input-props";
 import { autocompleteProps } from "./autocomplete/autocomplete-props";
 import { calendarProps } from "./calendar/calendar-props";
 import activeClasses from "./common/active.module.css";
-import { dateInputProps } from "./dateinput/dateinput-props";
+import { dateInputProps } from "./date-input/date-input-props";
 import { dateTimePickerProps } from "./datetime-picker/datetime-picker-props";
 import { multiselectProps } from "./multiselect/multiselect-props";
 import { notificationProps } from "./notification/notification-props";
@@ -26,6 +26,14 @@ import { radioProps } from "./radio/radio-props";
 import { segmentedControlProps } from "./segmented-control/segmented-control-props";
 import { stepperProps } from "./stepper/stepper-props";
 import { tabsProps } from "./tabs/tabs-props";
+import { DatePicker, DatePickerInput, MonthPicker, MonthPickerInput, TimeInput, YearPicker, YearPickerInput } from "@mantine/dates";
+import { datePickerProps } from "./date-picker/date-picker-props";
+import { datePickerInputProps } from "./date-picker-input/date-picker-input-props";
+import { monthPickerProps } from "./month-picker/month-picker-props";
+import { monthPickerInputProps } from "./month-picker-input/month-picker-input-props";
+import { yearPickerProps } from "./year-picker/year-picker-props";
+import { yearPickerInputProps } from "./year-picker-input/year-picker-input-props";
+import { timeInputProps } from "./time-input/time-input-props";
 
 // TODO: Move fonts to a separate file
 const defaultFontFamily =
@@ -116,6 +124,13 @@ export const theme = createTheme({
     Calendar: calendarProps,
     DateInput: dateInputProps,
     DateTimePicker: dateTimePickerProps,
+    DatePicker: datePickerProps,
+    DatePickerInput: datePickerInputProps,
+    MonthPicker: monthPickerProps,
+    MonthPickerInput: monthPickerInputProps,
+    YearPicker: yearPickerProps,
+    YearPickerInput: yearPickerInputProps,
+    TimeInput: timeInputProps,
 
     // notifications
     Notification: notificationProps,

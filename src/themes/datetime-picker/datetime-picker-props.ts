@@ -1,4 +1,7 @@
 import { DateTimePicker } from "@mantine/dates";
 
-// TODO DateTimePicker styles & props
-export const dateTimePickerProps = DateTimePicker.extend({});
+import classes from "../input/input.module.css";
+
+export const dateTimePickerProps = DateTimePicker.extend({
+  classNames: classes,
+});
