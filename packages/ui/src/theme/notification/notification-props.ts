@@ -1,4 +1,4 @@
-import { Notification } from "@good/ui/core";
+import { Notification } from "@mantine/core";
 
 // TODO: Notification theming
 export const notificationProps = Notification.extend({

@@ -1,1 +1,1 @@
-export * from "@good/ui/core";
+export * from "@mantine/core";

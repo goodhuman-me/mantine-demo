@@ -1,3 +1,3 @@
-import { DatePicker } from "@good/ui/dates";
+import { DatePicker } from "@mantine/dates";
 
 export const datePickerProps = DatePicker.extend({});

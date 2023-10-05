@@ -1,4 +1,4 @@
-import { ButtonFactory, PartialVarsResolver } from "@good/ui/core";
+import { ButtonFactory, PartialVarsResolver } from "@mantine/core";
 
 /*
  * Button specific vars resolver.

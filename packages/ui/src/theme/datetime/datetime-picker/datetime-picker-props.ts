@@ -1,4 +1,4 @@
-import { DateTimePicker } from "@good/ui/dates";
+import { DateTimePicker } from "@mantine/dates";
 
 import classes from "../../input/input.module.css";
 

@@ -1,4 +1,4 @@
-import { ActionIcon } from "@good/ui/core";
+import { ActionIcon } from "@mantine/core";
 import actionIconClasses from "./action-icon.module.css";
 
 // TODO: Add size resolver here

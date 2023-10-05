@@ -1,4 +1,4 @@
-import { Card } from "@good/ui/core";
+import { Card } from "@mantine/core";
 
 import cardClassNames from "./card.module.css";
 

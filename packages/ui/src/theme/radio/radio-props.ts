@@ -1,4 +1,4 @@
-import { Radio } from "@good/ui/core";
+import { Radio } from "@mantine/core";
 
 import classes from "./radio.module.css";
 

@@ -1,1 +1,1 @@
-export * from "@good/ui/modals";
+export * from "@mantine/modals";

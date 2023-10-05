@@ -1,1 +1,1 @@
-export * from "@good/ui/spotlight";
+export * from "@mantine/spotlight";

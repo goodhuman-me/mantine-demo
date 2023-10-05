@@ -1,3 +1,3 @@
-import { YearPicker } from "@good/ui/dates";
+import { YearPicker } from "@mantine/dates";
 
 export const yearPickerProps = YearPicker.extend({});

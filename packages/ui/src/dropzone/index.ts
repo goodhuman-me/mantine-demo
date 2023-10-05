@@ -1,1 +1,1 @@
-export * from "@good/ui/dropzone";
+export * from "@mantine/dropzone";

@@ -1,4 +1,4 @@
-import { Checkbox } from "@good/ui/core";
+import { Checkbox } from "@mantine/core";
 
 import classes from "./checkbox.module.css";
 

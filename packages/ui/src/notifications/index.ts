@@ -1,1 +1,1 @@
-export * from "@good/ui/notifications";
+export * from "@mantine/notifications";

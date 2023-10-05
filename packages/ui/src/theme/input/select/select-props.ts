@@ -1,4 +1,4 @@
-import { Select } from "@good/ui/core";
+import { Select } from "@mantine/core";
 
 import { inputVars } from "../input-vars";
 import classes from "../input.module.css";

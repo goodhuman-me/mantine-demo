@@ -1,3 +1,3 @@
-import { MonthPicker } from "@good/ui/dates";
+import { MonthPicker } from "@mantine/dates";
 
 export const monthPickerProps = MonthPicker.extend({});

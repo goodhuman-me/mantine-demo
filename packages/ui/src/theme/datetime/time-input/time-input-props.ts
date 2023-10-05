@@ -1,3 +1,3 @@
-import { TimeInput } from "@good/ui/dates";
+import { TimeInput } from "@mantine/dates";
 
 export const timeInputProps = TimeInput.extend({});

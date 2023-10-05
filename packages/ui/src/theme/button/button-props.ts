@@ -1,4 +1,4 @@
-import { Button } from "@good/ui/core";
+import { Button } from "@mantine/core";
 import { buttonVars } from "./button-vars";
 import buttonClasses from "./button.module.css";
 

@@ -1,4 +1,4 @@
-import { YearPickerInput } from "@good/ui/dates";
+import { YearPickerInput } from "@mantine/dates";
 
 import classes from "../../input/input.module.css";
 

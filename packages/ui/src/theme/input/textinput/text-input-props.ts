@@ -1,4 +1,4 @@
-import { TextInput } from "@good/ui/core";
+import { TextInput } from "@mantine/core";
 
 import { inputVars } from "../input-vars";
 import classes from "../input.module.css";
