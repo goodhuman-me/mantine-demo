@@ -39,7 +39,7 @@ import SearchGeneralPage from "../pages/individual/controls/SearchGeneralPage.ts
 import StepsPage from "../pages/individual/navigation/StepsPage.tsx";
 import TooltipPage from "../pages/individual/popovers/TooltipPage.tsx";
 import DatePickerPage from "../pages/individual/date-time/DatePickerPage.tsx";
-import { DatePickerInput } from "@mantine/dates";
+import { DatePickerInput } from "@good/ui/dates";
 import MonthPickerPage from "../pages/individual/date-time/MonthPickerPage.tsx";
 import MonthPickerInputPage from "../pages/individual/date-time/MonthPickerInputPage.tsx";
 import YearPickerInputPage from "../pages/individual/date-time/YearPickerInputPage.tsx";

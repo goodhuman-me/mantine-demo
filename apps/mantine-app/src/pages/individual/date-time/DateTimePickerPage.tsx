@@ -1,7 +1,7 @@
 import { Title, Text, Code, Stack } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
-import { DateTimePicker } from "@mantine/dates";
+import { DateTimePicker } from "@good/ui/dates";
 
 export default function DateTimePickerPage() {
   return (

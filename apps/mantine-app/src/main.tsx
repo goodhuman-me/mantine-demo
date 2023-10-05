@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 
 import { MantineProvider } from "@good/ui/core";
-import { Notifications } from "@mantine/notifications";
-import { DatesProvider } from "@mantine/dates";
+import { Notifications } from "@good/ui/notifications";
+import { DatesProvider } from "@good/ui/dates";
 
 import { router } from "./routes/router.tsx";
 import { theme } from "./themes/theme.ts";

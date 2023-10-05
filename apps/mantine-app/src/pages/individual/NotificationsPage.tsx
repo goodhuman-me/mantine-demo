@@ -1,5 +1,5 @@
 import { Title, Text, Code, Button } from "@good/ui/core";
-import { notifications } from "@mantine/notifications";
+import { notifications } from "@good/ui/notifications";
 
 import DefaultLayout from "../../layouts/DefaultLayout";
 import { Content } from "../../components/Content";

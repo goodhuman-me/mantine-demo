@@ -1,1 +1,1 @@
-export * from "@mantine/form";
+export * from "@good/ui/form";

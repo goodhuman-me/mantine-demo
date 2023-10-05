@@ -1,5 +1,5 @@
 import { Title, Text, Code, Center, Tabs, Box, Stack } from "@good/ui/core";
-import { CodeHighlight } from "@mantine/code-highlight";
+import { CodeHighlight } from "@good/ui/code-highlight";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 

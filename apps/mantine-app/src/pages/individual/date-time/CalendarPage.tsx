@@ -3,7 +3,7 @@ import { Title, Text, Code, Indicator, Stack, Group, Select, MantineSize } from 
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 
-import { Calendar } from "@mantine/dates";
+import { Calendar } from "@good/ui/dates";
 
 export default function CalendarPage() {
   const [calendarSize, setCalendarSize] = useState<string | null>("md");

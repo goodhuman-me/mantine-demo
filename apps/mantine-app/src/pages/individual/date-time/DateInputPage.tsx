@@ -1,7 +1,7 @@
 import { Title, Text, Code, Group, Stack, Divider } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
-import { DateInput } from "@mantine/dates";
+import { DateInput } from "@good/ui/dates";
 
 export default function DateInputPage() {
   return (

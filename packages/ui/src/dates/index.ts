@@ -1,1 +1,1 @@
-export * from "@mantine/dates";
+export * from "@good/ui/dates";

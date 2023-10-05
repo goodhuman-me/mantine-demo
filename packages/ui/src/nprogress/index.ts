@@ -1,1 +1,1 @@
-export * from "@mantine/nprogress";
+export * from "@good/ui/nprogress";

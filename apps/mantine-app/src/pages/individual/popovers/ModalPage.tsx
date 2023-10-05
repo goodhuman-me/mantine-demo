@@ -1,7 +1,7 @@
 import { Title, Text, Code, Center, Modal, Button, Stack, Group, TextInput, Box } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
-import { useDisclosure } from "@mantine/hooks";
+import { useDisclosure } from "@good/ui/hooks";
 import { useState } from "react";
 
 export default function ModalPage() {

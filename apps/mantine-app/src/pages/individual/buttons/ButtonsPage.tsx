@@ -1,4 +1,4 @@
-import { CodeHighlight } from "@mantine/code-highlight";
+import { CodeHighlight } from "@good/ui/code-highlight";
 import { ActionIcon, Anchor, Box, Button, Code, CopyButton, FileButton, Group, Text, Title } from "@good/ui/core";
 import { Analyze, Clipboard, ClipboardCopy, Upload } from "tabler-icons-react";
 import { Content } from "../../../components/Content";

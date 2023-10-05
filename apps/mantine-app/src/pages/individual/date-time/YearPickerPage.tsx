@@ -2,7 +2,7 @@ import { Title, Text, Code, Center, Stack, Box, Select, MantineSize } from "@goo
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { useState } from "react";
-import { YearPicker } from "@mantine/dates";
+import { YearPicker } from "@good/ui/dates";
 
 export default function YearPickerPage() {
   const [calendarSize, setCalendarSize] = useState<string | null>("md");

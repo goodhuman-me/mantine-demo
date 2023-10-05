@@ -1,1 +1,1 @@
-export * from "@mantine/hooks";
+export * from "@good/ui/hooks";

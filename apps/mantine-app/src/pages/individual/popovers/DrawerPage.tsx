@@ -2,7 +2,7 @@ import { Title, Text, Code, Center, Drawer, Button, Box, TextInput, Group, Flex,
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { useState } from "react";
-import { useDisclosure } from "@mantine/hooks";
+import { useDisclosure } from "@good/ui/hooks";
 import { times } from "ramda";
 
 type DrawerPosition = "bottom" | "left" | "right" | "top";
