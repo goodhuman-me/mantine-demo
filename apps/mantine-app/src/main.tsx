@@ -9,14 +9,14 @@ import { DatesProvider } from "@mantine/dates";
 import { router } from "./routes/router.tsx";
 import { theme } from "./themes/theme.ts";
 
-import "@good/mantine-theme/core/styles.css";
-import "@good/mantine-theme/dates/styles.css";
-import "@good/mantine-theme/notifications/styles.css";
-import "@good/mantine-theme/code-highlight/styles.css";
+import "@good/ui/core/styles.css";
+import "@good/ui/dates/styles.css";
+import "@good/ui/notifications/styles.css";
+import "@good/ui/code-highlight/styles.css";
 
 import "./index.css";
 
-import { goodTheme } from "@good/mantine-theme";
+import { goodTheme } from "@good/ui";
 
 // biome-ignore lint/style/noNonNullAssertion: <explanation>
 ReactDOM.createRoot(document.getElementById("root")!).render(

@@ -17,9 +17,9 @@ importers:
       '@biomejs/cli-darwin-arm64':
         specifier: ^1.0.0
         version: 1.0.0
-      '@good/mantine-theme':
+      '@good/ui':
         specifier: workspace:*
-        version: link:../../packages/mantine-theme
+        version: link:../../packages/ui
       '@mantine/code-highlight':
         specifier: 7.1.0
         version: 7.1.0(@mantine/core@7.1.0)(@mantine/hooks@7.1.0)(react-dom@18.2.0)(react@18.2.0)
@@ -148,7 +148,7 @@ importers:
         specifier: ^0.34.4
         version: 0.34.4
 
-  packages/mantine-theme:
+  packages/ui:
     dependencies:
       '@mantine/code-highlight':
         specifier: 7.1.0

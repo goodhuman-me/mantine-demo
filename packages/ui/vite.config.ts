@@ -10,7 +10,7 @@ module.exports = defineConfig({
     sourcemap: true,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: '@good/mantine-theme',
+      name: '@good/ui',
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {

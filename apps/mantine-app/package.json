@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@biomejs/cli-darwin-arm64": "^1.0.0",
-    "@good/mantine-theme": "workspace:*",
+    "@good/ui": "workspace:*",
     "@mantine/code-highlight": "7.1.0",
     "@mantine/core": "7.1.0",
     "@mantine/dates": "7.1.0",
