@@ -121,12 +121,12 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Alert hero" progress="p3" />
               <ComponentRow component="Alert inline" progress="p3" />
               <ComponentRow component="Alert toast" progress="p3" />
-              <ComponentRow component="Breadcrumb" progress="p3" />
+              <ComponentRow component="Breadcrumb" progress="p4" />
               <ComponentRow component="Button" progress="p5" />
               <ComponentRow component="Calendar" progress="p4" />
               <ComponentRow component="Checkbox" progress="p5" />
               <ComponentRow component="Data display" progress="p0" />
-              <ComponentRow component="Date picker" progress="p4" />
+              <ComponentRow component="Date picker" progress="p5" />
               <ComponentRow component="Drawer" progress="p4" />
               <ComponentRow component="Dropdown" progress="p4" />
               <ComponentRow component="Filter button" progress="p3" />
@@ -143,7 +143,7 @@ export default function ComponentProgressPage() {
               <ComponentRow component="Progress circle" progress="p1" />
               <ComponentRow component="Search file" progress="p3" />
               <ComponentRow component="Search general" progress="p3" />
-              <ComponentRow component="Select field" progress="p4" />
+              <ComponentRow component="Select field" progress="p5" />
               <ComponentRow component="Steps" progress="p4" />
               <ComponentRow component="Steps Vertical" progress="p4" />
               <ComponentRow component="Tab button" progress="p4" />
