@@ -1,4 +1,4 @@
-import { Title, Text, Code, Center, Menu, Button } from "@mantine/core";
+import { Title, Text, Code, Center, Menu, Button } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { CloudDownload, CloudUpload, DoorExit, FileMusic, NewSection, Settings, Trash } from "tabler-icons-react";

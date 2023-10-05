@@ -1,4 +1,4 @@
-import { Button, Text } from "@mantine/core";
+import { Button, Text } from "@good/ui/core";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 

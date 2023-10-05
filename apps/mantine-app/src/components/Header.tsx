@@ -1,4 +1,4 @@
-import { Anchor, Box, Container, Group, ThemeIcon, Title, Text } from "@mantine/core";
+import { Anchor, Box, Container, Group, ThemeIcon, Title, Text } from "@good/ui/core";
 import { Components, Link } from "tabler-icons-react";
 
 type HeaderContainerProps = {

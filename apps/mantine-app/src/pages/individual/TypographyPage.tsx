@@ -1,4 +1,4 @@
-import { Code, ComboboxData, Group, Select, Table, Text, Title, TitleOrder } from "@mantine/core";
+import { Code, ComboboxData, Group, Select, Table, Text, Title, TitleOrder } from "@good/ui/core";
 import { useState } from "react";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";

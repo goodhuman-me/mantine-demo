@@ -1,4 +1,4 @@
-import { Code, Select, Stack } from "@mantine/core";
+import { Code, Select, Stack } from "@good/ui/core";
 import { Content } from "../../../components/Content";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 

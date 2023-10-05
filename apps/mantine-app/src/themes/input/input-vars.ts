@@ -1,4 +1,4 @@
-import { AutocompleteFactory, MultiSelectFactory, PartialVarsResolver, SelectFactory, TextInputFactory } from "@mantine/core";
+import { AutocompleteFactory, MultiSelectFactory, PartialVarsResolver, SelectFactory, TextInputFactory } from "@good/ui/core";
 
 type InputTypes = TextInputFactory | SelectFactory | AutocompleteFactory | MultiSelectFactory;
 

@@ -1,4 +1,4 @@
-import { Container, Divider, Text, Title } from "@mantine/core";
+import { Container, Divider, Text, Title } from "@good/ui/core";
 import HeaderContainer from "../components/Header";
 import { PropsWithChildren } from "react";
 

@@ -1,4 +1,4 @@
-import { TagsInput } from "@mantine/core";
+import { TagsInput } from "@good/ui/core";
 import cx from "clsx";
 
 import { inputVars } from "../input-vars";

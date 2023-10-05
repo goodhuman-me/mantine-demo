@@ -1,4 +1,4 @@
-import { Autocomplete } from "@mantine/core";
+import { Autocomplete } from "@good/ui/core";
 
 import { inputVars } from "../input-vars";
 import inputClasses from "../input.module.css";

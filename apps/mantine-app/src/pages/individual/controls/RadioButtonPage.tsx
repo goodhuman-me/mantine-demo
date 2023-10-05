@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Title, Text, Code, Radio, Stack, Center } from "@mantine/core";
+import { Title, Text, Code, Radio, Stack, Center } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 

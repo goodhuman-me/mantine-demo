@@ -1,4 +1,4 @@
-import { Title, Text, Code, Center, Breadcrumbs, Anchor } from "@mantine/core";
+import { Title, Text, Code, Center, Breadcrumbs, Anchor } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { ChevronRight } from "tabler-icons-react";

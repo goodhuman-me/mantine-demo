@@ -1,4 +1,4 @@
-import { Title, Text, Code, Center, Stack, Box, Select, MantineSize } from "@mantine/core";
+import { Title, Text, Code, Center, Stack, Box, Select, MantineSize } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { useState } from "react";

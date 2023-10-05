@@ -1,4 +1,4 @@
-import { Table, Title, Text, Code, Progress, Box } from "@mantine/core";
+import { Table, Title, Text, Code, Progress, Box } from "@good/ui/core";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import { Content } from "../../components/Content";
 

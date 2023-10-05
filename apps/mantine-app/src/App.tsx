@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { router } from "./routes/router";
 
-import { AppShell, Box, Burger, Code, Group, NavLink, Space, Stack, ThemeIcon, Title } from "@mantine/core";
+import { AppShell, Box, Burger, Code, Group, NavLink, Space, Stack, ThemeIcon, Title } from "@good/ui/core";
 import { useDisclosure } from "@mantine/hooks";
 
 import {

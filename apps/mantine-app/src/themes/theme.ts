@@ -1,4 +1,4 @@
-import { createTheme } from "@mantine/core";
+import { createTheme } from "@good/ui/core";
 
 import { variantColorResolver } from "./colors/variant-colors";
 

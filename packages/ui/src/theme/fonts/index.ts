@@ -1,5 +1,5 @@
 import type { PartialDeep } from 'type-fest';
-import { MantineTheme } from '@mantine/core';
+import { MantineTheme } from '@good/ui/core';
 
 const defaultFontFamily =
   "'Messina Sans','--apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'";

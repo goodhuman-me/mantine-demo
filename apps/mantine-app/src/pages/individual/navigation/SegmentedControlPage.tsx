@@ -1,4 +1,4 @@
-import { Title, Text, Code, SegmentedControl, Stack, Center } from "@mantine/core";
+import { Title, Text, Code, SegmentedControl, Stack, Center } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { BrandNeteaseMusic, GuitarPick, Mailbox, Music } from "tabler-icons-react";

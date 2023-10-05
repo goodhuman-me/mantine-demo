@@ -1,4 +1,4 @@
-import { Anchor } from "@mantine/core";
+import { Anchor } from "@good/ui/core";
 
 import classes from "./anchor.module.css";
 

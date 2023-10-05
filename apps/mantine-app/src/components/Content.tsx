@@ -1,4 +1,4 @@
-import { Box, Divider, MantineSize, MantineSpacing, Stack, StyleProp, Text, Title, TitleOrder } from "@mantine/core";
+import { Box, Divider, MantineSize, MantineSpacing, Stack, StyleProp, Text, Title, TitleOrder } from "@good/ui/core";
 import { PropsWithChildren, ReactNode } from "react";
 
 type ContentSectionProps = PropsWithChildren<{

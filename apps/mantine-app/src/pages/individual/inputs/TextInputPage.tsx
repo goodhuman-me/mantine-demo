@@ -1,4 +1,4 @@
-import { Stack, TextInput, ThemeIcon } from "@mantine/core";
+import { Stack, TextInput, ThemeIcon } from "@good/ui/core";
 import { CurrencyDollarAustralian, Mail, MailOff } from "tabler-icons-react";
 import { Content } from "../../../components/Content";
 import DefaultLayout from "../../../layouts/DefaultLayout";

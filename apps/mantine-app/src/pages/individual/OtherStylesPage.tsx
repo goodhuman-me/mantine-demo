@@ -1,4 +1,4 @@
-import { Box, Card, CardProps, Group, Stack, Text } from "@mantine/core";
+import { Box, Card, CardProps, Group, Stack, Text } from "@good/ui/core";
 import { Content } from "../../components/Content";
 import DefaultLayout from "../../layouts/DefaultLayout";
 

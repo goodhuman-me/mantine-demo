@@ -1,4 +1,4 @@
-import { MultiSelect } from "@mantine/core";
+import { MultiSelect } from "@good/ui/core";
 import cx from "clsx";
 
 import { inputVars } from "../input-vars";

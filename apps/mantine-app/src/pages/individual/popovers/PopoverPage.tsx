@@ -1,4 +1,4 @@
-import { Title, Text, Code, Center, Button, Popover, FloatingPosition, Group, TextInput, Stack } from "@mantine/core";
+import { Title, Text, Code, Center, Button, Popover, FloatingPosition, Group, TextInput, Stack } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { useDisclosure } from "@mantine/hooks";

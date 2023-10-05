@@ -1,3 +1,3 @@
-import { Breadcrumbs } from "@mantine/core";
+import { Breadcrumbs } from "@good/ui/core";
 
 export const breadcrumbsProps = Breadcrumbs.extend({});

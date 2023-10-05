@@ -1,4 +1,4 @@
-import { Title, Text, Code, Center, Tabs, Box, Stack } from "@mantine/core";
+import { Title, Text, Code, Center, Tabs, Box, Stack } from "@good/ui/core";
 import { CodeHighlight } from "@mantine/code-highlight";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";

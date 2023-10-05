@@ -1,4 +1,4 @@
-import { Container, Group, Text, Title } from "@mantine/core";
+import { Container, Group, Text, Title } from "@good/ui/core";
 import { Components, WaveSine } from "tabler-icons-react";
 
 export default function Home() {

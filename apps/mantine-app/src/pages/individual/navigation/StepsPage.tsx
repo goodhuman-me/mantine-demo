@@ -1,4 +1,4 @@
-import { Stepper, Title, Text, Code, Center, Box, Button, Group, Select, Flex, MantineSize, Checkbox, Stack } from "@mantine/core";
+import { Stepper, Title, Text, Code, Center, Box, Button, Group, Select, Flex, MantineSize, Checkbox, Stack } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { useState } from "react";

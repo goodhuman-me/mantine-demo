@@ -1,4 +1,4 @@
-import { VariantColorsResolver, defaultVariantColorsResolver } from '@mantine/core';
+import { VariantColorsResolver, defaultVariantColorsResolver } from '@good/ui/core';
 
 /*
  * Custom variant color resolver, used to add customised theme colors for components.

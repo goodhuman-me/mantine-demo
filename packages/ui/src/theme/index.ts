@@ -1,5 +1,5 @@
 import type { PartialDeep } from "type-fest";
-import { MantineTheme, createTheme } from "@mantine/core";
+import { MantineTheme, createTheme } from "@good/ui/core";
 
 import { variantColorResolver } from "./colors/variant-colors";
 

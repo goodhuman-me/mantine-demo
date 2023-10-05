@@ -1,4 +1,4 @@
-import { Title, Text, Code, Checkbox, Stack, Box, Group } from "@mantine/core";
+import { Title, Text, Code, Checkbox, Stack, Box, Group } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 

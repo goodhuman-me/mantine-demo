@@ -1,4 +1,4 @@
-import { Title, Text, Code, Center, Stack, Box } from "@mantine/core";
+import { Title, Text, Code, Center, Stack, Box } from "@good/ui/core";
 import DefaultLayout from "../../../layouts/DefaultLayout";
 import { Content } from "../../../components/Content";
 import { DatePickerInput } from "@mantine/dates";
