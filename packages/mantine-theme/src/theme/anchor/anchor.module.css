@@ -1,0 +1,5 @@
+.root {
+  &[data-variant="accent"] {
+    color: var(--brand-accent-main);
+  }
+}

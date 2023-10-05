@@ -1,0 +1,11 @@
+/* CSS Module for active (on click) classes */
+
+.active {
+  transition: transform 50ms ease-in-out;
+
+  /* Default transforms for all active classes  */
+  &:active {
+    /* transform: scale(0.99); */
+    /* filter: brightness(0.95); */
+  }
+}

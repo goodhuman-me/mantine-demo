@@ -9,17 +9,19 @@ import { DatesProvider } from "@mantine/dates";
 import { router } from "./routes/router.tsx";
 import { theme } from "./themes/theme.ts";
 
-import "@mantine/core/styles.css";
-import "@mantine/dates/styles.css";
-import "@mantine/notifications/styles.css";
-import "@mantine/code-highlight/styles.css";
+import "@good/mantine-theme/core/styles.css";
+import "@good/mantine-theme/dates/styles.css";
+import "@good/mantine-theme/notifications/styles.css";
+import "@good/mantine-theme/code-highlight/styles.css";
 
 import "./index.css";
 
-// rome-ignore lint/style/noNonNullAssertion: <explanation>
+import { goodTheme } from "@good/mantine-theme";
+
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={goodTheme}>
       <Notifications position="top-right" limit={5} />
       <DatesProvider
         settings={{
@@ -31,5 +33,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <RouterProvider router={router} />
       </DatesProvider>
     </MantineProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

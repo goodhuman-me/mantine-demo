@@ -1,0 +1,63 @@
+/*
+  ? Not sure why !important is needed for some of these css attributes. 
+  ? Seems to have other inline styles overriding it; might be a Mantine v7 bug...?
+*/
+
+.label {
+  font-weight: var(--mantine-heading-font-weight) !important;
+  font-size: var(--mantine-font-size-sm) !important;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: var(--brand-body-main);
+  font-size: var(--mantine-font-size-sm) !important;
+  margin-bottom: 0.5rem !important;
+  line-height: var(--mantine-line-height-xs) !important;
+}
+
+.input {
+  &[disabled] {
+    background-color: var(--brand-body-light-2);
+    border-width: 1px;
+    border-color: var(--brand-body-main);
+  }
+
+  --_input-placeholder-color: var(--brand-body-dark-1);
+
+  @mixin hover {
+    border-color: var(--brand-body-dark-1);
+  }
+
+  &:focus {
+    border-width: 2px;
+    border-color: var(--brand-accent-main) !important;
+  }
+
+  &:focus-within {
+    border-width: 2px;
+    border-color: var(--brand-accent-main) !important;
+  }
+
+  input&[data-error] {
+    border-width: 2px;
+    border-color: var(--color-red-main);
+    color: var(--color-red-main);
+
+    --_input-placeholder-color: var(--brand-body-dark-1);
+
+    @mixin hover {
+      border-color: var(--color-red-dark-2);
+    }
+
+    &:focus {
+      border-width: 2px;
+      border-color: var(--color-red-dark-1) !important;
+    }
+
+    &:focus-within {
+      border-width: 2px;
+      border-color: var(--color-red-dark-1) !important;
+    }
+  }
+}

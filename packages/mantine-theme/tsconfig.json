@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "noEmit": false,
+    "moduleResolution": "Node",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "types": ["node"],
+    "declaration": true,
+    "allowJs": false,
+    "checkJs": false
+  },
+  "include": ["src/**/*.*"],
+  "exclude": ["**/node_modules", "**/dist", "**/.*/**/*", "./vitest.config.ts"]
+}

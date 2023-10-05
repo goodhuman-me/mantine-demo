@@ -1,0 +1,28 @@
+/*
+  ? Not sure why !important is needed for some of these css attributes. 
+  ? Seems to have other inline styles overriding it; might be a Mantine v7 bug...?
+*/
+
+.input {
+  &[data-error] {
+    border-width: 2px;
+    border-color: var(--color-red-main);
+    color: var(--color-red-main);
+
+    --_input-placeholder-color: var(--brand-body-dark-1);
+
+    @mixin hover {
+      border-color: var(--color-red-dark-2);
+    }
+
+    &:focus {
+      border-width: 2px;
+      border-color: var(--color-red-dark-1) !important;
+    }
+
+    &:focus-within {
+      border-width: 2px;
+      border-color: var(--color-red-dark-1) !important;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.radio {
+  --radio-color: var(--brand-accent-main);
+
+  input&[data-error] {
+    --radio-bd-color: var(--color-red-dark-2) !important;
+  }
+}
+
+.error {
+  color: var(--color-red-dark-2) !important;
+}

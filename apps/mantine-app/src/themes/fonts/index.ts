@@ -37,7 +37,6 @@ export const fontsProps: PartialDeep<MantineTheme> = {
     },
   },
   fontSizes: {
-    // @ts-expect-error -- forcefully add xxs size to theme
     xxs: "0.6875rem",
     xs: "0.75rem",
     sm: "0.875rem",
@@ -46,7 +45,6 @@ export const fontsProps: PartialDeep<MantineTheme> = {
     xl: "1.25rem",
   },
   lineHeights: {
-    // @ts-expect-error -- forcefully add xxs size to theme
     xxs: "0.875rem",
     xs: "1rem",
     sm: "1.375rem",

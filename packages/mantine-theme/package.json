@@ -1,0 +1,60 @@
+{
+  "name": "@good/mantine-theme",
+  "version": "1.0.0",
+  "description": "Shared mantine theme",
+  "main": "dist",
+  "scripts": {
+    "build": "tsc && pnpm copy-css",
+    "copy-css": "rsync -r --include='*.css' --exclude='*.*' src/ dist/",
+    "build:watch": "tsc -w",
+    "test": "dotenv -e .env.test -- vitest run",
+    "test:watch": "dotenv -e .env.test -- vitest",
+    "test:coverage": "dotenv -e .env.test -- vitest --run --coverage",
+    "lint": "biome check ./src"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js"
+    },
+    "./core/styles.css": "./node_modules/@mantine/core/esm/index.css",
+    "./core/styles.layer.css": "./node_modules/@mantine/core/esm/index.layer.css",
+    "./core/styles/*": "./node_modules/@mantine/core/esm/styles/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mantine/code-highlight": "7.1.0",
+    "@mantine/core": "7.1.0",
+    "@mantine/dates": "7.1.0",
+    "@mantine/dropzone": "7.1.0",
+    "@mantine/form": "7.1.0",
+    "@mantine/hooks": "7.1.0",
+    "@mantine/modals": "7.1.0",
+    "@mantine/notifications": "7.1.0",
+    "@mantine/nprogress": "7.1.0",
+    "@mantine/spotlight": "7.1.0",
+    "@mantine/tiptap": "7.1.0",
+    "clsx": "^2.0.0",
+    "type-fest": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@vitest/coverage-istanbul": "^0.32.0",
+    "postcss": "^8.4.23",
+    "postcss-preset-mantine": "^1.7.0",
+    "postcss-simple-vars": "^7.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.6",
+    "typescript": "^5.2.2",
+    "typescript-plugin-css-modules": "^5.0.1",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.5",
+    "vitest-mock-extended": "^1.2.0"
+  }
+}
