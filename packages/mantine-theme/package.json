@@ -1,5 +1,5 @@
 {
-  "name": "@good/mantine-theme",
+  "name": "@good/ui",
   "version": "1.0.0",
   "description": "Shared mantine theme",
   "main": "dist",
@@ -17,13 +17,69 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
+    "./code-highlight": {
+      "types": "./dist/code-highlight/index.d.ts",
+      "import": "./dist/code-highlight/index.js"
+    },
     "./core": {
       "types": "./dist/core/index.d.ts",
       "import": "./dist/core/index.js"
     },
+    "./dates": {
+      "types": "./dist/dates/index.d.ts",
+      "import": "./dist/dates/index.js"
+    },
+    "./dropzone": {
+      "types": "./dist/dropzone/index.d.ts",
+      "import": "./dist/dropzone/index.js"
+    },
+    "./form": {
+      "types": "./dist/form/index.d.ts",
+      "import": "./dist/form/index.js"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "import": "./dist/hooks/index.js"
+    },
+    "./modals": {
+      "types": "./dist/modals/index.d.ts",
+      "import": "./dist/modals/index.js"
+    },
+    "./notifications": {
+      "types": "./dist/notifications/index.d.ts",
+      "import": "./dist/notifications/index.js"
+    },
+    "./nprogress": {
+      "types": "./dist/nprogress/index.d.ts",
+      "import": "./dist/nprogress/index.js"
+    },
+    "./spotlight": {
+      "types": "./dist/spotlight/index.d.ts",
+      "import": "./dist/spotlight/index.js"
+    },
+    "./tiptap": {
+      "types": "./dist/tiptap/index.d.ts",
+      "import": "./dist/tiptap/index.js"
+    },
     "./core/styles.css": "./node_modules/@mantine/core/esm/index.css",
     "./core/styles.layer.css": "./node_modules/@mantine/core/esm/index.layer.css",
-    "./core/styles/*": "./node_modules/@mantine/core/esm/styles/*"
+    "./core/styles/*": "./node_modules/@mantine/core/esm/styles/*",
+    "./code-highlight/styles.css": "./node_modules/@mantine/code-highlight/esm/index.css",
+    "./code-highlight/styles.layer.css": "./node_modules/@mantine/code-highlight/esm/index.layer.css",
+    "./dates/styles.css": "./node_modules/@mantine/dates/esm/index.css",
+    "./dates/styles.layer.css": "./node_modules/@mantine/dates/esm/index.layer.css",
+    "./dropzone/styles.css": "./node_modules/@mantine/dropzone/esm/index.css",
+    "./dropzone/styles.layer.css": "./node_modules/@mantine/dropzone/esm/index.layer.css",
+    "./modals/styles.css": "./node_modules/@mantine/modals/esm/index.css",
+    "./modals/styles.layer.css": "./node_modules/@mantine/modals/esm/index.layer.css",
+    "./notifications/styles.css": "./node_modules/@mantine/notifications/esm/index.css",
+    "./notifications/styles.layer.css": "./node_modules/@mantine/notifications/esm/index.layer.css",
+    "./nprogress/styles.css": "./node_modules/@mantine/nprogress/esm/index.css",
+    "./nprogress/styles.layer.css": "./node_modules/@mantine/nprogress/esm/index.layer.css",
+    "./spotlight/styles.css": "./node_modules/@mantine/spotlight/esm/index.css",
+    "./spotlight/styles.layer.css": "./node_modules/@mantine/spotlight/esm/index.layer.css",
+    "./tiptap/styles.css": "./node_modules/@mantine/tiptap/esm/index.css",
+    "./tiptap/styles.layer.css": "./node_modules/@mantine/tiptap/esm/index.layer.css"
   },
   "keywords": [],
   "author": "",
