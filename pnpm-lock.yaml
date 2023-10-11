@@ -946,7 +946,7 @@ packages:
   /@mantine/hooks@7.1.2(react@18.2.0):
     resolution: {integrity: sha512-2sqfBKse/aJq93zEpIn4OY+jRACmDIWBixfBgobRfltDyeL8G+3223LSAaeT6ZD8+h2YBJVmbCD5QY7bx2l11Q==}
     peerDependencies:
-      react: ^18.2.0 || ^18.2
+      react: ^18.2.0
     dependencies:
       react: 18.2.0
     dev: false
