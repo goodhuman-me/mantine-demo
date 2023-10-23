@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@biomejs/biome':
+        specifier: 1.0.0
+        version: 1.0.0
       turbo:
         specifier: ^1.10.14
         version: 1.10.14
@@ -460,7 +463,6 @@ packages:
       '@biomejs/cli-linux-x64': 1.0.0
       '@biomejs/cli-win32-arm64': 1.0.0
       '@biomejs/cli-win32-x64': 1.0.0
-    dev: true
 
   /@biomejs/cli-darwin-arm64@1.0.0:
     resolution: {integrity: sha512-3v7kEyxkf3D246esH+q/lDK5wWn+xLCXZpHCuc1itAmC35GkEc6S7um6C1VD3XKXLx6N0sJR/rTmjKiRGV32Ig==}
@@ -474,7 +476,6 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: true
     optional: true
 
   /@biomejs/cli-linux-arm64@1.0.0:
@@ -483,7 +484,6 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: true
     optional: true
 
   /@biomejs/cli-linux-x64@1.0.0:
@@ -492,7 +492,6 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: true
     optional: true
 
   /@biomejs/cli-win32-arm64@1.0.0:
@@ -501,7 +500,6 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
-    dev: true
     optional: true
 
   /@biomejs/cli-win32-x64@1.0.0:
@@ -510,7 +508,6 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: true
     optional: true
 
   /@cspotcode/source-map-support@0.8.1:
@@ -946,7 +943,7 @@ packages:
   /@mantine/hooks@7.1.2(react@18.2.0):
     resolution: {integrity: sha512-2sqfBKse/aJq93zEpIn4OY+jRACmDIWBixfBgobRfltDyeL8G+3223LSAaeT6ZD8+h2YBJVmbCD5QY7bx2l11Q==}
     peerDependencies:
-      react: ^18.2.0 || ^18.2
+      react: ^18.2.0
     dependencies:
       react: 18.2.0
     dev: false

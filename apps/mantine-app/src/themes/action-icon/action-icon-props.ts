@@ -1,11 +1,11 @@
-import { ActionIcon } from "@good/ui/core";
-import actionIconClasses from "./action-icon.module.css";
+import { ActionIcon } from '@good/ui/core';
+import actionIconClasses from './action-icon.module.css';
 
 // TODO: Add size resolver here
 export const actionIconProps = ActionIcon.extend({
-  classNames: actionIconClasses,
-  defaultProps: {
-    variant: "filled",
-    color: "accent",
-  },
+	classNames: actionIconClasses,
+	defaultProps: {
+		variant: 'filled',
+		color: 'accent',
+	},
 });

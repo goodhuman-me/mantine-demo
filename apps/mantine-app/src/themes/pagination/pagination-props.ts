@@ -1,3 +1,3 @@
-import { Pagination } from "@good/ui/core";
+import { Pagination } from '@good/ui/core';
 
 export const paginationProps = Pagination.extend({});

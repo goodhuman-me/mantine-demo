@@ -1,7 +1,7 @@
-import { Checkbox } from "@good/ui/core";
+import { Checkbox } from '@good/ui/core';
 
-import classes from "./checkbox.module.css";
+import classes from './checkbox.module.css';
 
 export const checkboxProps = Checkbox.extend({
-  classNames: classes,
+	classNames: classes,
 });
