@@ -112,7 +112,7 @@ const routes = (
 			<Route path='components-progress' element={<ComponentProgressPage />} />
 
 			{/* Bookings */}
-			<Route path='booking/create-booking' element={<CreateBookingPage />} />
+			<Route path='bookings/create-booking' element={<CreateBookingPage />} />
 		</Route>
 	</>
 );

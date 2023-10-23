@@ -86,6 +86,11 @@ const NavMenu = () => (
     </Box>
 
     <Box>
+      <NavHeader title='Bookings' />
+      <NavLinkWithIcon label='Create bookings' to='bookings/create-booking' SideIcon={Click} />
+    </Box>
+
+    <Box>
       <NavHeader title='Buttons' />
       <NavLinkWithIcon label='Buttons' to='buttons' SideIcon={Click} />
     </Box>
