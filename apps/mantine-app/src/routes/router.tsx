@@ -47,6 +47,7 @@ import YearPickerPage from '../pages/individual/date-time/YearPickerPage.tsx';
 import TimeInputPage from '../pages/individual/date-time/TimeInputPage.tsx';
 import DatePickerInputPage from '../pages/individual/date-time/DatePickerInputPage.tsx';
 import CreateBookingPage from '../pages/bookings/create/create-booking.tsx';
+import SSOTestPage from '../pages/other/TestSSOPage.tsx';
 
 const routes = (
 	<>
@@ -113,6 +114,9 @@ const routes = (
 
 			{/* Bookings */}
 			<Route path='bookings/create-booking' element={<CreateBookingPage />} />
+
+			{/* SSO test */}
+			<Route path='sso-test' element={<SSOTestPage />} />
 		</Route>
 	</>
 );
