@@ -12,7 +12,6 @@
     "test:coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@biomejs/cli-darwin-arm64": "^1.0.0",
     "@good/ui": "workspace:*",
     "@mantine/code-highlight": "7.3.2",
     "@mantine/core": "7.3.2",
@@ -38,7 +37,7 @@
     "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.0.0",
+    "@biomejs/biome": "^1.4.1",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
     "@types/ramda": "^0.29.4",

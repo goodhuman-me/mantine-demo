@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@biomejs/biome": "1.0.0",
+    "@biomejs/biome": "^1.4.1",
     "turbo": "^1.10.14"
   }
 }
