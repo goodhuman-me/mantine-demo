@@ -20,6 +20,8 @@ export default function SSOTestPage() {
 			const res = await signInWithEmailAndPassword(auth, email, password);
 			// console.log(res.user.email);
 			appendMessage(`Logged in as ${res.user.email}`);
+
+			console.log(JSON.stringify(res));
 		} catch (error) {
 			appendMessage((error as Error).message);
 		}
@@ -35,7 +37,7 @@ export default function SSOTestPage() {
 
 	async function displayRedirectStatus() {
 		const result = await getRedirectResult(auth);
-		console.log(result);
+		console.log(JSON.stringify(result));
 	}
 
 	useEffect(() => {
